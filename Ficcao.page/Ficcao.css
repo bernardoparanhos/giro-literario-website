@@ -1,0 +1,279 @@
+/* Estilos para o cabeçalho principal */
+.main-header {
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Esconde o menu de gêneros por padrão (telas maiores) */
+.genres-menu {
+    display: none;
+}
+
+/* Esconde o botão de menu hambúrguer por padrão (telas maiores) */
+.menu-toggle {
+    display: none;
+}
+
+.logo {
+    font-family: 'Outfit', sans-serif;
+    color: #000000;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Agrupa a barra de pesquisa e o explorar */
+.header-items {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Estilo do formulário de pesquisa */
+.search-container {
+    display: flex;
+    flex-grow: 1;
+    max-width: 450px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 15px;
+    width: 100%;
+}
+
+.search-input {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 1rem;
+    color: #333;
+    flex-grow: 1;
+    font-family: 'Outfit', sans-serif;
+}
+
+.search-input::placeholder {
+    color: #999;
+    font-family: 'Outfit', sans-serif;
+}
+
+.search-button {
+    background-color: #000080;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-button .fas {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+/* Container do link "Explorar" e do menu flutuante */
+.explore-menu-container {
+    position: relative;
+}
+
+.explore-link {
+    font-family: 'Outfit', sans-serif;
+    color: #000000;
+    font-size: 1.1rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.explore-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    z-index: 1000;
+    width: 250px;
+}
+
+.explore-menu-container:hover .explore-dropdown-menu {
+    display: block;
+}
+
+.dropdown-header-items {
+    padding-bottom: 10px;
+}
+
+.dropdown-top-item {
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-top-item:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown-divider {
+    border: none;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 5px 20px 15px 20px;
+}
+
+.explore-dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.explore-dropdown-menu li a {
+    font-family: 'Outfit', sans-serif;
+    display: block;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.2s ease;
+}
+
+.explore-dropdown-menu li a:hover {
+    background-color: #f0f0f0;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-icon-link {
+    display: flex;
+    transition: transform 0.2s ease-in-out;
+}
+
+.social-icon-link:hover {
+    transform: scale(1.1);
+}
+
+.social-icons svg {
+    width: 28px;
+    height: 28px;
+}
+
+/* Estilos para telas menores que 768px (Mobile) */
+@media (max-width: 767px) {
+    .main-header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+        margin: 0;
+    }
+    
+    .header-items {
+        order: 1;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .search-container {
+        width: 100%;
+        max-width: none;
+    }
+    
+    .explore-menu-container {
+        display: none;
+    }
+
+    .social-icons {
+        margin-left: 0;
+        gap: 10px;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+
+    .genres-menu {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-100%);
+        transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+
+    .genres-menu.is-open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    
+    .genres-menu ul {
+        list-style: none;
+        padding: 10px 0;
+        margin: 0;
+    }
+
+    .genres-menu a {
+        display: block;
+        padding: 12px 20px;
+        text-decoration: none;
+        color: #333;
+        font-family: 'Outfit', sans-serif;
+        font-weight: bold;
+    }
+
+    .genres-menu a:hover {
+        background-color: #f0f0f0;
+    }
+
+    .menu-toggle .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin: 5px 0;
+        transition: all 0.3s ease-in-out;
+    }
+}
