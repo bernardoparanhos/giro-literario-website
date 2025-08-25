@@ -6,6 +6,9 @@ const { MongoClient, ServerApiVersion } = require('mongodb');
 const path = require('path');
 const cors = require('cors');
 
+// Adiciona a configuração do dotenv para carregar as variáveis de ambiente
+require('dotenv').config();
+
 // Inicializa o aplicativo Express
 const app = express();
 const port = 3000;
@@ -16,8 +19,8 @@ app.use(express.json());
 // Middleware para habilitar CORS (Cross-Origin Resource Sharing)
 app.use(cors());
 
-// Define a URI de conexão com o MongoDB Atlas, usando a sua URL fornecida
-const uri = "mongodb+srv://beparanhosborges:SENHA_SUBSTITUIDA@giro-literario-cluster.8tzknt8.mongodb.net/?retryWrites=true&w=majority&appName=giro-literario-cluster";
+// Define a URI de conexão com o MongoDB Atlas a partir da variável de ambiente
+const uri = process.env.MONGO_URI;
 
 // Cria um cliente MongoDB com as configurações de API
 const client = new MongoClient(uri, {
