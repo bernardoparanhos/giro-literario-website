@@ -31,6 +31,13 @@ const client = new MongoClient(uri, {
   }
 });
 
+// Adiciona esta linha para servir a pasta de imagens estaticamente
+// Isso permite que o servidor encontre as imagens no seu projeto
+app.use('/images', express.static(path.join(__dirname, '..', 'images')));
+
+// Adiciona esta linha para servir os arquivos estáticos da pasta raiz do projeto
+app.use(express.static(path.join(__dirname, '..')));
+
 /**
  * Conecta-se ao MongoDB Atlas, seleciona o banco de dados e a coleção,
  * e inicia o servidor.
@@ -86,10 +93,9 @@ async function run() {
       }
     });
 
-    // Rota para servir arquivos estáticos do frontend (opcional)
-    app.use(express.static(path.join(__dirname, 'public')));
+    // Rota para servir o index.html da pasta raiz
     app.get('/', (req, res) => {
-      res.sendFile(path.join(__dirname, 'public', 'index.html'));
+      res.sendFile(path.join(__dirname, '..', 'index.html'));
     });
 
     // Inicia o servidor na porta definida
