@@ -20,14 +20,13 @@
     
     <nav class="genres-menu" id="genresMenu">
         <ul>
-            <li><a href="index.html">Populares</a></li>
-            <li><a href="romance.page/Romance.html">Romance</a></li>
-            <li><a href="Aventura.page/Aventura.html">Aventura</a></li>
-            <li><a href="desenvpessoal.page/Pessoal.html">Desenvolvimento Pessoal</a></li>
-            <li><a href="Ficcao.page/Ficcao.html">Ficção Científica</a></li>
-            <li><a href="financias.page/Financias.html">Finanças e Negócios</a></li>
-            <li><a href="terror.page/Terror.html">Terror</a></li>
-        </ul>
+    <li><a href="../romance.page/Romance.html">Romance</a></li>
+    <li><a href="../Aventura.page/Aventura.html">Aventura</a></li>
+    <li><a href="../desenvpessoal.page/Pessoal.html">Desenvolvimento Pessoal</a></li>
+    <li><a href="../Ficcao.page/Ficcao.html">Ficção Científica</a></li>
+    <li><a href="../financias.page/Financias.html">Finanças e Negócios</a></li>
+    <li><a href="../terror.page/Terror.html">Terror</a></li>
+</ul>
     </nav>
 
     <h1 class="logo">
@@ -35,14 +34,15 @@
     </h1>
     
     <div class="header-items">
-        <div class="search-container">
-            <form action="#" method="get" class="search-form">
-                <input type="search" placeholder="Pesquise por Livros" class="search-input">
-                <button type="submit" class="search-button">
-                    <i class="fas fa-search"></i>
-                </button>
-            </form>
-        </div>
+       <div class="search-container">
+    <form action="#" method="get" class="search-form">
+        <input type="search" id="searchInput" placeholder="Pesquise por Livros" class="search-input">
+        <button type="submit" class="search-button">
+            <i class="fas fa-search"></i>
+        </button>
+    </form>
+    <div id="searchResultsContainer" class="search-results-container"></div>
+</div>
 
         <div class="explore-menu-container">
             <a href="#" class="explore-link">
@@ -50,29 +50,29 @@
                 <i class="fas fa-chevron-down"></i>
             </a>
             <div class="explore-dropdown-menu">
-                <div class="dropdown-header-items">
-                    <a href="index.html" class="dropdown-top-item">
-                        <svg width="20px" height="20px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 3L9.00001 4L11.2929 6.29289L8.50001 9.08579L5.50001 6.08579L0.292908 11.2929L1.70712 12.7071L5.50001 8.91421L8.50001 11.9142L12.7071 7.70711L15 10L16 9L16 3H10Z" fill="#000000"/>
-                        </svg>
-                        <span>Populares</span>
-                    </a>
-                </div>
+               <div class="dropdown-header-items">
+    <a href="../index.html" class="dropdown-top-item">
+        <svg width="20px" height="20px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 3L9.00001 4L11.2929 6.29289L8.50001 9.08579L5.50001 6.08579L0.292908 11.2929L1.70712 12.7071L5.50001 8.91421L8.50001 11.9142L12.7071 7.70711L15 10L16 9L16 3H10Z" fill="#000000"/>
+        </svg>
+        <span>Populares</span>
+    </a>
+</div>
                 <hr class="dropdown-divider">
-                <ul>
-                    <li><a href="romance.page/Romance.html">Romance</a></li>
-                    <li><a href="Aventura.page/Aventura.html">Aventura</a></li>
-                    <li><a href="desenvpessoal.page/Pessoal.html">Desenvolvimento Pessoal</a></li>
-                    <li><a href="Ficcao.page/Ficcao.html">Ficção Científica</a></li>
-                    <li><a href="financias.page/Financias.html">Finanças e Negócios</a></li>
-                    <li><a href="terror.page/Terror.html">Terror</a></li>
-                </ul>
+               <ul>
+    <li><a href="../romance.page/Romance.html">Romance</a></li>
+    <li><a href="../Aventura.page/Aventura.html">Aventura</a></li>
+    <li><a href="../desenvpessoal.page/Pessoal.html">Desenvolvimento Pessoal</a></li>
+    <li><a href="../Ficcao.page/Ficcao.html">Ficção Científica</a></li>
+    <li><a href="../financias.page/Financias.html">Finanças e Negócios</a></li>
+    <li><a href="../terror.page/Terror.html">Terror</a></li>
+</ul>
             </div>
         </div>
     </div>
 
     <div class="social-icons">
-       <a href="https://www.instagram.com/giroliterario_?igsh=NGFpZmo3bzZoaDhl" class="social-icon-link instagram-icon">
+        <a href="https://www.instagram.com/giroliterario_?igsh=NGFpZmo3bzZoaDhl" class="social-icon-link instagram-icon">
     <svg width="28px" height="28px" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 5H9.5C7.29086 5 5.5 6.79086 5.5 9V15C5.5 17.2091 7.29086 19 9.5 19H15.5C17.7091 19 19.5 17.2091 19.5 15V9C19.5 6.79086 17.7091 5 15.5 5Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 15C10.8431 15 9.5 13.6569 9.5 12C9.5 10.3431 10.8431 9 12.5 9C14.1569 9 15.5 10.3431 15.5 12C15.5 12.7956 15.1839 13.5587 14.6213 14.1213C14.0587 14.6839 13.2956 15 12.5 15Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -92,6 +92,214 @@
         </a>
     </div>
 </header>
-    <script src="Terror.js"></script>
+
+<h2 class="page-title">Terror</h2>
+
+
+    <div class="books-container">
+<div class="book-card">
+    <a href="https://www.amazon.com.br/Verity-Colleen-Hoover/dp/8501117846?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3Q1W3B4DTUVE5&dib=eyJ2IjoiMSJ9.gTnMLPMUyupmJ3aVS68C3GjpHDmu93xQW0WJUrOHt04qokgzyE7pXCMS3kE5Td_hs_vOTpovFmFDf9q2-yZaqNGOZsABMghpYQKZ4LyzQA_RiTnN5ymMeG2jClPtdrvpmE8R509eVbqEE9g46joRrFFRwQcbQRyyjVMzbem2QZkhAWzmoVfn1L11PadPkD1bccVFF7srnTmlfyDsPelNyqtayoQ-R2eCQ5wAMhgmz9SqPMFyUU3bEUm050VAecn-uRAbuz8nNryJnDwQY4VwEwBGIxfafN04vtNMOMR38kk.jFS4vH2gyPmIPbjODaPfaPAWfJmmwhjQa4yU3himFZ4&dib_tag=se&keywords=verity&qid=1756157387&sprefix=verity%2Caps%2C260&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=15c505968247751aca361e93ca5e6a83&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/terror/Verity.png" alt="Capa do Livro: Verity" class="book-cover">
+        <h4 class="book-title">Verity</h4>
+        <p class="book-author">Autor: Colleen Hoover</p>
+    </a>
+    <a href="https://www.amazon.com.br/Verity-Colleen-Hoover/dp/8501117846?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3Q1W3B4DTUVE5&dib=eyJ2IjoiMSJ9.gTnMLPMUyupmJ3aVS68C3GjpHDmu93xQW0WJUrOHt04qokgzyE7pXCMS3kE5Td_hs_vOTpovFmFDf9q2-yZaqNGOZsABMghpYQKZ4LyzQA_RiTnN5ymMeG2jClPtdrvpmE8R509eVbqEE9g46joRrFFRwQcbQRyyjVMzbem2QZkhAWzmoVfn1L11PadPkD1bccVFF7srnTmlfyDsPelNyqtayoQ-R2eCQ5wAMhgmz9SqPMFyUU3bEUm050VAecn-uRAbuz8nNryJnDwQY4VwEwBGIxfafN04vtNMOMR38kk.jFS4vH2gyPmIPbjODaPfaPAWfJmmwhjQa4yU3himFZ4&dib_tag=se&keywords=verity&qid=1756157387&sprefix=verity%2Caps%2C260&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=15c505968247751aca361e93ca5e6a83&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
+
+<div class="book-card">
+    <a href="https://www.amazon.com.br/casa-negra-Stephen-King/dp/8581050336?crid=5QNHYP4QOPYH&dib=eyJ2IjoiMSJ9.pcHHlDHNpZ9gkmMSGLcUXhnQt7vIk7F8iSroBiFDmTjeB_jKFDE0-Wz_PoH5YKniipqZhIoxggHbdrnWlATdaiJXzGhMupUPEjd7L2AlWUa5cyfEC8mD6EFkXwtjFjMQtapgS6yfw-mWzXOaeYeMR9Qam-hJ1zMdiDzu2zJtMX893NvIpdINsUYruMm3vm6cAgYGDVCTdnfHEO2Yb7wqKDmWXkgRwFYali-WIHwnlBIh1yjRMuz_2by6bBeJ6UWQ_5LbDgfLb5HpEJtfamGRfrVjcmLpA1rVmqkjW7KyyG4.d7OEpyc-Gf7yh-WW17TlrTyVSPGHX00WfKq2S4E6yfw&dib_tag=se&keywords=a+casa+negra+stephen+king&qid=1756157460&sprefix=a+casa+ne%2Caps%2C246&sr=8-1&ufe=app_do%3Aamzn1.fos.6121c6c4-c969-43ae-92f7-cc248fc6181d&linkCode=ll1&tag=giroliterario-20&linkId=4db5233bd19c4cc6206b579cf1de36b2&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/terror/casa-negra.png" alt="Capa do Livro: A Casa Negra" class="book-cover">
+        <h4 class="book-title">A Casa Negra</h4>
+        <p class="book-author">Autor: Stephen King</p>
+    </a>
+    <a href="https://www.amazon.com.br/casa-negra-Stephen-King/dp/8581050336?crid=5QNHYP4QOPYH&dib=eyJ2IjoiMSJ9.pcHHlDHNpZ9gkmMSGLcUXhnQt7vIk7F8iSroBiFDmTjeB_jKFDE0-Wz_PoH5YKniipqZhIoxggHbdrnWlATdaiJXzGhMupUPEjd7L2AlWUa5cyfEC8mD6EFkXwtjFjMQtapgS6yfw-mWzXOaeYeMR9Qam-hJ1zMdiDzu2zJtMX893NvIpdINsUYruMm3vm6cAgYGDVCTdnfHEO2Yb7wqKDmWXkgRwFYali-WIHwnlBIh1yjRMuz_2by6bBeJ6UWQ_5LbDgfLb5HpEJtfamGRfrVjcmLpA1rVmqkjW7KyyG4.d7OEpyc-Gf7yh-WW17TlrTyVSPGHX00WfKq2S4E6yfw&dib_tag=se&keywords=a+casa+negra+stephen+king&qid=1756157460&sprefix=a+casa+ne%2Caps%2C246&sr=8-1&ufe=app_do%3Aamzn1.fos.6121c6c4-c969-43ae-92f7-cc248fc6181d&linkCode=ll1&tag=giroliterario-20&linkId=4db5233bd19c4cc6206b579cf1de36b2&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
+
+<div class="book-card">
+    <a href="https://www.amazon.com.br/Casa-Escurid%C3%A3o-Eterna-Riley-Sager/dp/6555985097?crid=14UVX5KYQV2LK&dib=eyJ2IjoiMSJ9.M8o4_QMha-Pu9SpUUb5Sn4LWGuuUKbwYsdzzr491-ZnfrKtStndz5oERb5bPCMeoyklBcHqhDC_w6WLFQ16vqS-Dt4b7H2g4iIeSGGPTz0MSqe5ORY1P-NZemkH1uAOfpbVFl5R7jwPMPNPJd2a2TZEHUaouQqY3jR0nEjEMKcXvgf_N5EPF-2q11hUmXA-Y2Y7aTzunj_gyPG-BVkfA53HH6xrmNA1trIMEa3dIZs-Zd4GMs19tltai7-Idj5t1P1XZujKhR55prjGZEwse3MaMePTvVA3bQu5wYEkgSmw.hRACvP7eaSjg_oZ1u_-fWjZSA2k5lxjHxL7ulETBlHo&dib_tag=se&keywords=casa+da+escurid%C3%A3o+eterna&qid=1756157502&sprefix=casa+da+es%2Caps%2C240&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=fb3a1c4d6d68eccb59a89e413ab163e2&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/terror/casa-da-escuridao.png" alt="Capa do Livro: A Casa da Escuridão Eterna" class="book-cover">
+        <h4 class="book-title">A Casa da Escuridão Eterna</h4>
+        <p class="book-author">Autor: Riley Sager</p>
+    </a>
+    <a href="https://www.amazon.com.br/Casa-Escurid%C3%A3o-Eterna-Riley-Sager/dp/6555985097?crid=14UVX5KYQV2LK&dib=eyJ2IjoiMSJ9.M8o4_QMha-Pu9SpUUb5Sn4LWGuuUKbwYsdzzr491-ZnfrKtStndz5oERb5bPCMeoyklBcHqhDC_w6WLFQ16vqS-Dt4b7H2g4iIeSGGPTz0MSqe5ORY1P-NZemkH1uAOfpbVFl5R7jwPMPNPJd2a2TZEHUaouQqY3jR0nEjEMKcXvgf_N5EPF-2q11hUmXA-Y2Y7aTzunj_gyPG-BVkfA53HH6xrmNA1trIMEa3dIZs-Zd4GMs19tltai7-Idj5t1P1XZujKhR55prjGZEwse3MaMePTvVA3bQu5wYEkgSmw.hRACvP7eaSjg_oZ1u_-fWjZSA2k5lxjHxL7ulETBlHo&dib_tag=se&keywords=casa+da+escurid%C3%A3o+eterna&qid=1756157502&sprefix=casa+da+es%2Caps%2C240&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=fb3a1c4d6d68eccb59a89e413ab163e2&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
+
+<div class="book-card">
+    <a href="https://www.amazon.com.br/homem-giz-C-J-Tudor/dp/855100977X?crid=4ZIRRF1NORFL&dib=eyJ2IjoiMSJ9.Np5pqhewIwoeMxbNKpn9tUS2p7oiswcS4VpaYO3PZtgg8sz9gguhTNmHEAgrLX8yRts4O4DO2LVVbA_WL3LbEryBHgcqYTeccIaNweYVca_b-gh14OxQhmXH2EDA6tj1kyPlxnhIdRIISoqn070AGQ5lesmJ2s1v5BCjnRwvEPT1UrGq8fjJJxxnqj1rwYPcjD5CMV0BIZ2mQwAjCmLxn-6-wUHkT6cOhXDjC12-cwtKCaANY8MB2nRcp6SUFSfkjKBIf5k2yYkie-sL5cAUxknnAEkdzAH3-mBQIj9u2Qg.C0JLfyGcv5eTIpBOlpctQzY1V0S4U2cswv2gR1OqS1Q&dib_tag=se&keywords=o+homem+de+giz&qid=1756157548&sprefix=o+homem%2Caps%2C226&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=aa4a76a1196985f2f1a2a0b8d1014d2d&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/terror/homem-giz.png" alt="Capa do Livro: O Homem de Giz" class="book-cover">
+        <h4 class="book-title">O Homem de Giz</h4>
+        <p class="book-author">Autor: C. J. Tudor</p>
+    </a>
+    <a href="https://www.amazon.com.br/homem-giz-C-J-Tudor/dp/855100977X?crid=4ZIRRF1NORFL&dib=eyJ2IjoiMSJ9.Np5pqhewIwoeMxbNKpn9tUS2p7oiswcS4VpaYO3PZtgg8sz9gguhTNmHEAgrLX8yRts4O4DO2LVVbA_WL3LbEryBHgcqYTeccIaNweYVca_b-gh14OxQhmXH2EDA6tj1kyPlxnhIdRIISoqn070AGQ5lesmJ2s1v5BCjnRwvEPT1UrGq8fjJJxxnqj1rwYPcjD5CMV0BIZ2mQwAjCmLxn-6-wUHkT6cOhXDjC12-cwtKCaANY8MB2nRcp6SUFSfkjKBIf5k2yYkie-sL5cAUxknnAEkdzAH3-mBQIj9u2Qg.C0JLfyGcv5eTIpBOlpctQzY1V0S4U2cswv2gR1OqS1Q&dib_tag=se&keywords=o+homem+de+giz&qid=1756157548&sprefix=o+homem%2Caps%2C226&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=aa4a76a1196985f2f1a2a0b8d1014d2d&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
+</div>
+
+
+<div class="books-container">
+<div class="book-card">
+    <a href="https://www.amazon.com.br/paciente-Jasper-DeWitt-ebook/dp/B09HXWZQM9?crid=UF8ZSBVCF1TG&dib=eyJ2IjoiMSJ9.U3GKjP04IXTfwcuVBN9w4DxpkThbJ0xygBxKVj48q8PEka9XrIP4xIHCL5N4iAIuznGPALAU0OCmIaJGLb5aW4A3XVoz3NExJuZQk35O1Lz6jwooaTwKMcu_gz2mwkOYxMfE5pw7aUHB5gTrvxU-ZZ28wSK7W0yT45OIul7KouNwJ_tIAB5U5BSuvA-_WOmHtuXwUO_byw1xigQ1TH45MltJcnMJGRHpZ1sRxthAmYqBhRGTzFZKwUGZ5FygqIQcwQ_Tx6OZsVIlq6dN_elx-DIh9TYmHT75xhTxCaWymw.6jCEfU_OqozsFL28c6323puFUbPwM8h7bGt3TVEIUNM&dib_tag=se&keywords=o+paciente&qid=1756157048&sprefix=o+paci%2Caps%2C278&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=13863f4e3d4159e3d0d4a0ece352a37a&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/terror/o-paciente.png" alt="Capa do Livro: O Paciente" class="book-cover">
+        <h4 class="book-title">O Paciente</h4>
+        <p class="book-author">Autor: Jasper DeWitt</p>
+    </a>
+    <a href="https://www.amazon.com.br/paciente-Jasper-DeWitt-ebook/dp/B09HXWZQM9?crid=UF8ZSBVCF1TG&dib=eyJ2IjoiMSJ9.U3GKjP04IXTfwcuVBN9w4DxpkThbJ0xygBxKVj48q8PEka9XrIP4xIHCL5N4iAIuznGPALAU0OCmIaJGLb5aW4A3XVoz3NExJuZQk35O1Lz6jwooaTwKMcu_gz2mwkOYxMfE5pw7aUHB5gTrvxU-ZZ28wSK7W0yT45OIul7KouNwJ_tIAB5U5BSuvA-_WOmHtuXwUO_byw1xigQ1TH45MltJcnMJGRHpZ1sRxthAmYqBhRGTzFZKwUGZ5FygqIQcwQ_Tx6OZsVIlq6dN_elx-DIh9TYmHT75xhTxCaWymw.6jCEfU_OqozsFL28c6323puFUbPwM8h7bGt3TVEIUNM&dib_tag=se&keywords=o+paciente&qid=1756157048&sprefix=o+paci%2Caps%2C278&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=13863f4e3d4159e3d0d4a0ece352a37a&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
+
+<div class="book-card">
+    <a href="https://www.amazon.com.br/estrada-noite-Edi%C3%A7%C3%A3o-Luxo/dp/6555652551?crid=3DD8IHY6GW5XH&dib=eyJ2IjoiMSJ9.RC5NIYvTWn9j56r5FEdbWohdNUGuzGLUstp2J7vtQvKg1C3fOclYw_N6RyEElvuIPbKWC13t_eoWnwegly8R0yeTFDhiSlzqBlouyV54R1aJ097wKb74ulLBERDo8NaS.s1L0B7i5smv36VEcjShlDyklQN77NtyZghJ-9F9PUwQ&dib_tag=se&keywords=a+estrada+da+noite&qid=1756157098&sprefix=a+estrad%2Caps%2C228&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=81d51ec68b49e41a73a2f4c3e4486157&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/terror/estrada-da-noite.png" alt="Capa do Livro: A Estrada da Noite" class="book-cover">
+        <h4 class="book-title">A Estrada da Noite</h4>
+        <p class="book-author">Autor: Joe Hill</p>
+    </a>
+    <a href="https://www.amazon.com.br/estrada-noite-Edi%C3%A7%C3%A3o-Luxo/dp/6555652551?crid=3DD8IHY6GW5XH&dib=eyJ2IjoiMSJ9.RC5NIYvTWn9j56r5FEdbWohdNUGuzGLUstp2J7vtQvKg1C3fOclYw_N6RyEElvuIPbKWC13t_eoWnwegly8R0yeTFDhiSlzqBlouyV54R1aJ097wKb74ulLBERDo8NaS.s1L0B7i5smv36VEcjShlDyklQN77NtyZghJ-9F9PUwQ&dib_tag=se&keywords=a+estrada+da+noite&qid=1756157098&sprefix=a+estrad%2Caps%2C228&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=81d51ec68b49e41a73a2f4c3e4486157&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
+
+<div class="book-card">
+    <a href="https://www.amazon.com.br/cemit%C3%A9rio-Stephen-King/dp/8581050395?crid=1JGAD72DWR230&dib=eyJ2IjoiMSJ9.K9AGaEnYMm7QcDsEVBMSKFCHIEMp2eUy2QhUGKFxYdf5PYmDhSWeT66hHNZEaPabjfdJ3u8XffYUiQWiCtbs2mjeXt7B_SjLtCjRrvpFjx35nrN5M6K5DA_AGJzJ0c6V1d1WUNx0S189KHaDre4F54Agz_lbTCPuWaHJojlat5U2cCQ7v1w5yQLY-OhA2lmVtJOl8PG6YhA6zmmZCiSL0YEo7aUxu4OqecqKMCzXqpWxzDG_4LFq7xQ6BxM5fFMTk4-k36IcvCx1qm6Nvdd31CyQm4mD4yDX7qexoxU1Y64.ewxSL25BTXuaNdity62CFFVTkTYgP3XOvxcwN3gsQvo&dib_tag=se&keywords=o+cemit%C3%A9rio+stephen+king&qid=1756157147&sprefix=o+cemit%2Caps%2C233&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=4f239752f581e2bd690aee3e9eebe63d&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/terror/o-cemiterio.png" alt="Capa do Livro: O Cemitério" class="book-cover">
+        <h4 class="book-title">O Cemitério</h4>
+        <p class="book-author">Autor: Stephen King</p>
+    </a>
+    <a href="https://www.amazon.com.br/cemit%C3%A9rio-Stephen-King/dp/8581050395?crid=1JGAD72DWR230&dib=eyJ2IjoiMSJ9.K9AGaEnYMm7QcDsEVBMSKFCHIEMp2eUy2QhUGKFxYdf5PYmDhSWeT66hHNZEaPabjfdJ3u8XffYUiQWiCtbs2mjeXt7B_SjLtCjRrvpFjx35nrN5M6K5DA_AGJzJ0c6V1d1WUNx0S189KHaDre4F54Agz_lbTCPuWaHJojlat5U2cCQ7v1w5yQLY-OhA2lmVtJOl8PG6YhA6zmmZCiSL0YEo7aUxu4OqecqKMCzXqpWxzDG_4LFq7xQ6BxM5fFMTk4-k36IcvCx1qm6Nvdd31CyQm4mD4yDX7qexoxU1Y64.ewxSL25BTXuaNdity62CFFVTkTYgP3XOvxcwN3gsQvo&dib_tag=se&keywords=o+cemit%C3%A9rio+stephen+king&qid=1756157147&sprefix=o+cemit%2Caps%2C233&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=4f239752f581e2bd690aee3e9eebe63d&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
+
+<div class="book-card">
+    <a href="https://www.amazon.com.br/iluminado-Stephen-King/dp/8556510469?crid=3FMX2YST16FXY&dib=eyJ2IjoiMSJ9.pfoGDM_gxz-xXlrqkJeBVYmsXHCGt9BvirRIbQKxcm7e6LMoOroL-6WnKG-5C4aFxFFjnw9aLpG5TfD5OQ8dosEDNo5hpY_FO5bdqMCt2UhEmv-4igmvhGLP9ZjRk3jFa3YpT0rNBUQARLbHIf7xmIAgz_lbTCPuWaHJojlat5W4O-qyv0hpbIugFknB3NQS0duYTns1DqNcDNKgzV1RLne6ReUa3L-AIR4w7ZcdBf_fNblDrakxPdE8BE3eqpwvP5pY9gnSW9MPz3IOITGutGbWPluwwY8P5Y4vy5my5LM.wsSi13bgLcRUntB2AvzcmfVTh932LjZnZoKbNcM5oK4&dib_tag=se&keywords=o+iluminado+stephen+king&qid=1756157196&sprefix=o+ilu%2Caps%2C214&sr=8-1&ufe=app_do%3Aamzn1.fos.6121c6c4-c969-43ae-92f7-cc248fc6181d&linkCode=ll1&tag=giroliterario-20&linkId=0b9417964ebdce385d911d9035ab5759&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/terror/o-iluminado.png" alt="Capa do Livro: O Iluminado" class="book-cover">
+        <h4 class="book-title">O Iluminado</h4>
+        <p class="book-author">Autor: Stephen King</p>
+    </a>
+    <a href="https://www.amazon.com.br/iluminado-Stephen-King/dp/8556510469?crid=3FMX2YST16FXY&dib=eyJ2IjoiMSJ9.pfoGDM_gxz-xXlrqkJeBVYmsXHCGt9BvirRIbQKxcm7e6LMoOroL-6WnKG-5C4aFxFFjnw9aLpG5TfD5OQ8dosEDNo5hpY_FO5bdqMCt2UhEmv-4igmvhGLH9ZjRk3jFa3YpT0rNBUQARLbHIf7xmIAgz_lbTCPuWaHJojlat5W4O-qyv0hpbIugFknB3NQS0duYTns1DqNcDNKgzV1RLne6ReUa3L-AIR4w7ZcdBf_fNblDrakxPdE8BE3eqpwvP5pY9gnSW9MPz3IOITGutGbWPluwwY8P5Y4vy5my5LM.wsSi13bgLcRUntB2AvzcmfVTh932LjZnZoKbNcM5oK4&dib_tag=se&keywords=o+iluminado+stephen+king&qid=1756157196&sprefix=o+ilu%2Caps%2C214&sr=8-1&ufe=app_do%3Aamzn1.fos.6121c6c4-c969-43ae-92f7-cc248fc6181d&linkCode=ll1&tag=giroliterario-20&linkId=0b9417964ebdce385d911d9035ab5759&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
+</div>
+
+<div class="books-container">
+<div class="book-card">
+    <a href="https://www.amazon.com.br/Garotas-Em-Chamas-C-Tudor/dp/6555601922?crid=CBZVMD0OPTIT&dib=eyJ2IjoiMSJ9.UMnRgWGz1aPMObBjM4FDEwmxUUG6pnNX8jX_jmcdsfmkKPsYLb15SeGq_HL1D7wWOGdBgBPOZ1br0H_JMduMjHwAoyYW1Y3CRHh83_zT1r1Go6mr3hhr2Goul0Ek2i9k0dvu48GgVT-mvH9cy-6vAm1XUA2HBNZBYW-Wy275TK8707NQY8LnG4OR7YN9_pqrWC-kSVZNnoYaAALExy-09IXB0BktrlAX46j3gSIs7cX7EkZbCFNGEmHfcxQab5w2pPfTr20K7W-iGJohRODVjcRNxAEdSg2bXPj1lmT8Zg.QwgCjXl0H6QPggzGwI4R6plkKcdzkGdYDqTFMGWh0OA&dib_tag=se&keywords=garotas+em+chamas&qid=1756157871&sprefix=garotas+em%2Caps%2C262&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=d146b6d6eab76b45e8d1f62f9adc8050&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/terror/garotas-em-chama.png" alt="Capa do Livro: Garotas em chamas" class="book-cover">
+        <h4 class="book-title">Garotas em chamas</h4>
+        <p class="book-author">Autor: C. J. Tudor</p>
+    </a>
+    <a href="https://www.amazon.com.br/Garotas-Em-Chamas-C-Tudor/dp/6555601922?crid=CBZVMD0OPTIT&dib=eyJ2IjoiMSJ9.UMnRgWGz1aPMObBjM4FDEwmxUUG6pnNX8jX_jmcdsfmkKPsYLb15SeGq_HL1D7wWOGdBgBPOZ1br0H_JMduMjHwAoyYW1Y3CRHh83_zT1r1Go6mr3hhr2Goul0Ek2i9k0dvu48GgVT-mvH9cy-6vAm1XUA2HBNZBYW-Wy275TK8707NQY8LnG4OR7YN9_pqrWC-kSVZNnoYaAALExy-09IXB0BktrlAX46j3gSIs7cX7EkZbCFNGEmHfcxQab5w2pPfTr20K7W-iGJohRODVjcRNxAEdSg2bXPj1lmT8Zg.QwgCjXl0H6QPggzGwI4R6plkKcdzkGdYDqTFMGWh0OA&dib_tag=se&keywords=garotas+em+chamas&qid=1756157871&sprefix=garotas+em%2Caps%2C262&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=d146b6d6eab76b45e8d1f62f9adc8050&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
+
+<div class="book-card">
+    <a href="https://www.amazon.com.br/massacre-fam%C3%ADlia-Hope-Riley-Sager-ebook/dp/B0D8QX7J6V?crid=1YEMFSKG4D3XM&dib=eyJ2IjoiMSJ9.rqrU-QqN1ufv-6EHfW7siBVknSY9NWO3njpCnYZRfn-f5qtaXJB3o1Usednhx-r8R2UPNnYLRhTlWLyYveOdm1yeqI1IkHVmv34wp-9bn8c.q9yJWx-pt95_J63_aJ_U9shKKUpNDGpxSSUJnSm9rK8&dib_tag=se&keywords=massacre+da+fam%C3%ADlia+hope&qid=1756157932&sprefix=massacr%2Caps%2C217&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=84d85281af0e64e5ade6fd46e58ff473&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/terror/massacre-hope.png" alt="Capa do Livro: O massacre da família Hope" class="book-cover">
+        <h4 class="book-title">O massacre da família Hope</h4>
+        <p class="book-author">Autor: Riley Sager</p>
+    </a>
+    <a href="https://www.amazon.com.br/massacre-fam%C3%ADlia-Hope-Riley-Sager-ebook/dp/B0D8QX7J6V?crid=1YEMFSKG4D3XM&dib=eyJ2IjoiMSJ9.rqrU-QqN1ufv-6EHfW7siBVknSY9NWO3njpCnYZRfn-f5qtaXJB3o1Usednhx-r8R2UPNnYLRhTlWLyYveOdm1yeqI1IkHVmv34wp-9bn8c.q9yJWx-pt95_J63_aJ_U9shKKUpNDGpxSSUJnSm9rK8&dib_tag=se&keywords=massacre+da+fam%C3%ADlia+hope&qid=1756157932&sprefix=massacr%2Caps%2C217&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=84d85281af0e64e5ade6fd46e58ff473&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
+
+<div class="book-card">
+    <a href="https://www.amazon.com.br/Beb%C3%AA-Rosemary-Ira-Levin/dp/6555981571?crid=2LPGU6PYZXK2P&dib=eyJ2IjoiMSJ9.K0dFXz1o9IvqkkpXINxHQsVg3BHm0IzpaTkXFaz6cR45qTKdkOqxNZeHjHXrBY5nYFoAaKwTDIg1stJyJlBR3WqzHViC-OEawJEYgweflKyBAWxUnFr3tYpvUtJfd4D1ZZFbwDApdiLJto8ptFZuI4GcgEp2NSgBuywcG_zsnqrbb1WpqlS1cpoOPdrrRsoqxdre7pn51TGfKNb0Px6ilBJwbIUp7774hLAgnt_ndjlHh6yA4oUn3m-WEvCuniLIa3N0yp9vKA_YHDI9eSio7xohaoV-w6WouCVng6jSCUM.3TgLgZ61dVR3bXV5lkWq1fnGwiU9L6ZsC9RNGuRlm1g&dib_tag=se&keywords=o+bebe+de+rosemary&qid=1756157984&sprefix=o+bebe+d%2Caps%2C278&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=4da565c0c6058ebb98fd691b122df3bd&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/terror/o-bebe.png" alt="Capa do Livro: O Bebê de Rosemary" class="book-cover">
+        <h4 class="book-title">O Bebê de Rosemary</h4>
+        <p class="book-author">Autor: Ira Levin</p>
+    </a>
+    <a href="https://www.amazon.com.br/Beb%C3%AA-Rosemary-Ira-Levin/dp/6555981571?crid=2LPGU6PYZXK2P&dib=eyJ2IjoiMSJ9.K0dFXz1o9IvqkkpXINxHQsVg3BHm0IzpaTkXFaz6cR45qTKdkOqxNZeHjHXrBY5nYFoAaKwTDIg1stJyJlBR3WqzHViC-OEawJEYgweflKyBAWxUnFr3tYpvUtJfd4D1ZZFbwDApdiLJto8ptFZuI4GcgEp2NSgBuywcG_zsnqrbb1WpqlS1cpoOPdrrRsoqxdre7pn51TGfKNb0Px6ilBJwbIUp7774hLAgnt_ndjlHh6yA4oUn3m-WEvCuniLIa3N0yp9vKA_YHDI9eSio7xohaoV-w6WouCVng6jSCUM.3TgLgZ61dVR3bXV5lkWq1fnGwiU9L6ZsC9RNGuRlm1g&dib_tag=se&keywords=o+bebe+de+rosemary&qid=1756157984&sprefix=o+bebe+d%2Caps%2C278&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=4da565c0c6058ebb98fd691b122df3bd&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
+
+<div class="book-card">
+    <a href="https://www.amazon.com.br/estou-pensando-acabar-com-tudo/dp/6555320958?crid=302NY2ADZ8X7T&dib=eyJ2IjoiMSJ9.fm2nxKCEsXIqwo41Sz8PS27EqQVzBYXlMi2MhVuA6udko0IdzX4ymo3pCYcGgVqv.33U2FgcXuP50TH7WaAG6OWedCPejnyNPnwt94zI5gBQ&dib_tag=se&keywords=eu+estou+pensando+em+acabar+com+tudo&qid=1756158031&sprefix=eu+e%2Caps%2C241&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=5148fa1047f9138ede20808e5b48c991&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/terror/pensando-em-acabar-com.png" alt="Capa do Livro: Eu estou pensando em acabar com tudo" class="book-cover">
+        <h4 class="book-title">Eu estou pensando em acabar com tudo</h4>
+        <p class="book-author">Autor: Iain Reid</p>
+    </a>
+    <a href="https://www.amazon.com.br/estou-pensando-acabar-com-tudo/dp/6555320958?crid=302NY2ADZ8X7T&dib=eyJ2IjoiMSJ9.fm2nxKCEsXIqwo41Sz8PS27EqQVzBYXlMi2MhVuA6udko0IdzX4ymo3pCYcGgVqv.33U2FgcXuP50TH7WaAG6OWedCPejnyNPnwt94zI5gBQ&dib_tag=se&keywords=eu+estou+pensando+em+acabar+com+tudo&qid=1756158031&sprefix=eu+e%2Caps%2C241&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=5148fa1047f9138ede20808e5b48c991&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
+</div>
+
+<div class="books-container">
+<div class="book-card">
+    <a href="https://www.amazon.com.br/Queda-Casa-Morta-T-Kingfisher/dp/6555983353?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2GULBLL3FFEQI&dib=eyJ2IjoiMSJ9.aK5SI7SaK8uaQTpPDdnytVBwQ4dFF26_58ht2DTR6q3Q0XVcBtTgpUfmcFNBoy9KjUUn6bonn8b7MMQ89sj4BN9AKj665KAgEhushUKuiLq0bJGa3ikbjP3XX9aD6WEmKIQw26rFh24Jgq40PPduh83MDC5q7nRLEgq0VMcZYo8.4lBLId6RNcHKglsDFfrsEZze_61Jb1lQ7ImGTyaiwnQ&dib_tag=se&keywords=queda+da+casa+morta&qid=1756158367&sprefix=queda+da+casa+morta%2Caps%2C322&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=b891f5361a8a32a04ffd5e35333c9579&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/terror/queda-da-casa-morta.png" alt="Capa do Livro: A Queda da Casa Morta" class="book-cover">
+        <h4 class="book-title">A Queda da Casa Morta</h4>
+        <p class="book-author">Autor: T. Kingfisher</p>
+    </a>
+    <a href="https://www.amazon.com.br/Queda-Casa-Morta-T-Kingfisher/dp/6555983353?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2GULBLL3FFEQI&dib=eyJ2IjoiMSJ9.aK5SI7SaK8uaQTpPDdnytVBwQ4dFF26_58ht2DTR6q3Q0XVcBtTgpUfmcFNBoy9KjUUn6bonn8b7MMQ89sj4BN9AKj665KAgEhushUKuiLq0bJGa3ikbjP3XX9aD6WEmKIQw26rFh24Jgq40PPduh83MDC5q7nRLEgq0VMcZYo8.4lBLId6RNcHKglsDFfrsEZze_61Jb1lQ7ImGTyaiwnQ&dib_tag=se&keywords=queda+da+casa+morta&qid=1756158367&sprefix=queda+da+casa+morta%2Caps%2C322&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=b891f5361a8a32a04ffd5e35333c9579&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
+
+<div class="book-card">
+    <a href="https://www.amazon.com.br/Exorcista-William-Peter-Blatty/dp/8595086230?crid=BEHNYV699JBU&dib=eyJ2IjoiMSJ9.1VzCqj0v14Zt8HEw1FmSBdfcjNhNtJkxKm0HNw58TvorHrBm4tW2gxcq2NQyJLmWLTCCGnyfCGWwmGGNvWYVB4Ud0dvURUcYQfhlBxc4hkFM6m9gNd7-6TcI2HecJHBwiGFxlMZ3UbRhBYkAZ7AK4NHux8itT9x242iiPErKqn0xPiV0hsqKc754Z_KAjO17NKUgJ5n86Tv1L-GoFGsjpD3Otjj6gFQDofTjTn_pz5PnLBB5qQ07FTryht3sul_Ppki-vMGzxgpsdVoFucqxoy4VCIaCybvcLlvqT9Z9Gx0.oJYP95wX30bjcGTHh0YH1xsUIqCjtnLz03X5p1H4roU&dib_tag=se&keywords=o+exorcista&qid=1756158457&sprefix=o+exo%2Caps%2C246&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=d4053461d6b0807e3fd5613dd5cad528&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/terror/o-exorcista.png" alt="Capa do Livro: O Exorcista" class="book-cover">
+        <h4 class="book-title">O Exorcista</h4>
+        <p class="book-author">Autor: William Peter Blatty</p>
+    </a>
+    <a href="https://www.amazon.com.br/Exorcista-William-Peter-Blatty/dp/8595086230?crid=BEHNYV699JBU&dib=eyJ2IjoiMSJ9.1VzCqj0v14Zt8HEw1FmSBdfcjNhNtJkxKm0HNw58TvorHrBm4tW2gxcq2NQyJLmWLTCCGnyfCGWwmGGNvWYVB4Ud0dvURUcYQfhlBxc4hkFM6m9gNd7-6TcI2HecJHBwiGFxlMZ3UbRhBYkAZ7AK4NHux8itT9x242iiPErKqn0xPiV0hsqKc754Z_KAjO17NKUgJ5n86Tv1L-GoFGsjpD3Otjj6gFQDofTjTn_pz5PnLBB5qQ07FTryht3sul_Ppki-vMGzxgpsdVoFucqxoy4VCIaCybvcLlvqT9Z9Gx0.oJYP95wX30bjcGTHh0YH1xsUIqCjtnLz03X5p1H4roU&dib_tag=se&keywords=o+exorcista&qid=1756158457&sprefix=o+exo%2Caps%2C246&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=d4053461d6b0807e3fd5613dd5cad528&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
+
+<div class="book-card">
+    <a href="https://www.amazon.com.br/Horrorstor-Sam-Stall/dp/1594745269?crid=C10T8RIUTIHE&dib=eyJ2IjoiMSJ9.loIXukmoqFE_wPelekWKvw_b-i7gHW3nZwDodeTzIIKqBrVFyQhSnB1SgINC-0giGBHwsc2FNzzQ3n0iBU6ubKhchL0fBKbhT68AW6wB6lrKa15uD3Gk1F4WvBqeZa2Jd2WBVUKppGG7Oec-4em9BpqWtlkww8W3YmIVHHcvq8IanUGOKRtQofxObdwGRsyc-omrcT1GCQuSqteWsfzwsvA4Z0bBIgJlX4u8RoL8O4e0HqHgj9POUnp8jAnsLJ2vhKMPjbETzDjfuAwhviBAoR2uTY7Qu9gMrYXAyF7PFV-M.VUxaB29mRJsk1VTz7VOIKedcR78MRmPKC33yLdnbZJ4&dib_tag=se&keywords=horrorstor&qid=1756158524&sprefix=horror%2Caps%2C245&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=7e5ae8e422bb0ff873207fd910dd8944&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/terror/horrorstor.png" alt="Capa do Livro: Horrorstor" class="book-cover">
+        <h4 class="book-title">Horrorstor: A Novel</h4>
+        <p class="book-author">Autor: Grady Hendrix</p>
+    </a>
+    <a href="https://www.amazon.com.br/Horrorstor-Sam-Stall/dp/1594745269?crid=C10T8RIUTIHE&dib=eyJ2IjoiMSJ9.loIXukmoqFE_wPelekWKvw_b-i7gHW3nZwDodeTzIIKqBrVFyQhSnB1SgINC-0giGBHwsc2FNzzQ3n0iBU6ubKhchL0fBKbhT68AW6wB6lrKa15uD3Gk1F4WvBqeZa2Jd2WBVUKppGG7Oec-4em9BpqWtlkww8W3YmIVHHcvq8IanUGOKRtQofxObdwGRsyc-omrcT1GCQuSqteWsfzwsvA4Z0bBIgJlX4u8RoL8O4e0HqHgj9POUnp8jAnsLJ2vhKMPjbETzDjfuAwhviBAoR2uTY7Qu9gMrYXAyF7PFV-M.VUxaB29mRJsk1VTz7VOIKedcR78MRmPKC33yLdnbZJ4&dib_tag=se&keywords=horrorstor&qid=1756158524&sprefix=horror%2Caps%2C245&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=7e5ae8e422bb0ff873207fd910dd8944&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
+
+<div class="book-card">
+    <a href="https://www.amazon.com.br/Temporada-Ca%C3%A7a-Stephen-Graham-Jones/dp/6555981814?crid=276CFCO250SQ0&dib=eyJ2IjoiMSJ9.KlHhs2-ijGHLosmPGJfDlSPGnkIk7flcic4PGMzsFHYwDO2z8VbsvR7ivGHQ2jjFSi1vIGD0UlK0Id_magmrXGc6fWLFR1vncxfW8mF94miq6ETOxFJqkhLxFOjxhNzvnRgsjkUerFdWjAHGeNTW00-4QSOjq4vHwZfbmR2wFp4svLZp3PRHQPMrV6Hn7h3tPKgovJodnNX1RCodgnEYsYCplONQeCNmR3Fo-7HuwX-I7Pos1QVnnfAFw_ABTcDrTS7_O94q_W2ocMDocnD5QALtzld4Sdvhm4UBq2R3S78.rkTIQT19YF3BpqchLsOOdGjDvJcExJUfUJM-LvzXdm4&dib_tag=se&keywords=temporada+de+ca%C3%A7a&qid=1756158560&sprefix=temporad%2Caps%2C245&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=179ecdd455d9d3f1317d2df87d38c1fd&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/terror/temporada-de-caça.png" alt="Capa do Livro: Temporada de Caça" class="book-cover">
+        <h4 class="book-title">Temporada de Caça</h4>
+        <p class="book-author">Autor: Stephen Graham Jones</p>
+    </a>
+    <a href="https://www.amazon.com.br/Temporada-Ca%C3%A7a-Stephen-Graham-Jones/dp/6555981814?crid=276CFCO250SQ0&dib=eyJ2IjoiMSJ9.KlHhs2-ijGHLosmPGJfDlSPGnkIk7flcic4PGMzsFHYwDO2z8VbsvR7ivGHQ2jjFSi1vIGD0UlK0Id_magmrXGc6fWLFR1vncxfW8mF94miq6ETOxFJqkhLxFOjxhNzvnRgsjkUerFdWjAHGeNTW00-4QSOjq4vHwZfbmR2wFp4svLZp3PRHQPMrV6Hn7h3tPKgovJodnNX1RCodgnEYsYCplONQeCNmR3Fo-7HuwX-I7Pos1QVnnfAFw_ABTcDrTS7_O94q_W2ocMDocnD5QALtzld4Sdvhm4UBq2R3S78.rkTIQT19YF3BpqchLsOOdGjDvJcExJUfUJM-LvzXdm4&dib_tag=se&keywords=temporada+de+ca%C3%A7a&qid=1756158560&sprefix=temporad%2Caps%2C245&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=179ecdd455d9d3f1317d2df87d38c1fd&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
+
+</div>
+
+<div class="books-container">
+<div class="book-card">
+    <a href="https://www.amazon.com.br/Christine-Stephen-King/dp/8560280871?crid=25P9EZR118MWI&dib=eyJ2IjoiMSJ9.wI2EyFyV-xCK1IGbWpztSIrmV_rZwKyS2adODL6jE3jcCJtzlfepm5dK1t3vTQk8anlKbL7suOin3L6uMTZ5mEfaTGBU1eVKsoAfOYDoyvM-HoLf1DJUVtKhMgU_uMIsGTklH1gtTwBzAseCDrwfg4EYHBoJHPAuk9JU8GmyW7RI.QAkJDoHvdFiy8cTfHYCJAYgDRFqlETRtTrz4P7gbL90&dib_tag=se&keywords=christine+stephen+king&qid=1756158864&sprefix=christi%2Caps%2C246&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=b70b4eba87fd10f6d9be6d453f62b64c&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/terror/crhistiane.png" alt="Capa do Livro: Christine" class="book-cover">
+        <h4 class="book-title">Christine</h4>
+        <p class="book-author">Autor: Stephen King</p>
+    </a>
+    <a href="https://www.amazon.com.br/Christine-Stephen-King/dp/8560280871?crid=25P9EZR118MWI&dib=eyJ2IjoiMSJ9.wI2EyFyV-xCK1IGbWpztSIrmV_rZwKyS2adODL6jE3jcCJtzlfepm5dK1t3vTQk8anlKbL7suOin3L6uMTZ5mEfaTGBU1eVKsoAfOYDoyvM-HoLf1DJUVtKhMgU_uMIsGTklH1gtTwBzAseCDrwfg4EYHBoJHPAuk9JU8GmyW7RI.QAkJDoHvdFiy8cTfHYCJAYgDRFqlETRtTrz4P7gbL90&dib_tag=se&keywords=christine+stephen+king&qid=1756158864&sprefix=christi%2Caps%2C246&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=b70b4eba87fd10f6d9be6d453f62b64c&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
+
+<div class="book-card">
+    <a href="https://www.amazon.com.br/Fuma%C3%A7a-branca-Tiffany-D-Jackson/dp/8555342201?crid=10E29GOSAO09U&dib=eyJ2IjoiMSJ9.PdcOdFmRfCX1pS_c7oK4LkbmBXYokx699XYcMRoEXG7sVpdCleu3RpOh8PYHhOw0USyH3RkZbpXCs_sEL5gzHyQBaHlkNvlGrtdQUkLQKqBulZL_d368qxUmkxdU7Mt8.ZLcNeuBLYfzbBiJMtmr0Qrvh7XC_RM4TPrKm0eeTjjQ&dib_tag=se&keywords=fuma%C3%A7a+branca&qid=1756158918&sprefix=fuma%C3%A7a+br%2Caps%2C209&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=4a50b1e435f7922beadecaa3a80aded3&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/terror/fumaça-branca.png" alt="Capa do Livro: Fumaça branca" class="book-cover">
+        <h4 class="book-title">Fumaça branca</h4>
+        <p class="book-author">Autor: Tiffany D. Jackson</p>
+    </a>
+    <a href="https://www.amazon.com.br/Fuma%C3%A7a-branca-Tiffany-D-Jackson/dp/8555342201?crid=10E29GOSAO09U&dib=eyJ2IjoiMSJ9.PdcOdFmRfCX1pS_c7oK4LkbmBXYokx699XYcMRoEXG7sVpdCleu3RpOh8PYHhOw0USyH3RkZbpXCs_sEL5gzHyQBaHlkNvlGrtdQUkLQKqBulZL_d368qxUmkxdU7Mt8.ZLcNeuBLYfzbBiJMtmr0Qrvh7XC_RM4TPrKm0eeTjjQ&dib_tag=se&keywords=fuma%C3%A7a+branca&qid=1756158918&sprefix=fuma%C3%A7a+br%2Caps%2C209&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=4a50b1e435f7922beadecaa3a80aded3&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
+
+<div class="book-card">
+    <a href="https://www.amazon.com.br/Amigo-imagin%C3%A1rio-Stephen-Chbosky/dp/8501118893?crid=3LNLWQANDG6LR&dib=eyJ2IjoiMSJ9.IGuqySp9mUWTaeCwDrCQIQNi2xCq6vuK5zI11fKAlDsHwHIAubX7LnLOpmPa-8MZemNie12ZO0Tc6KtyonazSaF0L5cWqeUTFlLUtoaSE4c1TU1KF7THvcIb7NLDOilnAb1MzbZZ28ERBYxHy__TXbwU-Smvre1up7QxQ5YxPi1lb0ok04Veo8YBahEbFRp5AzN9guGhupT5dXVpr2A2KDCTlUbhHqDsiJMAqnsOFvb2lgRzk8f60IFr05LH4SX3h0n7R_uzOf2Edho89v_7kZohFPL3dR8s9tHU31CjFVM.oXP9nJoG9TNiUWh-Ge7ZGWdrDJycu2lbz-wrAtSvUyw&dib_tag=se&keywords=amigo+imagin%C3%A1rio&qid=1756158974&sprefix=amigo+%2Caps%2C223&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=c41d6a190a2e6248581c9cf1f013569a&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/terror/amigo-imaginario.png" alt="Capa do Livro: Amigo imaginário" class="book-cover">
+        <h4 class="book-title">Amigo imaginário</h4>
+        <p class="book-author">Autor: Stephen Chbosky</p>
+    </a>
+    <a href="https://www.amazon.com.br/Amigo-imagin%C3%A1rio-Stephen-Chbosky/dp/8501118893?crid=3LNLWQANDG6LR&dib=eyJ2IjoiMSJ9.IGuqySp9mUWTaeCwDrCQIQNi2xCq6vuK5zI11fKAlDsHwHIAubX7LnLOpmPa-8MZemNie12ZO0Tc6KtyonazSaF0L5cWqeUTFlLUtoaSE4c1TU1KF7THvcIb7NLDOilnAb1MzbZZ28ERBYxHy__TXbwU-Smvre1up7QxQ5YxPi1lb0ok04Veo8YBahEbFRp5AzN9guGhupT5dXVpr2A2KDCTlUbhHqDsiJMAqnsOFvb2lgRzk8f60IFr05LH4SX3h0n7R_uzOf2Edho89v_7kZohFPL3dR8s9tHU31CjFVM.oXP9nJoG9TNiUWh-Ge7ZGWdrDJycu2lbz-wrAtSvUyw&dib_tag=se&keywords=amigo+imagin%C3%A1rio&qid=1756158974&sprefix=amigo+%2Caps%2C223&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=c41d6a190a2e6248581c9cf1f013569a&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
+
+<div class="book-card">
+    <a href="https://www.amazon.com.br/Jantar-secreto-Raphael-Montes/dp/8535928359?crid=2RY1ZQNF8KRM9&dib=eyJ2IjoiMSJ9.8AoYDS4xxVWpY0KfDHxDmDPxPAkCkgpwpZW57xoaK7MvpvdL99kLQUC0m04xk8sE_XJdZeKy9WshDtvjwU0HNx-KSgFPet0kdXzewxHT0oJDJmQqcquOkMPBdLrf3xo2aCJG08Zl1vzDbxYcfy9pW3gEscIc_0oZ8ZhWEMYYPhhW0RikC4W7Daw9xhKRER8UgYb88TNKWOpH81f2Mn_032vumXxh99xIpUlMXY7i8adsM0Y5wiIP7umTZhSXRhWxrSswPis9XK9fYuKYP2_VvO8WcQdeXeodDvk4GfsZxOI.TuMbiEabLXSkwENTr5BvHGCb4WnmGYUL6RudAb4vtg&dib_tag=se&keywords=jantar+secreto+raphael+montes&qid=1756159020&sprefix=janta%2Caps%2C207&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=b752e50c1c29f3b768bb967695290957&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/terror/jantar-secreto.png" alt="Capa do Livro: Jantar secreto" class="book-cover">
+        <h4 class="book-title">Jantar secreto</h4>
+        <p class="book-author">Autor: Raphael Montes</p>
+    </a>
+    <a href="https://www.amazon.com.br/Jantar-secreto-Raphael-Montes/dp/8535928359?crid=2RY1ZQNF8KRM9&dib=eyJ2IjoiMSJ9.8AoYDS4xxVWpY0KfDHxDmDPxPAkCkgpwpZW57xoaK7MvpvdL99kLQUC0m04xk8sE_XJdZeKy9WshDtvjwU0HNx-KSgFPet0kdXzewxHT0oJDJmQqcquOkMPBdLrf3xo2aCJG08Zl1vzDbxYcfy9pW3gEscIc_0oZ8ZhWEMYYPhhW0RikC4W7Daw9xhKRER8UgYb88TNKWOpH81f2Mn_032vumXxh99xIpUlMXY7i8adsM0Y5wiIP7umTZhSXRhWxrSswPis9XK9fYuKYP2_VvO8WcQdeXeodDvk4GfsZxOI.TuMbiEabLXSkwENTr5BvHGCb4WnmGYUL6RudAb4vtg&dib_tag=se&keywords=jantar+secreto+raphael+montes&qid=1756159020&sprefix=janta%2Caps%2C207&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=b752e50c1c29f3b768bb967695290957&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
+</div>
+
+
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-center">
+            <p>&copy; 2025 Giro Literário. Todos os direitos reservados.</p>
+        </div>
+        <div class="footer-right">
+            <p>Giro Literário é um participante do Programa de Associados da Amazon Services LLC, um programa de publicidade de afiliados projetado para fornecer um meio para que os sites ganhem taxas de publicidade anunciando e vinculando a amazon.com.</p>
+        </div>
+    </div>
+</footer>
+    <script src="../script.js"></script>
 </body>
 </html>

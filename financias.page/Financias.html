@@ -20,14 +20,13 @@
     
     <nav class="genres-menu" id="genresMenu">
         <ul>
-            <li><a href="index.html">Populares</a></li>
-            <li><a href="romance.page/Romance.html">Romance</a></li>
-            <li><a href="Aventura.page/Aventura.html">Aventura</a></li>
-            <li><a href="desenvpessoal.page/Pessoal.html">Desenvolvimento Pessoal</a></li>
-            <li><a href="Ficcao.page/Ficcao.html">Ficção Científica</a></li>
-            <li><a href="financias.page/Financias.html">Finanças e Negócios</a></li>
-            <li><a href="terror.page/Terror.html">Terror</a></li>
-        </ul>
+    <li><a href="../romance.page/Romance.html">Romance</a></li>
+    <li><a href="../Aventura.page/Aventura.html">Aventura</a></li>
+    <li><a href="../desenvpessoal.page/Pessoal.html">Desenvolvimento Pessoal</a></li>
+    <li><a href="../Ficcao.page/Ficcao.html">Ficção Científica</a></li>
+    <li><a href="../financias.page/Financias.html">Finanças e Negócios</a></li>
+    <li><a href="../terror.page/Terror.html">Terror</a></li>
+</ul>
     </nav>
 
     <h1 class="logo">
@@ -35,14 +34,15 @@
     </h1>
     
     <div class="header-items">
-        <div class="search-container">
-            <form action="#" method="get" class="search-form">
-                <input type="search" placeholder="Pesquise por Livros" class="search-input">
-                <button type="submit" class="search-button">
-                    <i class="fas fa-search"></i>
-                </button>
-            </form>
-        </div>
+       <div class="search-container">
+    <form action="#" method="get" class="search-form">
+        <input type="search" id="searchInput" placeholder="Pesquise por Livros" class="search-input">
+        <button type="submit" class="search-button">
+            <i class="fas fa-search"></i>
+        </button>
+    </form>
+    <div id="searchResultsContainer" class="search-results-container"></div>
+</div>
 
         <div class="explore-menu-container">
             <a href="#" class="explore-link">
@@ -50,29 +50,29 @@
                 <i class="fas fa-chevron-down"></i>
             </a>
             <div class="explore-dropdown-menu">
-                <div class="dropdown-header-items">
-                    <a href="index.html" class="dropdown-top-item">
-                        <svg width="20px" height="20px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 3L9.00001 4L11.2929 6.29289L8.50001 9.08579L5.50001 6.08579L0.292908 11.2929L1.70712 12.7071L5.50001 8.91421L8.50001 11.9142L12.7071 7.70711L15 10L16 9L16 3H10Z" fill="#000000"/>
-                        </svg>
-                        <span>Populares</span>
-                    </a>
-                </div>
+               <div class="dropdown-header-items">
+    <a href="../index.html" class="dropdown-top-item">
+        <svg width="20px" height="20px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 3L9.00001 4L11.2929 6.29289L8.50001 9.08579L5.50001 6.08579L0.292908 11.2929L1.70712 12.7071L5.50001 8.91421L8.50001 11.9142L12.7071 7.70711L15 10L16 9L16 3H10Z" fill="#000000"/>
+        </svg>
+        <span>Populares</span>
+    </a>
+</div>
                 <hr class="dropdown-divider">
-                <ul>
-                    <li><a href="romance.page/Romance.html">Romance</a></li>
-                    <li><a href="Aventura.page/Aventura.html">Aventura</a></li>
-                    <li><a href="desenvpessoal.page/Pessoal.html">Desenvolvimento Pessoal</a></li>
-                    <li><a href="Ficcao.page/Ficcao.html">Ficção Científica</a></li>
-                    <li><a href="financias.page/Financias.html">Finanças e Negócios</a></li>
-                    <li><a href="terror.page/Terror.html">Terror</a></li>
-                </ul>
+               <ul>
+    <li><a href="../romance.page/Romance.html">Romance</a></li>
+    <li><a href="../Aventura.page/Aventura.html">Aventura</a></li>
+    <li><a href="../desenvpessoal.page/Pessoal.html">Desenvolvimento Pessoal</a></li>
+    <li><a href="../Ficcao.page/Ficcao.html">Ficção Científica</a></li>
+    <li><a href="../financias.page/Financias.html">Finanças e Negócios</a></li>
+    <li><a href="../terror.page/Terror.html">Terror</a></li>
+</ul>
             </div>
         </div>
     </div>
 
     <div class="social-icons">
-       <a href="https://www.instagram.com/giroliterario_?igsh=NGFpZmo3bzZoaDhl" class="social-icon-link instagram-icon">
+        <a href="https://www.instagram.com/giroliterario_?igsh=NGFpZmo3bzZoaDhl" class="social-icon-link instagram-icon">
     <svg width="28px" height="28px" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 5H9.5C7.29086 5 5.5 6.79086 5.5 9V15C5.5 17.2091 7.29086 19 9.5 19H15.5C17.7091 19 19.5 17.2091 19.5 15V9C19.5 6.79086 17.7091 5 15.5 5Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 15C10.8431 15 9.5 13.6569 9.5 12C9.5 10.3431 10.8431 9 12.5 9C14.1569 9 15.5 10.3431 15.5 12C15.5 12.7956 15.1839 13.5587 14.6213 14.1213C14.0587 14.6839 13.2956 15 12.5 15Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -80,7 +80,7 @@
         <rect x="16" y="8.5" width="1" height="1" rx="0.5" transform="rotate(-90 16 8.5)" stroke="#000000" stroke-linecap="round"/>
     </svg>
 </a>
-         <a href="https://www.tiktok.com/@aluxuryy1?_t=ZM-8z9gc388yFK&_r=1" class="social-icon-link tiktok-icon">
+        <a href="https://www.tiktok.com/@aluxuryy1?_t=ZM-8z9gc388yFK&_r=1" class="social-icon-link tiktok-icon">
             <svg fill="#000000" width="28px" height="28px" viewBox="0 0 24 24" id="tiktok" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color">
                 <path id="primary" d="M21,7V9a1,1,0,0,1-1,1,8,8,0,0,1-4-1.08V15.5A6.5,6.5,0,1,1,6.53,9.72a1,1,0,0,1,1.47.9v2.52a.92.92,0,0,1-.28.62,2.49,2.49,0,0,0,2,4.23A2.61,2.61,0,0,0,12,15.35V3a1,1,0,0,1,1-1h2.11a1,1,0,0,1,1,.83A4,4,0,0,0,20,6,1,1,0,0,1,21,7Z" style="fill: rgb(0, 0, 0);"></path>
             </svg>
@@ -92,6 +92,202 @@
         </a>
     </div>
 </header>
-    <script src="Financias.js"></script>
+
+<h2 class="page-title">Financias e Negocios</h2>
+
+
+    <div class="books-container">
+  <div class="book-card">
+    <a href="https://www.amazon.com.br/Ganhar-Gastar-Investir-dinheiro-mulheres-ebook/dp/B01EZ6QNBE?crid=RGSTWJ97YK9H&dib=eyJ2IjoiMSJ9.Q8aQ9OO-i5VMf2d8HL7xC-rLgD7BmuiTQYwrV2iGjkwPzyD_DfwKvukXeGHCM7XnsLQyiIENcnTJYw_vlMv9VSfQrt6N7U5eTzT4cgoa4he4pNj2_vFXcAZMAlKS4yvLCz6MmKV6KzL72_NZyECanVtLtuMj1hCSQDNDSERT_xLYpA9F0IyjbSUyafdM_Yx3HTHPgyKcYdJ6UoDpnjdQG2puMW_ex5bluD1RZRHl3i1vVsEbPn9Umkcm14UEMY4iI5wfYYFawTmZeOiefZMcM0rmMQPhjBJ0y_HLE20w_3U.RzvlWYqm3U6nCTMCsy-JFVOtl3PFMYH3moQGcsEpet8&dib_tag=se&keywords=ganhar+gastar+e+investir&qid=1756154535&sprefix=ganha+gastar+e+%2Caps%2C240&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=4731127aa6897a66b5ae24d4aedf9af7&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/financiasenegoios/ganhar-e-investir.png" alt="Capa do Livro: Ganhar, Gastar, Investir" class="book-cover">
+        <h4 class="book-title">Ganhar, Gastar, Investir</h4>
+        <p class="book-author">Autor: Denise Damiani</p>
+    </a>
+    <a href="https://www.amazon.com.br/Ganhar-Gastar-Investir-dinheiro-mulheres-ebook/dp/B01EZ6QNBE?crid=RGSTWJ97YK9H&dib=eyJ2IjoiMSJ9.Q8aQ9OO-i5VMf2d8HL7xC-rLgD7BmuiTQYwrV2iGjkwPzyD_DfwKvukXeGHCM7XnsLQyiIENcnTJYw_vlMv9VSfQrt6N7U5eTzT4cgoa4he4pNj2_vFXcAZMAlKS4yvLCz6MmKV6KzL72_NZyECanVtLtuMj1hCSQDNDSERT_xLYpA9F0IyjbSUyafdM_Yx3HTHPgyKcYdJ6UoDpnjdQG2puMW_ex5bluD1RZRHl3i1vVsEbPn9Umkcm14UEMY4iI5wfYYFawTmZeOiefZMcM0rmMQPhjBJ0y_HLE20w_3U.RzvlWYqm3U6nCTMCsy-JFVOtl3PFMYH3moQGcsEpet8&dib_tag=se&keywords=ganhar+gastar+e+investir&qid=1756154535&sprefix=ganha+gastar+e+%2Caps%2C240&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=4731127aa6897a66b5ae24d4aedf9af7&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
+
+<div class="book-card">
+    <a href="https://www.amazon.com.br/segredos-mente-milion%C3%A1ria-Harv-Eker/dp/8575422391?crid=3M7JLJHOR8BB1&dib=eyJ2IjoiMSJ9.yK6XByU53boUTPtBVTBIY9EgLsCs9COGhpQf8rDAP-C4KkPNwOkY-F4oDC8hYKBasIHmxwL5Tv1hlv-mHdbDioeZVr7dtubfSA5gU1l9l4FSfvVgbQSOrK-0Mx7G5zI33_Zd5cPZBgKimNDEVuhkVu5vyxspSiEaa9121MuVm_ll_mzvPtBhMbV1EPnoCYAEypb6IMFADc6I34y5Nr6VEPwryyeZ6uyWjsUuduHN778-atE_yhIemmS0O_ZNAokb0yY1e9LMjPxPRXfhdNe9fFyhVhiUlfd3a8kx2R-2auY.KXNpR3JXDPlRLRDMQQL5VYBYI_mDoN3Q4XoyVCgpUqQ&dib_tag=se&keywords=os+segredos+da+mente+milion%C3%A1ria&qid=1756154645&sprefix=os+segre%2Caps%2C270&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=d51afd71f79c026f9bbae871823ffe82&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/financiasenegoios/segredos-da-mente.png" alt="Capa do Livro: Os segredos da mente milionária" class="book-cover">
+        <h4 class="book-title">Os segredos da mente milionária</h4>
+        <p class="book-author">Autor: T. Harv Eker</p>
+    </a>
+    <a href="https://www.amazon.com.br/segredos-mente-milion%C3%A1ria-Harv-Eker/dp/8575422391?crid=3M7JLJHOR8BB1&dib=eyJ2IjoiMSJ9.yK6XByU53boUTPtBVTBIY9EgLsCs9COGhpQf8rDAP-C4KkPNwOkY-F4oDC8hYKBasIHmxwL5Tv1hlv-mHdbDioeZVr7dtubfSA5gU1l9l4FSfvVgbQSOrK-0Mx7G5zI33_Zd5cPZBgKimNDEVuhkVu5vyxspSiEaa9121MuVm_ll_mzvPtBhMbV1EPnoCYAEypb6IMFADc6I34y5Nr6VEPwryyeZ6uyWjsUuduHN778-atE_yhIemmS0O_ZNAokb0yY1e9LMjPxPRXfhdNe9fFyhVhiUlfd3a8kx2R-2auY.KXNpR3JXDPlRLRDMQQL5VYBYI_mDoN3Q4XoyVCgpUqQ&dib_tag=se&keywords=os+segredos+da+mente+milion%C3%A1ria&qid=1756154645&sprefix=os+segre%2Caps%2C270&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=d51afd71f79c026f9bbae871823ffe82&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
+
+<div class="book-card">
+    <a href="https://www.amazon.com.br/Casais-inteligentes-enriquecem-Gustavo-Cerbasi/dp/8543101433?crid=8AMZDCAWT13Q&dib=eyJ2IjoiMSJ9.c2LXBe_RZdJl64vyjIzHYRy9TGeyEAJoaH4EO1CTJ8eqeSHDXps0RifdCurz3mO4W0p6LfX_tMm58fkA735FjvG0IBOqoj9z6jqZyKHwquKNc3UU2k0aBaVtvPTGgCpYGD4HK5j_eKy_7UElojHfRrMk_RRqtAeoH-lbTLYsr0W-rrL9c5BzcaAZnsToWhaMUoZef0xwZ2QaI0TxfohFCXT4vZa-vfWJTo5Z9F1KMSruCJQdgdtW6eJm5E0lSL7TRxrUL7xWS-R0JK1WkY22zjXzRf_jY7bxjU6V9Uj8Wws.q1k6KPKmhYvtExWaLsAHOZSZy7xIh3CZ-nHJjiwDPAk&dib_tag=se&keywords=casais+inteligentes+enriquecem+juntos&qid=1756154721&sprefix=casais+%2Caps%2C229&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=29c3754161c298a82380462413c8b342&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/financiasenegoios/casais-inteligentes.png" alt="Capa do Livro: Casais inteligentes enriquecem juntos" class="book-cover">
+        <h4 class="book-title">Casais inteligentes enriquecem juntos</h4>
+        <p class="book-author">Autor: Gustavo Cerbasi</p>
+    </a>
+    <a href="https://www.amazon.com.br/Casais-inteligentes-enriquecem-Gustavo-Cerbasi/dp/8543101433?crid=8AMZDCAWT13Q&dib=eyJ2IjoiMSJ9.c2LXBe_RZdJl64vyjIzHYRy9TGeyEAJoaH4EO1CTJ8eqeSHDXps0RifdCurz3mO4W0p6LfX_tMm58fkA735FjvG0IBOqoj9z6jqZyKHwquKNc3UU2k0aBaVtvPTGgCpYGD4HK5j_eKy_7UElojHfRrMk_RRqtAeoH-lbTLYsr0W-rrL9c5BzcaAZnsToWhaMUoZef0xwZ2QaI0TxfohFCXT4vZa-vfWJTo5Z9F1KMSruCJQdgdtW6eJm5E0lSL7TRxrUL7xWS-R0JK1WkY22zjXzRf_jY7bxjU6V9Uj8Wws.q1k6KPKmhYvtExWaLsAHOZSZy7xIh3CZ-nHJjiwDPAk&dib_tag=se&keywords=casais+inteligentes+enriquecem+juntos&qid=1756154721&sprefix=casais+%2Caps%2C229&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=29c3754161c298a82380462413c8b342&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
+
+<div class="book-card">
+    <a href="https://www.amazon.com.br/Ponto-inflex%C3%A3o-Fl%C3%A1vio-Augusto-Silva/dp/8593156835?crid=389AEPUCNWCL3&dib=eyJ2IjoiMSJ9.pXyHQ26mJw8Ebwjw8elrDyDgfGYKzLVEFWvcPQ6OOa4ywqVNqLHzOunef8L4p1bZSTTbQ-mYT6vMX9oYA8Arnp8eDpUc64LjPUmpWF5ZLT93k421SCl8vzrMYkBvbNFyliHtnPCYuX0K-poJZWJHr1kcTNA0wRHtGbccygkOTav-fET1kfv9B_uaRSaJA5elDnbKHsCsG1hr6vNVSavaaQIsHlpdd8YFHz1rc6XvOR-2oXa48vGrqemJPQ5kYMu1wj4weJFAFju4o0m7qkKwi3ytIFZXRkkYJLJm0e0kAtw.RARihHls3socCutOtoo_dk_ktkxv6QrCZsgXinq-BQY&dib_tag=se&keywords=ponto+de+inflex%C3%A3o&qid=1756154831&sprefix=ponto+de+%2Caps%2C230&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=c21e66c87738ba788638447a49a2c712&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/financiasenegoios/ponto-de.png" alt="Capa do Livro: Ponto de inflexão" class="book-cover">
+        <h4 class="book-title">Ponto de inflexão</h4>
+        <p class="book-author">Autor: Flávio Augusto Da Silva</p>
+    </a>
+    <a href="https://www.amazon.com.br/Ponto-inflex%C3%A3o-Fl%C3%A1vio-Augusto-Silva/dp/8593156835?crid=389AEPUCNWCL3&dib=eyJ2IjoiMSJ9.pXyHQ26mJw8Ebwjw8elrDyDgfGYKzLVEFWvcPQ6OOa4ywqVNqLHzOunef8L4p1bZSTTbQ-mYT6vMX9oYA8Arnp8eDpUc64LjPUmpWF5ZLT93k421SCl8vzrMYkBvbNFyliHtnPCYuX0K-poJZWJHr1kcTNA0wRHtGbccygkOTav-fET1kfv9B_uaRSaJA5elDnbKHsCsG1hr6vNVSavaaQIsHlpdd8YFHz1rc6XvOR-2oXa48vGrqemJPQ5kYMu1wj4weJFAFju4o0m7qkKwi3ytIFZXRkkYJLJm0e0kAtw.RARihHls3socCutOtoo_dk_ktkxv6QrCZsgXinq-BQY&dib_tag=se&keywords=ponto+de+inflex%C3%A3o&qid=1756154831&sprefix=ponto+de+%2Caps%2C230&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=c21e66c87738ba788638447a49a2c712&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
+</div>
+
+
+<div class="books-container">
+ <div class="book-card">
+    <a href="https://www.amazon.com.br/Segredo-Rhonda-Byrne/dp/8543101964?crid=3SK31H23JBDHE&dib=eyJ2IjoiMSJ9.AxH3yOjq7hPb4JAwQ2HxsbNO3PsBdnX5EfiY35NUKJNBeey53xTloLWGh3qCG_N37wNBNhVueGk7YpkJhjm0sI6Oze2td8XUrpn2leKqsZWUx5DgKIGjo-aDDpurdINPoxZr_FMAgxGAGnBh7eAKcZsgfCrJ4y54FyZtVfMM-l2qzpfOwCuOdIW3OAUdi7OWCdM6nxxq6kSyKB-yaO4Due9JYgz3fep2-7_eBYYCm7BCKXjdEF-A4yVBzhEBxDVj5oSeTlBa2jdZ91xfp7SqdIa9mIBvsFN-Rl67xj1OO6w.2owWKRgTuORuZKzixHaIJOPiVypQtI-AhQgdrj4Xp8g&dib_tag=se&keywords=o+segredo&qid=1756155117&sprefix=o+se%2Caps%2C280&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=80a70d700f1a63c27138c1605adb3d84&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/financiasenegoios/o-segredo.png" alt="Capa do Livro: O segredo" class="book-cover">
+        <h4 class="book-title">O segredo</h4>
+        <p class="book-author">Autor: Rhonda Byrne</p>
+    </a>
+    <a href="https://www.amazon.com.br/Segredo-Rhonda-Byrne/dp/8543101964?crid=3SK31H23JBDHE&dib=eyJ2IjoiMSJ9.AxH3yOjq7hPb4JAwQ2HxsbNO3PsBdnX5EfiY35NUKJNBeey53xTloLWGh3qCG_N37wNBNhVueGk7YpkJhjm0sI6Oze2td8XUrpn2leKqsZWUx5DgKIGjo-aDDpurdINPoxZr_FMAgxGAGnBh7eAKcZsgfCrJ4y54FyZtVfMM-l2qzpfOwCuOdIW3OAUdi7OWCdM6nxxq6kSyKB-yaO4Due9JYgz3fep2-7_eBYYCm7BCKXjdEF-A4yVBzhEBxDVj5oSeTlBa2jdZ91xfp7SqdIa9mIBvsFN-Rl67xj1OO6w.2owWKRgTuORuZKzixHaIJOPiVypQtI-AhQgdrj4Xp8g&dib_tag=se&keywords=o+segredo&qid=1756155117&sprefix=o+se%2Caps%2C280&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=80a70d700f1a63c27138c1605adb3d84&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
+
+<div class="book-card">
+    <a href="https://www.amazon.com.br/Do-mil-milh%C3%A3o-cafezinho-best-seller/dp/8595083274?crid=2FEK87EWNBRD5&dib=eyJ2IjoiMSJ9.QCCU0Gdm5Kjin--KJnOjL3pTiQMJM4Yl3uM4pMajGGkcBj8SOTFcunXbpBaZfw3igXQMQz-r1bz8XWubezLQ6B41dTjtxuoKdTzivoS8Z-JEIlaptVWU0_IZB-JP9Hv7cUqkQ8UUBzdN-I-gw2E_aRMVu4YusmIR4mieuFCfAcT5ZgPHKm_btbSm2Wtzor0mA_BIY2F39wz17yrAFPkbN8_I1mXMh6Gq17db_d2UHu-GCXlyGPGKZsFDPjNNAPqLxLe_udIc5Ldrf-WKXwRxg3uRIkmqGqa7aQL_DDea5N0.hrCB42DdadZX6wEQZeEa8nVO9W_jFBVZemMR-ynshsg&dib_tag=se&keywords=do+mil+ao+milh%C3%A3o&qid=1756155165&sprefix=do+mi%2Caps%2C206&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=7d5bd15a692c727e8ea4fbedd672f5d4&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/financiasenegoios/do-mil-ao-milhao.png" alt="Capa do Livro: Do mil ao milhão" class="book-cover">
+        <h4 class="book-title">Do mil ao milhão</h4>
+        <p class="book-author">Autor: Thiago Nigro</p>
+    </a>
+    <a href="https://www.amazon.com.br/Do-mil-milh%C3%A3o-cafezinho-best-seller/dp/8595083274?crid=2FEK87EWNBRD5&dib=eyJ2IjoiMSJ9.QCCU0Gdm5Kjin--KJnOjL3pTiQMJM4Yl3uM4pMajGGkcBj8SOTFcunXbpBaZfw3igXQMQz-r1bz8XWubezLQ6B41dTjtxuoKdTzivoS8Z-JEIlaptVWU0_IZB-JP9Hv7cUqkQ8UUBzdN-I-gw2E_aRMVu4YusmIR4mieuFCfAcT5ZgPHKm_btbSm2Wtzor0mA_BIY2F39wz17yrAFPkbN8_I1mXMh6Gq17db_d2UHu-GCXlyGPGKZsFDPjNNAPqLxLe_udIc5Ldrf-WKXwRxg3uRIkmqGqa7aQL_DDea5N0.hrCB42DdadZX6wEQZeEa8nVO9W_jFBVZemMR-ynshsg&dib_tag=se&keywords=do+mil+ao+milh%C3%A3o&qid=1756155165&sprefix=do+mi%2Caps%2C206&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=7d5bd15a692c727e8ea4fbedd672f5d4&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
+
+<div class="book-card">
+    <a href="https://www.amazon.com.br/Deixe-ser-pobre-conquistar-independ%C3%AAncia-ebook/dp/B0C6WBQ8YT?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3MNKC9QZA9KYQ&dib=eyJ2IjoiMSJ9.bXivQ-MOo8YsjLimp16ULPmhUWi6yCHTxdExuso08AJsW_gmz5D590nebFbBV48vrKfh97KqM93S2lc10ucyZOUsCh6Vv_JU2c2_FbUUeWYVb3eXRBBojvhhdLZvFp2fK-kop-LP0B7HBTL01H30UFaW9398108bY3AJE77pKsqIN2G6G2itCOKRXOvSawPrUbAKZwyG1i9K73an4lvoPl6HbLalmEW8LA2eDzZkJnSOCLhU0_DX1_GstSMSBtnDjr3rpHK10jxyL4q4AkmSXHfNKfgXJ9NhgnyodHpGJrU.20oLOjlQrU9GJBElhhHWRR-zN9NiXuLpWqqDShlBePU&dib_tag=se&keywords=deixa+de+ser+pobre&qid=1756155241&sprefix=m+deixa+de+ser+pobre%2Caps%2C179&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=59f154319d5602974e20559cc5784cd1&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/financiasenegoios/deixe-de-ser-pobre.png" alt="Capa do Livro: Deixe de ser pobre" class="book-cover">
+        <h4 class="book-title">Deixe de ser pobre</h4>
+        <p class="book-author">Autor: Eduardo Felberg</p>
+    </a>
+    <a href="https://www.amazon.com.br/Deixe-ser-pobre-conquistar-independ%C3%AAncia-ebook/dp/B0C6WBQ8YT?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3MNKC9QZA9KYQ&dib=eyJ2IjoiMSJ9.bXivQ-MOo8YsjLimp16ULPmhUWi6yCHTxdExuso08AJsW_gmz5D590nebFbBV48vrKfh97KqM93S2lc10ucyZOUsCh6Vv_JU2c2_FbUUeWYVb3eXRBBojvhhdLZvFp2fK-kop-LP0B7HBTL01H30UFaW9398108bY3AJE77pKsqIN2G6G2itCOKRXOvSawPrUbAKZwyG1i9K73an4lvoPl6HbLalmEW8LA2eDzZkJnSOCLhU0_DX1_GstSMSBtnDjr3rpHK10jxyL4q4AkmSXHfNKfgXJ9NhgnyodHpGJrU.20oLOjlQrU9GJBElhhHWRR-zN9NiXuLpWqqDShlBePU&dib_tag=se&keywords=deixa+de+ser+pobre&qid=1756155241&sprefix=m+deixa+de+ser+pobre%2Caps%2C179&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=59f154319d5602974e20559cc5784cd1&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
+
+<div class="book-card">
+    <a href="https://www.amazon.com.br/investidor-inteligente-Lourdes-Sette/dp/8595080801?crid=26Z9RUJ1B4FVR&dib=eyJ2IjoiMSJ9.kZiJZjPbB9tC6QHnRMR-UHGU6W-NIu1UH_t3Z-VCgrdGQJ9xyY9muyVrQqEjaMRuT090kFI1RFewq4HIGIKD7Z1dtGSIluk4Bb03rtWXyL9sxp3M7FdvRYZ5FyXCQN5VHse0_JFWG-DceX23xAb8y527wQs2KYWGJ_lHzFrEh1PqgxkOhWnlOZle0JDfXLO-S3sptLshqkBALIqIp3mJA-5RykiZ4ovRBM7S4KjzTE9h0gFmXcOp_9T8txm4BVhz9OTsAW25-1oj_FSJip8FMprWt54nqPZwloS7qfC73XM.pVW8xy-CPMmGSiB5MdkUeUCqUbLDEfN50JVdRuTgMUE&dib_tag=se&keywords=o+investidor+inteligente&qid=1756155332&sprefix=o+o+inves%2Caps%2C227&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=0b12f3db63a526f3287309ed26e5b47d&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/financiasenegoios/investidor-inteligente.png" alt="Capa do Livro: O investidor inteligente" class="book-cover">
+        <h4 class="book-title">O investidor inteligente</h4>
+        <p class="book-author">Autor: Benjamin Graham</p>
+    </a>
+    <a href="https://www.amazon.com.br/investidor-inteligente-Lourdes-Sette/dp/8595080801?crid=26Z9RUJ1B4FVR&dib=eyJ2IjoiMSJ9.kZiJZjPbB9tC6QHnRMR-UHGU6W-NIu1UH_t3Z-VCgrdGQJ9xyY9muyVrQqEjaMRuT090kFI1RFewq4HIGIKD7Z1dtGSIluk4Bb03rtWXyL9sxp3M7FdvRYZ5FyXCQN5VHse0_JFWG-DceX23xAb8y527wQs2KYWGJ_lHzFrEh1PqgxkOhWnlOZle0JDfXLO-S3sptLshqkBALIqIp3mJA-5RykiZ4ovRBM7S4KjzTE9h0gFmXcOp_9T8txm4BVhz9OTsAW25-1oj_FSJip8FMprWt54nqPZwloS7qfC73XM.pVW8xy-CPMmGSiB5MdkUeUCqUbLDEfN50JVdRuTgMUE&dib_tag=se&keywords=o+investidor+inteligente&qid=1756155332&sprefix=o+o+inves%2Caps%2C227&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=0b12f3db63a526f3287309ed26e5b47d&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
+</div>
+
+<div class="books-container">
+<div class="book-card">
+    <a href="https://www.amazon.com.br/Investindo-A%C3%A7%C3%B5es-Longo-Prazo-Indispens%C3%A1vel/dp/8582602812?crid=2MYT3WB54233S&dib=eyJ2IjoiMSJ9.omuykF96dwnLH40QLDqtTv2kBXcNrM9VjDF3zsyipeVKF0m9z5AjY-HdAfgIq9coc-Dhvw_S787FUkXwW2X4FBLm1jGcmEFk_0X57lTpDmZmCyhHZNjBBA0lbnjeKuSI9p6ZTHuRl2rd4fKKGgkbPi1iSZEvAf_3Qhp7oHCL6K0HsfXg-Apdprtug2st77hwvSSTv45y5IYhbUI_Cc56yTghw1tG6sUqbYKt3Y5DfA8H1YNL7ZMdMP5K8itLxJ6H34TqKnwsO_autJ8sILdhiD4kHDO1tP49ipj2-z3QKn8.hVzyzMcKHd4S3rQebb8c9djks8YBt8AOEAq2fSxlZAU&dib_tag=se&keywords=investindo+em+a%C3%A7%C3%B5es+no+longo+prazo&qid=1756155600&sprefix=investindo+e%2Caps%2C225&sr=8-1&ufe=app_do%3Aamzn1.fos.6a09f7ec-d911-4889-ad70-de8dd83c8a74&linkCode=ll1&tag=giroliterario-20&linkId=a58084db5878d181bcd464c5bc17c6f5&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/financiasenegoios/investindo-a-longo-prazo.png" alt="Capa do Livro: Investindo em Ações no Longo Prazo" class="book-cover">
+        <h4 class="book-title">Investindo em Ações no Longo Prazo</h4>
+        <p class="book-author">Autor: Jeremy J. Siegel</p>
+    </a>
+    <a href="https://www.amazon.com.br/Investindo-A%C3%A7%C3%B5es-Longo-Prazo-Indispens%C3%A1vel/dp/8582602812?crid=2MYT3WB54233S&dib=eyJ2IjoiMSJ9.omuykF96dwnLH40QLDqtTv2kBXcNrM9VjDF3zsyipeVKF0m9z5AjY-HdAfgIq9coc-Dhvw_S787FUkXwW2X4FBLm1jGcmEFk_0X57lTpDmZmCyhHZNjBBA0lbnjeKuSI9p6ZTHuRl2rd4fKKGgkbPi1iSZEvAf_3Qhp7oHCL6K0HsfXg-Apdprtug2st77hwvSSTv45y5IYhbUI_Cc56yTghw1tG6sUqbYKt3Y5DfA8H1YNL7ZMdMP5K8itLxJ6H34TqKnwsO_autJ8sILdhiD4kHDO1tP49ipj2-z3QKn8.hVzyzMcKHd4S3rQebb8c9djks8YBt8AOEAq2fSxlZAU&dib_tag=se&keywords=investindo+em+a%C3%A7%C3%B5es+no+longo+prazo&qid=1756155600&sprefix=investindo+e%2Caps%2C225&sr=8-1&ufe=app_do%3Aamzn1.fos.6a09f7ec-d911-4889-ad70-de8dd83c8a74&linkCode=ll1&tag=giroliterario-20&linkId=a58084db5878d181bcd464c5bc17c6f5&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
+
+<div class="book-card">
+    <a href="https://www.amazon.com.br/Quem-Pensa-Enriquece-Legado-Napoleon/dp/8568014542?crid=2KSFUT5BHX5TE&dib=eyJ2IjoiMSJ9.2JVKE9p5AZc7qV4yUEf2cdLvnqypWI6Qa-hu3ZMy71dBm04HYH--b-hcqvwN6Di4r_8NwzlHNhPW-dBFN9bBTfc5a6g89ecUvEA7jkc-LV5fXR9-MEqfKOHymb-Jd8XdYmlLff2DBwY9712WOUAFmWOe19OerqtjfnxF8w833zkR77ez4pSykMsR1G3vBTGS-rozigP7wA6cMrk3c2U8JFoPVa2iE1B_0_b-Jbnh51pur5O6zlnfFFg_j7spXOWFXuDt8q2MVx_jPNS90Farb6GuwrwSWzskBFZYf8h3Zqw.3cDEnhxct_oIuMm0kr4xHsW7UmgCjAdXGTWpQQDv2VM&dib_tag=se&keywords=quem+pensa+enriquece&qid=1756155556&sprefix=quem+pen%2Caps%2C260&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=00199a1e64c8820d9be3a572c98812da&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/financiasenegoios/quem-pensa-enrique.png" alt="Capa do Livro: Quem Pensa Enriquece" class="book-cover">
+        <h4 class="book-title">Quem Pensa Enriquece</h4>
+        <p class="book-author">Autor: Napoleon Hill</p>
+    </a>
+    <a href="https://www.amazon.com.br/Quem-Pensa-Enriquece-Legado-Napoleon/dp/8568014542?crid=2KSFUT5BHX5TE&dib=eyJ2IjoiMSJ9.2JVKE9p5AZc7qV4yUEf2cdLvnqypWI6Qa-hu3ZMy71dBm04HYH--b-hcqvwN6Di4r_8NwzlHNhPW-dBFN9bBTfc5a6g89ecUvEA7jkc-LV5fXR9-MEqfKOHymb-Jd8XdYmlLff2DBwY9712WOUAFmWOe19OerqtjfnxF8w833zkR77ez4pSykMsR1G3vBTGS-rozigP7wA6cMrk3c2U8JFoPVa2iE1B_0_b-Jbnh51pur5O6zlnfFFg_j7spXOWFXuDt8q2MVx_jPNS90Farb6GuwrwSWzskBFZYf8h3Zqw.3cDEnhxct_oIuMm0kr4xHsW7UmgCjAdXGTWpQQDv2VM&dib_tag=se&keywords=quem+pensa+enriquece&qid=1756155556&sprefix=quem+pen%2Caps%2C260&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=00199a1e64c8820d9be3a572c98812da&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
+
+<div class="book-card">
+    <a href="https://www.amazon.com.br/Iludidos-pelo-acaso-influ%C3%AAncia-mercados/dp/8547000968?crid=33UH11LF3K060&dib=eyJ2IjoiMSJ9.a7Vrwcew5CJHI3h1fbYMQU1oCdh8XLWaChc3cDg1bB-OMq-XwNgXUIRbNLtM5Ty5u9Sked4P8FrfvZ2hJJqzkNEZJjf5lILfKZGa4B3nLaAhb1ZCkJnmLdjznFeLmBknMgT5GOgWSvEqkT8iOueoW65_BMs_JENBYhVkP78H1JGCFyakI784YfV2Urh9XUDq2bTJOogItFhxTDjYftG7CTaX_aMlgvP2TXu5rADtF1GFfVBA5X3a_ZjpU7P4n_p18sxiHCuppvD0IuFzb_05imb-MgUPX9goiMYAh57P3ZA.Dhjr2X5WaoyyZnwn_U5oKfF0VQifqXgN7bdwmBAlBg&dib_tag=se&keywords=iludidos+pelo+acaso&qid=1756155693&sprefix=ilu%2Caps%2C210&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=350d42a9c732e5ce4df2db3e718ef07a&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/financiasenegoios/iludidos-pelo-acaso.png" alt="Capa do Livro: Iludidos pelo acaso" class="book-cover">
+        <h4 class="book-title">Iludidos pelo acaso</h4>
+        <p class="book-author">Autor: Nassim Nicholas Taleb</p>
+    </a>
+    <a href="https://www.amazon.com.br/Iludidos-pelo-acaso-influ%C3%AAncia-mercados/dp/8547000968?crid=33UH11LF3K060&dib=eyJ2IjoiMSJ9.a7Vrwcew5CJHI3h1fbYMQU1oCdh8XLWaChc3cDg1bB-OMq-XwNgXUIRbNLtM5Ty5u9Sked4P8FrfvZ2hJJqzkNEZJjf5lILfKZGa4B3nLaAhb1ZCkJnmLdjznFeLmBknMgT5GOgWSvEqkT8iOueoW65_BMs_JENBYhVkP78H1JGCFyakI784YfV2Urh9XUDq2bTJOogItFhxTDjYftG7CTaX_aMlgvP2TXu5rADtF1GFfVBA5X3a_ZjpU7P4n_p18sxiHCuppvD0IuFzb_05imb-MgUPX9goiMYAh57P3ZA.Dhjr2X5WaoyyZnwn_U5oKfF0VQifqXgN7bdwmBAlBg&dib_tag=se&keywords=iludidos+pelo+acaso&qid=1756155693&sprefix=ilu%2Caps%2C210&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=350d42a9c732e5ce4df2db3e718ef07a&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
+
+<div class="book-card">
+    <a href="https://www.amazon.com.br/Negocie-como-vida-dependesse-disso/dp/8543108055?crid=1HP41PEEGWZAJ&dib=eyJ2IjoiMSJ9.jS2C2WluFz6mUc5IythEhUfFPDnwlj2wqNTOA6BHY7uas_asUuk50SsHT8ACp-b8FkCO-XpMFdg34WJfc_ms4Kjp16p057PaKLdJ0Qak5ibh8e0GsQIHWjzK-gf8xKGrv8j6WkxKxNM0xIRDoeMmVsYPxkJm4vUuaBB2QnzGDU7_XBifxMdDoHeNbwHTh8qxTj8mSzxtayFEM7WMK92AF1WPPO8v4PqdCw7mxsmlA2lyHVUsO9xITUOdALMXe3PMMeuAmnH9br5a1HU7VJnIFziQ9EPGjeXtu4nkCEbIAWQ.JBFDTI1VrHCLduR0xYjJTs7yXPujtH_5-ULtiYd_RYo&dib_tag=se&keywords=negocie+como+se+sua+vida+dependesse+disso&qid=1756155760&sprefix=negocie%2Caps%2C222&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=7e0fc5670b5b70f9e1e064f14e5f9464&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/financiasenegoios/negocie-como.png" alt="Capa do Livro: Negocie como se sua vida dependesse disso" class="book-cover">
+        <h4 class="book-title">Negocie como se sua vida dependesse disso</h4>
+        <p class="book-author">Autor: Chris Voss</p>
+    </a>
+    <a href="https://www.amazon.com.br/Negocie-como-vida-dependesse-disso/dp/8543108055?crid=1HP41PEEGWZAJ&dib=eyJ2IjoiMSJ9.jS2C2WluFz6mUc5IythEhUfFPDnwlj2wqNTOA6BHY7uas_asUuk50SsHT8ACp-b8FkCO-XpMFdg34WJfc_ms4Kjp16p057PaKLdJ0Qak3ibh8e0GsQIHWjzK-gf8xKGrv8j6WkxKxNM0xIRDoeMmVsYPxkJm4vUuaBB2QnzGDU7_XBifxMdDoHeNbwHTh8qxTj8mSzxtayFEM7WMK92AF1WPPO8v4PqdCw7mxsmlA2lyHVUsO9xITUOdALMXe3PMMeuAmnH9br5a1HU7VJnIFziQ9EPGjeXtu4nkCEbIAWQ.JBFDTI1VrHCLduR0xYjJTs7yXPujtH_5-ULtiYd_RYo&dib_tag=se&keywords=negocie+como+se+sua+vida+dependesse+disso&qid=1756155760&sprefix=negocie%2Caps%2C222&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=7e0fc5670b5b70f9e1e064f14e5f9464&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
+</div>
+
+<div class="books-container">
+<div class="book-card">
+    <a href="https://www.amazon.com.br/Negocie-sem-medo-construir-confian%C3%A7a/dp/6554240012?crid=CKHJH671XHF2&dib=eyJ2IjoiMSJ9.au1d6-CO_k5_Q3JbvyaC3NcLA6Og60gY_j3GP4BtMkF3diXCpCV8vwhCid93XyK8Ftu8EC045itgoseib9i7FnJv-jN3pcONtfTVswKT0A1PRThrZyGZcA8zeFqpwI_MzRS9Y9FIca3C9JG0ZsHiAjRd_fyfTi8TahHsAzgLijlSK4ZaykMYQduc-GHU8w-KWoXwCPHhSExkOwaqpLlHgS6E59ZWfUCYAxQBou3zE31rVG1gz18oix7eVY3n9mQYgLgJgN5D9GHNpVMGDxxoHGyp-OAel3HwtV48qPZ7WHs.DUC0p6t-WAeUg0zfF3LXCNFYVPN3eimT9KS-1MkawvU&dib_tag=se&keywords=negocie+sem+medo&qid=1756156027&sprefix=negoci%2Caps%2C251&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=521e2426f90eb04200b6185969e37e82&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/financiasenegoios/negocie-sem-medo.png" alt="Capa do Livro: Negocie sem medo" class="book-cover">
+        <h4 class="book-title">Negocie sem medo</h4>
+        <p class="book-author">Autor: Breno Paquelet</p>
+    </a>
+    <a href="https://www.amazon.com.br/Negocie-sem-medo-construir-confian%C3%A7a/dp/6554240012?crid=CKHJH671XHF2&dib=eyJ2IjoiMSJ9.au1d6-CO_k5_Q3JbvyaC3NcLA6Og60gY_j3GP4BtMkF3diXCpCV8vwhCid93XyK8Ftu8EC045itgoseib9i7FnJv-jN3pcONtfTVswKT0A1PRThrZyGZcA8zeFqpwI_MzRS9Y9FIca3C9JG0ZsHiAjRd_fyfTi8TahHsAzgLijlSK4ZaykMYQduc-GHU8w-KWoXwCPHhSExkOwaqpLlHgS6E59ZWfUCYAxQBou3zE31rVG1gz18oix7eVY3n9mQYgLgJgN5D9GHNpVMGDxxoHGyp-OAel3HwtV48qPZ7WHs.DUC0p6t-WAeUg0zfF3LXCNFYVPN3eimT9KS-1MkawvU&dib_tag=se&keywords=negocie+sem+medo&qid=1756156027&sprefix=negoci%2Caps%2C251&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=521e2426f90eb04200b6185969e37e82&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
+
+<div class="book-card">
+    <a href="https://www.amazon.com.br/Steve-Jobs-Walter-Isaacson/dp/6555603321?crid=2XDF4W3KNPYBF&dib=eyJ2IjoiMSJ9.tUNRhHafJeZXFCvE4pyHu24zl62PJAwuKsjNjHJnXpIkY4bK7hdxaWXHX7Gnnqnfv6Cx6QMn7hk9oN8hRH1NGq-LhJVbszsb95VBnIOOnjkZ1QXcu9HzbUClLFWQh344oRk97sqTdc48hpfJP3Dt7KiP3M8S91oBcSfU0e3txYGBzB9G-5FqzStP1H1_EKF99-dLe_tyXX19NyCaR215zLwFivirAJYRZ6V8cIhzl7o5lbpjzQf4_N_uuJFF-QRv2WL6Vr4Oc52DqVNUsfoyj42M3XmVbEGrlB4WrFfv-7Q.EwpMsn-t92yytWt7QHw4mTnNAe2-cxoe2e7K-HFItHM&dib_tag=se&keywords=steve+jobs&qid=1756156095&sprefix=stev%2Caps%2C226&sr=8-1&ufe=app_do%3Aamzn1.fos.6121c6c4-c969-43ae-92f7-cc248fc6181d&linkCode=ll1&tag=giroliterario-20&linkId=d103424caa4c1b30c45dad9f5dcc26be&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/financiasenegoios/SteveJobs.png" alt="Capa do Livro: Steve Jobs" class="book-cover">
+        <h4 class="book-title">Steve Jobs</h4>
+        <p class="book-author">Autor: Walter Isaacson</p>
+    </a>
+    <a href="https://www.amazon.com.br/Steve-Jobs-Walter-Isaacson/dp/6555603321?crid=2XDF4W3KNPYBF&dib=eyJ2IjoiMSJ9.tUNRhHafJeZXFCvE4pyHu24zl62PJAwuKsjNjHJnXpIkY4bK7hdxaWXHX7Gnnqnfv6Cx6QMn7hk9oN8hRH1NGq-LhJVbszsb95VBnIOOnjkZ1QXcu9HzbUClLFWQh344oRk97sqTdc48hpfJP3Dt7KiP3M8S91oBcSfU0e3txYGBzB9G-5FqzStP1H1_EKF99-dLe_tyXX19NyCaR215zLwFivirAJYRZ6V8cIhzl7o5lbpjzQf4_N_uuJFF-QRv2WL6Vr4Oc52DqVNUsfoyj42M3XmVbEGrlB4WrFfv-7Q.EwpMsn-t92yytWt7QHw4mTnNAe2-cxoe2e7K-HFItHM&dib_tag=se&keywords=steve+jobs&qid=1756156095&sprefix=stev%2Caps%2C226&sr=8-1&ufe=app_do%3Aamzn1.fos.6121c6c4-c969-43ae-92f7-cc248fc6181d&linkCode=ll1&tag=giroliterario-20&linkId=d103424caa4c1b30c45dad9f5dcc26be&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
+
+<div class="book-card">
+    <a href="https://www.amazon.com.br/l%C3%B3gica-consumo-Verdades-mentiras-compramos/dp/8595082669?crid=2H27LA892O2M&dib=eyJ2IjoiMSJ9.rUO6oBxAOZX6RLqAO4PWtcf2H33VT2dlST_tWnACYTfTXMx8p9lssNRoTWdOYp17gnv0tjBF1cZ9s8lDYgnE6qiKvRPxP3_7cJKLG0_rb1kMFj52cAdXrBQUk5hfu67q6oXOBbGd8Rcjxz-9y2RN7IWaerxAUH2cOxu_Sg_dwLwzBW8JdP7oiFfz0I7LA_D6vexBTGmgKbf_g0a4X6LDVBdC3IwVPHsJkK1ybdHuKGkQ-aB-oLOIAoEwF0aaaU8b4wn-POBahLpPxuJbGHWk-GbJkQ2wNQqXZOPuPCnUf4k.R1bJlgI9qzs0WJ2nTZwDzR4VQm3qwFVh5cCeWCLYwM&dib_tag=se&keywords=a+logica+do+consumo&qid=1756156169&sprefix=a+logic%2Caps%2C218&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=7e95f417e4c02c3bde65329636e37bb3&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/financiasenegoios/a-logica-do-consumo.png" alt="Capa do Livro: A lógica do consumo" class="book-cover">
+        <h4 class="book-title">A lógica do consumo</h4>
+        <p class="book-author">Autor: Martin Lindstrom</p>
+    </a>
+    <a href="https://www.amazon.com.br/l%C3%B3gica-consumo-Verdades-mentiras-compramos/dp/8595082669?crid=2H27LA892O2M&dib=eyJ2IjoiMSJ9.rUO6oBxAOZX6RLqAO4PWtcf2H33VT2dlST_tWnACYTfTXMx8p9lssNRoTWdOYp17gnv0tjBF1cZ9s8lDYgnE6qiKvRPxP3_7cJKLG0_rb1kMFj52cAdXrBQUk5hfu67q6oXOBbGd8Rcjxz-9y2RN7IWaerxAUH2cOxu_Sg_dwLwzBW8JdP7oiFfz0I7LA_D6vexBTGmgKbf_g0a4X6LDVBdC3IwVPHsJkK1ybdHuKGkQ-aB-oLOIAoEwF0aaaU8b4wn-POBahLpPxuJbGHWk-GbJkQ2wNQqXZOPuPCnUf4k.R1bJlgI9qzs0WJ2nTZwDzR4VQm3qwFVh5cCeWCLYwM&dib_tag=se&keywords=a+logica+do+consumo&qid=1756156169&sprefix=a+logic%2Caps%2C218&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=7e95f417e4c02c3bde65329636e37bb3&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
+
+<div class="book-card">
+    <a href="https://www.amazon.com.br/Riqueza-das-Na%C3%A7%C3%B5es-Edi%C3%A7%C3%A3o-IntegraI/dp/6556600423?crid=29RBJI92ZYHZT&dib=eyJ2IjoiMSJ9.5uTrJSN9FBxo40i9yIHDfAFtLN5g6xelXiLwwuPu-Vs5GZNSD7rETlvgb4NbyAbRowSMfCVTa7CVoNW6cDLxBmVh7nVMjeO-iyyQ9y1nr2rKW9ZZLCeHKurN2GjPyZ24H9kK_1nBGZgo4PrzTXbYKAqhPHuwqittLCYyRsMJHHCWu-BgsJyggrOHXa6COjK_UxxQpGUYU6aRNmQsLzQG8SUzY3WYG-ounEugo5XUzru8IkwrGa0uOUHt-wbUaq_HI_AHCHw3BbFSTPec11mJLitCDiVsgUZPK4r2pzZAc9k.SjuMyHF0AfsCsykNwlEd5vbtjLkan8Lo_h_ZO9J4mpA&dib_tag=se&keywords=a+riqueza+das+na%C3%A7%C3%B5es&qid=1756156209&sprefix=a+rique%2Caps%2C232&sr=8-2&ufe=app_do%3Aamzn1.fos.6a09f7ec-d911-4889-ad70-de8dd83c8a74&linkCode=ll1&tag=giroliterario-20&linkId=8177c9e36051da88876a56da36d77178&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/financiasenegoios/a-riqueza-das-nacoes.png" alt="Capa do Livro: A Riqueza das Nações" class="book-cover">
+        <h4 class="book-title">A Riqueza das Nações</h4>
+        <p class="book-author">Autor: Adam Smith</p>
+    </a>
+    <a href="https://www.amazon.com.br/Riqueza-das-Na%C3%A7%C3%B5es-Edi%C3%A7%C3%A3o-IntegraI/dp/6556600423?crid=29RBJI92ZYHZT&dib=eyJ2IjoiMSJ9.5uTrJSN9FBxo40i9yIHDfAFtLN5g6xelXiLwwuPu-Vs5GZNSD7rETlvgb4NbyAbRowSMfCVTa7CVoNW6cDLxBmVh7nVMjeO-iyyQ9y1nr2rKW9ZZLCeHKurN2GjPyZ24H9kK_1nBGZgo4PrzTXbYKAqhPHuwqittLCYyRsMJHHCWu-BgsJyggrOHXa6COjK_UxxQpGUYU6aRNmQsLzQG8SUzY3WYG-ounEugo5XUzru8IkwrGa0uOUHt-wbUaq_HI_AHCHw3BbFSTPec11mJLitCDiVsgUZPK4r2pzZAc9k.SjuMyHF0AfsCsykNwlEd5vbtjLkan8Lo_h_ZO9J4mpA&dib_tag=se&keywords=a+riqueza+das+na%C3%A7%C3%B5es&qid=1756156209&sprefix=a+rique%2Caps%2C232&sr=8-2&ufe=app_do%3Aamzn1.fos.6a09f7ec-d911-4889-ad70-de8dd83c8a74&linkCode=ll1&tag=giroliterario-20&linkId=8177c9e36051da88876a56da36d77178&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
+</div>
+
+<div class="books-container">
+<div class="book-card">
+    <a href="https://www.amazon.com.br/livro-economia-reduzido-V%C3%A1rios-autores/dp/8525067210?crid=1607QXF9TX05O&dib=eyJ2IjoiMSJ9.BoCG-GBlWoszuUGm0MdoUO60PwcRRyxXd-L-mcal5J7_yaZjciEBRLunhp8DnKatWh4YVLwf4csMmjPfn_WHOlbeHRs38fzO4fLyJ0xMxx8a6Tj0QkfHTTG4vlNCc1yf9av7IR6DMrW4u7uaRZuQGv9vULTCphSKXmCa2hy2pYOn6x5gzIm0aUCgv_ppsU7VJo22IgQe1onFyN4F-4a_g_FKB5rzyORGhcyOa33IpuSccbctSKHu69EkwJwmZNKFo5LiklNOrISu3NHZWN0muSUAmFA5TmOkIFOcQEpBrPU.wMlLtqulr2cLLOeGxBbNc3WTD3VMP-1e7vcHzkLl5wM&dib_tag=se&keywords=o+livro+da+economia&qid=1756156461&sprefix=o+o+livro+da+e%2Caps%2C240&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=6c1b67b686d9a7d281b768573242a85e&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/financiasenegoios/o-livro-da-economia.png" alt="Capa do Livro: O Livro da Economia" class="book-cover">
+        <h4 class="book-title">O Livro da Economia</h4>
+        <p class="book-author">Autor: Vários</p>
+    </a>
+    <a href="https://www.amazon.com.br/livro-economia-reduzido-V%C3%A1rios-autores/dp/8525067210?crid=1607QXF9TX05O&dib=eyJ2IjoiMSJ9.BoCG-GBlWoszuUGm0MdoUO60PwcRRyxXd-L-mcal5J7_yaZjciEBRLunhp8DnKatWh4YVLwf4csMmjPfn_WHOlbeHRs38fzO4fLyJ0xMxx8a6Tj0QkfHTTG4vlNCc1yf9av7IR6DMrW4u7uaRZuQGv9vULTCphSKXmCa2hy2pYOn6x5gzIm0aUCgv_ppsU7VJo22IgQe1onFyN4F-4a_g_FKB5rzyORGhcyOa33IpuSccbctSKHu69EkwJwmZNKFo5LiklNOrISu3NHZWN0muSUAmFA5TmOkIFOcQEpBrPU.wMlLtqulr2cLLOeGxBbNc3WTD3VMP-1e7vcHzkLl5wM&dib_tag=se&keywords=o+livro+da+economia&qid=1756156461&sprefix=o+o+livro+da+e%2Caps%2C240&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=6c1b67b686d9a7d281b768573242a85e&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
+
+<div class="book-card">
+    <a href="https://www.amazon.com.br/Crash-Uma-breve-hist%C3%B3ria-economia/dp/8595085064?crid=1X4MNE9SJ01K2&dib=eyJ2IjoiMSJ9.OTzEVWXr4ULAG42vw-C3h2DU5ImHaLW1SZC7lAJclMSfWIqXe8RiCU5z07g2esO1gFFMHb_SW5L5qq5UCDEev8R1XVd6g3o72eCiwPh0HBtcKw5bGec4nrDkE4NWa8g3cpfchq4ADAPZ45w5BO2VB2ZATWeiEl2NUSEj9-2P8K3deu-QFAA8WSCTz6uIn6ralyap6vFhFLNoboohca1r1H9ODWyTWQXDw4_WcLcOURUBDR8fB45s--xH6X3KFZvxpQzkSoMkdeh_cTY9Z5jmtwBcOupPZx_723ew9SrTb6w.Y8kGrcSHRuY4trQmXd7GYQx3ZttR_LCMvfJRnfqRjcM&dib_tag=se&keywords=uma+breve+hist%C3%B3ria+da+economia&qid=1756156520&sprefix=uma+brev%2Caps%2C222&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=33ea284dce1242897daa0c5138bd273b&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/financiasenegoios/uma-breve-historia.png" alt="Capa do Livro: Crash: Uma breve história da economia" class="book-cover">
+        <h4 class="book-title">Crash: Uma breve história da economia</h4>
+        <p class="book-author">Autor: Alexandre Versignassi</p>
+    </a>
+    <a href="https://www.amazon.com.br/Crash-Uma-breve-hist%C3%B3ria-economia/dp/8595085064?crid=1X4MNE9SJ01K2&dib=eyJ2IjoiMSJ9.OTzEVWXr4ULAG42vw-C3h2DU5ImHaLW1SZC7lAJclMSfWIqXe8RiCU5z07g2esO1gFFMHb_SW5L5qq5UCDEev8R1XVd6g3o72eCiwPh0HBtcKw5bGec4nrDkE4NWa8g3cpfchq4ADAPZ45w5BO2VB2ZATWeiEl2NUSEj9-2P8K3deu-QFAA8WSCTz6uIn6ralyap6vFhFLNoboohca1r1H9ODWyTWQXDw4_WcLcOURUBDR8fB45s--xH6X3KFZvxpQzkSoMkdeh_cTY9Z5jmtwBcOupPZx_723ew9SrTb6w.Y8kGrcSHRuY4trQmXd7GYQx3ZttR_LCMvfJRnfqRjcM&dib_tag=se&keywords=uma+breve+hist%C3%B3ria+da+economia&qid=1756156520&sprefix=uma+brev%2Caps%2C222&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=33ea284dce1242897daa0c5138bd273b&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
+
+<div class="book-card">
+    <a href="https://www.amazon.com.br/riqueza-pobreza-das-na%C3%A7%C3%B5es/dp/8535203745?crid=HHJWZUR78XX2&dib=eyJ2IjoiMSJ9.W54VLgJGzkNSAouhIajqCWZ3L08cWBUMf9UiWzHd1uAf-cRkTHfzeBYZ_NN_1tnVj2ogOH5CTBnOV3cDi21jwVBi2_6-tz3N1dN8tHzHMl_YRHMatdan5Xwao8iNOb3m2fBjtA7IRzJHVdXQB1t6Hz6YIbfWTeiMQCehFvaK81_YES2O6Y1W-q0AyuleHBkWKDBhRckwXtMPOoFz75YbRfjMhD3lDP7MtQZgX0YZwd03BFXPmPFuhdxe6JfjohUKQpnsQjQ4bNHnFlhTvhBb9gWIaGlT1NnyK9j2_OPryaM.-eYiRQzAzIQlB6eNmGBrgxyJh8rhx0dGKw2avbKg4V4&dib_tag=se&keywords=riqueza+e+pobreza+das+na%C3%A7%C3%B5es&qid=1756156569&sprefix=riqueza+e+po%2Caps%2C212&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=a7a8dedaec36002c2f92e8b0c8536178&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/financiasenegoios/riqueza-e-pobreza.png" alt="Capa do Livro: A Riqueza e a Pobreza das Nações" class="book-cover">
+        <h4 class="book-title">A Riqueza e a Pobreza das Nações</h4>
+        <p class="book-author">Autor: David S. Landes</p>
+    </a>
+    <a href="https://www.amazon.com.br/riqueza-pobreza-das-na%C3%A7%C3%B5es/dp/8535203745?crid=HHJWZUR78XX2&dib=eyJ2IjoiMSJ9.W54VLgJGzkNSAouhIajqCWZ3L08cWBUMf9UiWzHd1uAf-cRkTHfzeBYZ_NN_1tnVj2ogOH5CTBnOV3cDi21jwVBi2_6-tz3N1dN8tHzHMl_YRHMatdan5Xwao8iNOb3m2fBjtA7IRzJHVdXQB1t6Hz6YIbfWTeiMQCehFvaK81_YES2O6Y1W-q0AyuleHBkWKDBhRckwXtMPOoFz75YbRfjMhD3lDP7MtQZgX0YZwd03BFXPmPFuhdxe6JfjohUKQpnsQjQ4bNHnFlhTvhBb9gWIaGlT1NnyK9j2_OPryaM.-eYiRQzAzIQlB6eNmGBrgxyJh8rhx0dGKw2avbKg4V4&dib_tag=se&keywords=riqueza+e+pobreza+das+na%C3%A7%C3%B5es&qid=1756156569&sprefix=riqueza+e+po%2Caps%2C212&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=a7a8dedaec36002c2f92e8b0c8536178&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
+
+<div class="book-card">
+    <a href="https://www.amazon.com.br/mesmo-sempre-guia-para-nunca/dp/8539007894?crid=3ZGSEGJOZJWP&dib=eyJ2IjoiMSJ9.3Lh2dFsK1-cGyXXJSHr343NR8JUXWWR5QAx2WF8pxj62u91bPHsY9DczQ7nG-zahzvWQmtqwuG7c5w9naBMrKrKw06j_M7Oni3TvM0gafV_S5jKK9Qe9syuup-AqXsNjGJQbayT7UIh08UQDrIQOL6wdvT7Ju8Qqlpg76-MiI16IcHohxxypMcZsPm4slVo6uSthrcdduusNnXEHbk2cN96dcb-DKBKhTee_N1qw2tSpEm82CtiJz2BdQjMulmpPQhdfwPJ3L2uhE0YuAa8wkI-XTnH8WiK1dS8nR3VwxCE.fDsOOyIGKC-DlhIPdjlRyaAGZxopsx2snHrlO9l7W-E&dib_tag=se&keywords=o+mesmo+de+sempre&qid=1756156680&sprefix=o+mesmo+%2Caps%2C215&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=57e69202afba1bb24e3fdc2641594bd1&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/financiasenegoios/o-mesmo-de-sempre.png" alt="Capa do Livro: O mesmo de sempre" class="book-cover">
+        <h4 class="book-title">O mesmo de sempre</h4>
+        <p class="book-author">Autor: Morgan Housel</p>
+    </a>
+    <a href="https://www.amazon.com.br/mesmo-sempre-guia-para-nunca/dp/8539007894?crid=3ZGSEGJOZJWP&dib=eyJ2IjoiMSJ9.3Lh2dFsK1-cGyXXJSHr343NR8JUXWWR5QAx2WF8pxj62u91bPHsY9DczQ7nG-zahzvWQmtqwuG7c5w9naBMrKrKw06j_M7Oni3TvM0gafV_S5jKK9Qe9syuup-AqXsNjGJQbayT7UIh08UQDrIQOL6wdvT7Ju8Qqlpg76-MiI16IcHohxxypMcZsPm4slVo6uSthrcdduusNnXEHbk2cN96dcb-DKBKhTee_N1qw2tSpEm82CtiJz2BdQjMulmpPQhdfwPJ3L2uhE0YuAa8wkI-XTnH8WiK1dS8nR3VwxCE.fDsOOyIGKC-DlhIPdjlRyaAGZxopsx2snHrlO9l7W-E&dib_tag=se&keywords=o+mesmo+de+sempre&qid=1756156680&sprefix=o+mesmo+%2Caps%2C215&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=57e69202afba1bb24e3fdc2641594bd1&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
+</div>
+
+
+    <script src="../script.js"></script>
 </body>
 </html>

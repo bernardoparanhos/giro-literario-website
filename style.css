@@ -206,7 +206,7 @@ body {
 .call-to-action {
     display: flex;
     justify-content: center;
-    margin-top: 300px;
+    margin-top: 50px;
 }
 
 .buy-button {
@@ -318,10 +318,6 @@ body {
         width: 100%;
         max-width: none;
     }
-    
-    .explore-menu-container {
-        display: none;
-    }
 
     .social-icons {
         margin-left: 0;
@@ -393,4 +389,247 @@ body {
         margin: 5px 0;
         transition: all 0.3s ease-in-out;
     }
+}
+
+
+/* Estilos para a galeria de livros inclinados */
+.hero-books-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Alinha na parte de baixo para que as imagens fiquem na mesma linha */
+    gap: 40px; /* Aumenta o espaçamento entre os livros */
+    padding: 50px 20px;
+    margin-top: 50px; /* Ajuste o espaçamento do header */
+    margin-bottom: 50px; /* Ajuste o espaçamento dos botões */
+    flex-wrap: wrap; /* Permite que as imagens quebrem a linha em telas menores */
+}
+
+/* Esconde os livros extras por padrão */
+.hero-book-extra {
+    display: none;
+}
+
+.hero-book {
+    position: relative;
+    width: 150px; /* Ajuste o tamanho da imagem */
+    height: 225px; /* Proporção 3:2 */
+    transition: transform 0.3s ease, z-index 0.3s ease;
+}
+
+.hero-book a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-book-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efeito de inclinação */
+.hero-books-container .hero-book:nth-child(2n) {
+    transform: rotate(3deg);
+}
+
+.hero-books-container .hero-book:nth-child(2n-1) {
+    transform: rotate(-3deg);
+}
+
+/* Efeito de hover */
+.hero-book:hover {
+    transform: translateY(-10px) scale(1.05);
+    z-index: 10;
+}
+
+/* --- Media Queries --- */
+
+/* Exibe os livros extras apenas em telas grandes (a partir de 768px) */
+@media (min-width: 768px) {
+    .hero-book-extra {
+        display: block;
+    }
+}
+
+/* Ajustes para mobile */
+@media (max-width: 767px) {
+    .hero-books-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 30px 10px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+    
+    .hero-book {
+        width: calc(33% - 15px);
+        height: auto;
+        margin-bottom: 20px;
+    }
+    
+    .hero-book-cover {
+        height: auto;
+    }
+
+    /* Remove a inclinação para melhor visualização no mobile */
+    .hero-books-container .hero-book:nth-child(n) {
+        transform: none !important;
+    }
+
+    /* Mover o botão "Compre agora" para cima em telas menores */
+    .call-to-action {
+        margin-top: 50px;
+    }
+}
+
+/* Estilo para a nova frase de impacto */
+.impact-phrase {
+    text-align: left; /* Alinha a frase à esquerda */
+    font-family: 'Outfit', sans-serif;
+    font-size: 8.2rem; /* Tamanho da fonte para impacto */
+    font-weight: 700; /* Deixa a fonte em negrito */
+    color: #000; /* Cor preta para o texto */
+    margin-top: 40px; /* Adiciona espaçamento superior */
+    margin-left: 30px; /* Adiciona espaçamento à esquerda para não colar na borda */
+}
+
+/* Estilos para a seção de gêneros */
+.genres-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+.genre-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.genre-item:hover {
+    transform: translateX(5px);
+    color: #ef204d;
+}
+
+.genre-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.genre-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.genre-name {
+    font-family: 'Outfit', sans-serif;
+    font-size: 3rem; /* Aumentei o tamanho da fonte */
+    font-weight: 900; /* Deixei o peso máximo para mais impacto */
+}
+
+/* --- Media Queries --- */
+
+/* Ajustes para telas menores */
+@media (max-width: 767px) {
+    /* ... seu código de media query existente ... */
+
+    .genres-section {
+        margin-left: 15px; /* Reduz a margem para não colar na tela */
+    }
+
+    .genre-name {
+        font-size: 2rem; /* Reduz o tamanho da fonte em telas menores para melhor visualização */
+    }
+}
+
+/* Estilo para a nova frase de impacto */
+.impact-phrase {
+    text-align: left;
+    font-family: 'Outfit', sans-serif;
+    font-size: 8.2rem;
+    font-weight: 700;
+    color: #000;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+/* Media Query para telas menores que 768px (Mobile) */
+@media (max-width: 767px) {
+    .impact-phrase {
+        font-size: 4rem; /* Reduz o tamanho da fonte no mobile */
+        margin-left: 15px; /* Reduz a margem para evitar que o texto fique muito "apertado" */
+        text-align: center; /* Centraliza o texto no mobile para melhor leitura */
+    }
+}
+
+/* Media Query para telas entre 768px e 1024px (Tablets) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .impact-phrase {
+        font-size: 6rem; /* Tamanho da fonte intermediário para tablets */
+    }
+}
+
+
+.genre-link {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Herda a cor do elemento pai (para que a cor não fique azul) */
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+footer {
+    background-color: #f1f1f1;
+    color: #555;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-center {
+    margin-bottom: 10px; /* Adiciona um espaço entre as duas linhas de texto */
+}
+
+.footer-center p {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}
+
+.footer-right {
+    text-align: center;
+    max-width: 400px;
+}
+
+.footer-right p {
+    font-family: 'Outfit', sans-serif;
+    font-size: 12px; /* Fonte menor para a nota de rodapé */
+    margin: 0;
+    color: #666;
+}
+
+
+.explore-dropdown-menu.show {
+    display: block; /* Garante que o menu seja visível */
+    opacity: 1; /* Para a animação suave, se você quiser */
 }

@@ -277,3 +277,284 @@
         transition: all 0.3s ease-in-out;
     }
 }
+
+.page-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.books-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.book-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 180px;
+    flex-shrink: 0;
+    justify-content: space-between;
+}
+
+.book-cover {
+    width: 150px;
+    height: 225px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.book-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.1rem;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.buy-button {
+    font-family: 'Outfit', sans-serif;
+    display: inline-block;
+    background-color: #000080;
+    color: #ffffff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: auto;
+}
+
+.buy-button:hover {
+    background-color: #000066;
+}
+
+.book-author {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.9rem;
+    color: #555;
+    margin: -5px 0 15px 0;
+}
+
+/* Adicione esta regra no topo do seu arquivo CSS */
+* {
+    box-sizing: border-box;
+}
+
+/* ... o restante do seu código CSS ... */
+
+/* Media query para telas menores que 768px (tablets e celulares) */
+@media (max-width: 768px) {
+    .books-container {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .book-card {
+        /* Define a largura para que dois cards caibam na mesma linha */
+        width: calc(50% - 10px);
+        /* box-sizing: border-box; <-- Já está no seletor universal, mas deixo como exemplo */
+    }
+}
+
+/* Estilos para telas maiores (desktop) */
+.books-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha */
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.book-card {
+    /* Define a largura para que 4 cards caibam na mesma linha,
+       considerando o espaçamento */
+    width: calc(25% - 15px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    flex-shrink: 0;
+    justify-content: space-between;
+}
+
+/* ... mantenha o restante das regras CSS para .book-cover, .book-title, etc. ... */
+
+/* Media query para telas menores que 768px (tablets e celulares) */
+@media (max-width: 768px) {
+    .books-container {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .book-card {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+        border-right: 1px solid #e0e0e0;
+    }
+
+    .book-card:nth-child(even) {
+        border-right: none;
+    }
+
+    /* Linha horizontal para separar as linhas de 2 livros */
+    .books-container > .book-card:nth-child(2n) {
+        border-bottom: 1px solid #e0e0e0;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    .books-container > .book-card:nth-child(2n):last-child {
+        border-bottom: none;
+    }
+
+}
+
+
+
+/*
+    --- CÓDIGO A SER ADICIONADO AO FINAL DO Aventura.css ---
+*/
+/* Estilo do contêiner de resultados */
+.search-results-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    display: none; /* Inicia escondido */
+    flex-direction: column;
+}
+
+/* Estilo de cada item de resultado */
+.search-result-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.2s ease;
+}
+
+.search-result-item:hover {
+    background-color: #f0f0f0;
+}
+
+.search-result-image {
+    width: 40px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+
+.search-result-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-result-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.search-result-author {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.no-results {
+    padding: 15px;
+    text-align: center;
+    color: #888;
+    font-family: 'Outfit', sans-serif;
+}
+
+
+/* Estilo do formulário de pesquisa */
+.search-container {
+    display: flex;
+    flex-grow: 1;
+    max-width: 450px;
+    position: relative; /* ADICIONE ESTA LINHA */
+}
+
+/* Estilo para o link que envolve a imagem e o texto */
+.book-card .book-link {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Faz o texto herdar a cor do elemento pai (o card) */
+}
+
+/* Estilo para os títulos dos livros dentro do link */
+.book-card .book-link .book-title {
+    color: black; /* Garante que o título seja preto, ou a cor que você preferir */
+}
+
+/* Estilo para o autor do livro dentro do link */
+.book-card .book-link .book-author {
+    color: #666; /* Garante que o autor tenha uma cor cinza mais suave, como na página de Aventura */
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+footer {
+    background-color: #f1f1f1;
+    color: #555;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-center {
+    margin-bottom: 10px; /* Adiciona um espaço entre as duas linhas de texto */
+}
+
+.footer-center p {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}
+
+.footer-right {
+    text-align: center;
+    max-width: 400px;
+}
+
+.footer-right p {
+    font-family: 'Outfit', sans-serif;
+    font-size: 12px; /* Fonte menor para a nota de rodapé */
+    margin: 0;
+    color: #666;
+}

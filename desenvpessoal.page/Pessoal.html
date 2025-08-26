@@ -20,14 +20,13 @@
     
     <nav class="genres-menu" id="genresMenu">
         <ul>
-            <li><a href="index.html">Populares</a></li>
-            <li><a href="romance.page/Romance.html">Romance</a></li>
-            <li><a href="Aventura.page/Aventura.html">Aventura</a></li>
-            <li><a href="desenvpessoal.page/Pessoal.html">Desenvolvimento Pessoal</a></li>
-            <li><a href="Ficcao.page/Ficcao.html">Ficção Científica</a></li>
-            <li><a href="financias.page/Financias.html">Finanças e Negócios</a></li>
-            <li><a href="terror.page/Terror.html">Terror</a></li>
-        </ul>
+    <li><a href="../romance.page/Romance.html">Romance</a></li>
+    <li><a href="../Aventura.page/Aventura.html">Aventura</a></li>
+    <li><a href="../desenvpessoal.page/Pessoal.html">Desenvolvimento Pessoal</a></li>
+    <li><a href="../Ficcao.page/Ficcao.html">Ficção Científica</a></li>
+    <li><a href="../financias.page/Financias.html">Finanças e Negócios</a></li>
+    <li><a href="../terror.page/Terror.html">Terror</a></li>
+</ul>
     </nav>
 
     <h1 class="logo">
@@ -35,14 +34,15 @@
     </h1>
     
     <div class="header-items">
-        <div class="search-container">
-            <form action="#" method="get" class="search-form">
-                <input type="search" placeholder="Pesquise por Livros" class="search-input">
-                <button type="submit" class="search-button">
-                    <i class="fas fa-search"></i>
-                </button>
-            </form>
-        </div>
+       <div class="search-container">
+    <form action="#" method="get" class="search-form">
+        <input type="search" id="searchInput" placeholder="Pesquise por Livros" class="search-input">
+        <button type="submit" class="search-button">
+            <i class="fas fa-search"></i>
+        </button>
+    </form>
+    <div id="searchResultsContainer" class="search-results-container"></div>
+</div>
 
         <div class="explore-menu-container">
             <a href="#" class="explore-link">
@@ -50,23 +50,24 @@
                 <i class="fas fa-chevron-down"></i>
             </a>
             <div class="explore-dropdown-menu">
-                <div class="dropdown-header-items">
-                    <a href="index.html" class="dropdown-top-item">
-                        <svg width="20px" height="20px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 3L9.00001 4L11.2929 6.29289L8.50001 9.08579L5.50001 6.08579L0.292908 11.2929L1.70712 12.7071L5.50001 8.91421L8.50001 11.9142L12.7071 7.70711L15 10L16 9L16 3H10Z" fill="#000000"/>
-                        </svg>
-                        <span>Populares</span>
-                    </a>
-                </div>
+               <div class="dropdown-header-items">
+    <a href="../index.html" class="dropdown-top-item">
+        <svg width="20px" height="20px" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 3L9.00001 4L11.2929 6.29289L8.50001 9.08579L5.50001 6.08579L0.292908 11.2929L1.70712 12.7071L5.50001 8.91421L8.50001 11.9142L12.7071 7.70711L15 10L16 9L16 3H10Z" fill="#000000"/>
+        </svg>
+        <span>Populares</span>
+    </a>
+</div>
                 <hr class="dropdown-divider">
-                <ul>
-                    <li><a href="romance.page/Romance.html">Romance</a></li>
-                    <li><a href="Aventura.page/Aventura.html">Aventura</a></li>
-                    <li><a href="desenvpessoal.page/Pessoal.html">Desenvolvimento Pessoal</a></li>
-                    <li><a href="Ficcao.page/Ficcao.html">Ficção Científica</a></li>
-                    <li><a href="financias.page/Financias.html">Finanças e Negócios</a></li>
-                    <li><a href="terror.page/Terror.html">Terror</a></li>
-                </ul>
+               <ul>
+    <li><a href="../index.html">Populares</a></li>
+    <li><a href="../romance.page/Romance.html">Romance</a></li>
+    <li><a href="../Aventura.page/Aventura.html">Aventura</a></li>
+    <li><a href="../desenvpessoal.page/Pessoal.html">Desenvolvimento Pessoal</a></li>
+    <li><a href="../Ficcao.page/Ficcao.html">Ficção Científica</a></li>
+    <li><a href="../financias.page/Financias.html">Finanças e Negócios</a></li>
+    <li><a href="../terror.page/Terror.html">Terror</a></li>
+</ul>
             </div>
         </div>
     </div>
@@ -95,159 +96,199 @@
 
 <h2 class="page-title">Desenvolvimento Pessoal</h2>
 
-<div class="books-container">
-    <div class="book-card">
-        <img src="../images/Captura de tela 2025-08-24 195233.png" alt="Capa do Livro 1" class="book-cover">
+
+    <div class="books-container">
+   <div class="book-card">
+    <a href="https://www.amazon.com.br/Nunca-hora-parar-desenvolva-inexplorado/dp/6555647299?crid=1PILE9J5NG9OR&dib=eyJ2IjoiMSJ9.o4ILeq4hspT2Wixim9HsF_oxzhEjDDuRJOkJ4D0NKhH8vc5BBB9WdpvCQ3PRKfxrXK6iyvkWYIqZtRe7PiBUCsDT7JM_UN6-7U_9hQ3k0QiH_vRIjFDcP30SH2kRNHxLQyqKQGG0asxN4zrAp08FXtbWik3x2ve78lyIQEOT5lCCKIFsfpAXnpNU6y2MKZnIf0wyw53FAoNYdeadqUg_JW8yPnHdsOsYh2FKTOd4wcYeVdVuG9TcdjwghSOAGASTVtlRyJIKEPk1RXINe5R2hqAjl2D8TJ9zDNkYmjU6EDs.jGHr1oWO8QWv-Oz1K7vA81neScouF58lL8UWMrQzZPo&dib_tag=se&keywords=nunca+%C3%A9+hora+de+parar&qid=1756146380&sprefix=nunca+%C3%A9+%2Caps%2C257&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=0766a59c4bddf0708ba8859181cdada6&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/desenvolvimentopessoal/nunca-e-hora-de-parar.png" alt="Capa do Livro: Nunca é hora de Parar" class="book-cover">
         <h4 class="book-title">Nunca é hora de Parar</h4>
         <p class="book-author">Autor: David Goggins</p>
-        <a href="#" class="buy-button">Comprar</a>
-    </div>
+    </a>
+    <a href="https://www.amazon.com.br/Nunca-hora-parar-desenvolva-inexplorado/dp/6555647299?crid=1PILE9J5NG9OR&dib=eyJ2IjoiMSJ9.o4ILeq4hspT2Wixim9HsF_oxzhEjDDuRJOkJ4D0NKhH8vc5BBB9WdpvCQ3PRKfxrXK6iyvkWYIqZtRe7PiBUCsDT7JM_UN6-7U_9hQ3k0QiH_vRIjFDcP30SH2kRNHxLQyqKQGG0asxN4zrAp08FXtbWik3x2ve78lyIQEOT5lCCKIFsfpAXnpNU6y2MKZnIf0wyw53FAoNYdeadqUg_JW8yPnHdsOsYh2FKTOd4wcYeVdVuG9TcdjwghSOAGASTVtlRyJIKEPk1RXINe5R2hqAjl2D8TJ9zDNkYmjU6EDs.jGHr1oWO8QWv-Oz1K7vA81neScouF58lL8UWMrQzZPo&dib_tag=se&keywords=nunca+%C3%A9+hora+de+parar&qid=1756146380&sprefix=nunca+%C3%A9+%2Caps%2C257&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=0766a59c4bddf0708ba8859181cdada6&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
 
-    <div class="book-card">
-        <img src="../images/Captura de tela 2025-08-24 195500.png" alt="Capa do Livro 2" class="book-cover">
+<div class="book-card">
+    <a href="https://www.amazon.com.br/As-48-leis-do-poder/dp/6555320516?crid=4SAOOPK0C6SM&dib=eyJ2IjoiMSJ9.Q5EWejsM7Qd1MZgo3X1F0JT1nBCfu25dvi_kIn9YckZcktL6gbDiDUDKns_3PraKr5BSEOOqmN5hspOCAZvyfXd225iThI-Q5MFYSZIMw0cbB50zckCjFtVzw2Zr_Fm8IajKfExviDZRON0TjORg9VyG yZAw7dOOWWg8Gf9gGg6H4xcC8QWCp_GwVehDmVDDYpUUtufxnZgYVwxMv5H2-h9U9miUA_-1oSBe_aVffuTDlzTIFHQZHHeOz_iSfOz5v7ceX5U_wWC1wYPiai2J9MJOmb-H36DIw3yjVAghco.KsINIxQMEJi3hCEdT_U2aCsWJCWtOunBmeNg_M1khgA&dib_tag=se&keywords=48+leis+do+poder&qid=1756146489&sprefix=48+%2Caps%2C266&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=107047be130aa0daea690d6a6f446fd0&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/desenvolvimentopessoal/48-leis-do-poder.png" alt="Capa do Livro: 48 Leis do Poder" class="book-cover">
         <h4 class="book-title">48 Leis do Poder</h4>
         <p class="book-author">Autor: Robert Greene</p>
-        <a href="#" class="buy-button">Comprar</a>
-    </div>
+    </a>
+    <a href="https://www.amazon.com.br/As-48-leis-do-poder/dp/6555320516?crid=4SAOOPK0C6SM&dib=eyJ2IjoiMSJ9.Q5EWejsM7Qd1MZgo3X1F0JT1nBCfu25dvi_kIn9YckZcktL6gbDiDUDKns_3PraKr5BSEOOqmN5hspOCAZvyfXd225iThI-Q5MFYSZIMw0cbB50zckCjFtVzw2Zr_Fm8IajKfExviDZRON0TjORg9VyG yZAw7dOOWWg8Gf9gGg6H4xcC8QWCp_GwVehDmVDDYpUUtufxnZgYVwxMv5H2-h9U9miUA_-1oSBe_aVffuTDlzTIFHQZHHeOz_iSfOz5v7ceX5U_wWC1wYPiai2J9MJOmb-H36DIw3yjVAghco.KsINIxQMEJi3hCEdT_U2aCsWJCWtOunBmeNg_M1khgA&dib_tag=se&keywords=48+leis+do+poder&qid=1756146489&sprefix=48+%2Caps%2C266&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=107047be130aa0daea690d6a6f446fd0&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
 
-    <div class="book-card">
-        <img src="../images/Captura de tela 2025-08-24 195347.png" alt="Capa do Livro 3" class="book-cover">
+<div class="book-card">
+    <a href="https://www.amazon.com.br/Nada-pode-ferir-David-Goggins/dp/6555646136?crid=CYX2U0FR7TN&dib=eyJ2IjoiMSJ9.7SLdWinepTkhVDcyAXiCLdkM0v7loj0SzWWFC60lEkmVKfUxkrTH9ZtLAX4K-iVWlQKZgeWf_b468GqMZBoJfHRSNefw6n93tzH-cyeF7S4.Ytama0mBz-R2vhth-oTc5YEMok-WAeAkK5BeaZVYgLE&dib_tag=se&keywords=nada+pode+me+ferir&qid=1756146527&sprefix=nada%2Caps%2C255&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=e458d327b6c7fb05451bae4aa2c0d721&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/desenvolvimentopessoal/nada-pode-me-ferir.png" alt="Capa do Livro: Nada pode me Ferir" class="book-cover">
         <h4 class="book-title">Nada pode me Ferir</h4>
         <p class="book-author">Autor: David Goggins</p>
-        <a href="#" class="buy-button">Comprar</a>
-    </div>
+    </a>
+    <a href="https://www.amazon.com.br/Nada-pode-ferir-David-Goggins/dp/6555646136?crid=CYX2U0FR7TN&dib=eyJ2IjoiMSJ9.7SLdWinepTkhVDcyAXiCLdkM0v7loj0SzWWFC60lEkmVKfUxkrTH9ZtLAX4K-iVWlQKZgeWf_b468GqMZBoJfHRSNefw6n93tzH-cyeF7S4.Ytama0mBz-R2vhth-oTc5YEMok-WAeAkK5BeaZVYgLE&dib_tag=se&keywords=nada+pode+me+ferir&qid=1756146527&sprefix=nada%2Caps%2C255&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=e458d327b6c7fb05451bae4aa2c0d721&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
 
-    <div class="book-card">
-        <img src="../images/Captura de tela 2025-08-24 201421.png" alt="Capa do Livro 4" class="book-cover">
+<div class="book-card">
+    <a href="https://www.amazon.com.br/poder-do-h%C3%A1bito-Charles-Duhigg/dp/8539004119?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3GHHN14IM2CUN&dib=eyJ2IjoiMSJ9.lzcU65kTSh01jK57-byCzUakYFQitgKtBATizssTmKrUGLGUH0rXrY5pYo_2H11F9OZIJsZyPotbAlIZldsV_2SwlsJVVs0dhCtb9TZ2gXJVTDOjW-DTlBXw-NxuPBu6MdBm1hIh-yNOYJJrUJEIQI37XYkNGI4dSPCjYDi7kaaw_HfXOOeW8lDU28i-iYbiZludR_vFDiMXfTg-b58OOlEX4AEoLyRNeEDUZDFCM9Es6ZxwCE1EBHVv-_z0Gd1Vifh2bf7yQC6Z7O9Fs6XYQTd_41GzgM9hKXHnmf6KBI0.Vtq2ockxk_pF7xcYVICUofKQx1Yo307ArwVNGt3M&dib_tag=se&keywords=O+poder+do+H%C3%A1bito&qid=1756146565&sprefix=o+poder+do+h%C3%A1bito%2Caps%2C224&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=3f4a295cf42fa55262ba6e8574c89f06&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/desenvolvimentopessoal/o-poder-do-habito.png" alt="Capa do Livro: O poder do Hábito" class="book-cover">
         <h4 class="book-title">O poder do Hábito</h4>
         <p class="book-author">Autor: Charles Duhigg</p>
-        <a href="#" class="buy-button">Comprar</a>
-    </div>
+    </a>
+    <a href="https://www.amazon.com.br/poder-do-h%C3%A1bito-Charles-Duhigg/dp/8539004119?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3GHHN14IM2CUN&dib=eyJ2IjoiMSJ9.lzcU65kTSh01jK57-byCzUakYFQitgKtBATizssTmKrUGLGUH0rXrY5pYo_2H11F9OZIJsZyPotbAlIZldsV_2SwlsJVVs0dhCtb9TZ2gXJVTDOjW-DTlBXw-NxuPBu6MdBm1hIh-yNOYJJrUJEIQI37XYkNGI4dSPCjYDi7kaaw_HfXOOeW8lDU28i-iYbiZludR_vFDiMXfTg-b58OOlEX4AEoLyRNeEDUZDFCM9Es6ZxwCE1EBHVv-_z0Gd1Vifh2bf7yQC6Z7O9Fs6XYQTd_41GzgM9hKXHnmf6KBI0.Vtq2ockxk_pF7xcYVICUofKQx1Yo307ArwVNGt3M&dib_tag=se&keywords=O+poder+do+H%C3%A1bito&qid=1756146565&sprefix=o+poder+do+h%C3%A1bito%2Caps%2C224&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=3f4a295cf42fa55262ba6e8574c89f06&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
 </div>
 
 
-
 <div class="books-container">
-    <div class="book-card">
-        <img src="../images/Captura de tela 2025-08-24 202626.png" alt="Capa do Livro 5" class="book-cover">
+   <div class="book-card">
+    <a href="https://www.amazon.com.br/Sutil-Arte-Ligar-Se/dp/855100249X?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3V2WA3P1OP4UC&dib=eyJ2IjoiMSJ9.DSMdtYYRuqKKcV9JaIqCD7mc9HnsYpm-0Dfom5sYTyTwDLBDIlS-KF6S7lGbHLrU0SxqTzyYiQM_ZkDIpUw-mlBrLLQ3aV6LYfGogAzLyC2uDnHy0KfZc81wMIvPEOcGfJnFM5PMV1rdAyS-mjr6kw.15hAbg88GKUkZb9mRzitMO27PaXnRRzUlvC-wV2YJBU&dib_tag=se&keywords=A+Sutil+Arte+de+Ligar+o+F&qid=1756147393&sprefix=a+sutil+arte+de+ligar+o+f+%2Caps%2C308&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=623cb0a3dc8d2aca72b85ec190dab06f&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/desenvolvimentopessoal/a-sutil-arte.png" alt="Capa do Livro: A Sutil Arte de Ligar o F*" class="book-cover">
         <h4 class="book-title">A Sutil Arte de Ligar o F*</h4>
         <p class="book-author">Autor: Mark Manson</p>
-        <a href="#" class="buy-button">Comprar</a>
-    </div>
+    </a>
+    <a href="https://www.amazon.com.br/Sutil-Arte-Ligar-Se/dp/855100249X?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3V2WA3P1OP4UC&dib=eyJ2IjoiMSJ9.DSMdtYYRuqKKcV9JaIqCD7mc9HnsYpm-0Dfom5sYTyTwDLBDIlS-KF6S7lGbHLrU0SxqTzyYiQM_ZkDIpUw-mlBrLLQ3aV6LYfGogAzLyC2uDnHy0KfZc81wMIvPEOcGfJnFM5PMV1rdAyS-mjr6kw.15hAbg88GKUkZb9mRzitMO27PaXnRRzUlvC-wV2YJBU&dib_tag=se&keywords=A+Sutil+Arte+de+Ligar+o+F&qid=1756147393&sprefix=a+sutil+arte+de+ligar+o+f+%2Caps%2C308&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=623cb0a3dc8d2aca72b85ec190dab06f&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
 
-    <div class="book-card">
-        <img src="../images/Mindset.png" alt="Capa do Livro 6" class="book-cover">
-        <h4 class="book-title">Mindset: A nova pscicologia do sucesso</h4>
-        <p class="book-author">Autor: Napoleon Hill</p>
-        <a href="#" class="buy-button">Comprar</a>
-    </div>
+<div class="book-card">
+    <a href="https://www.amazon.com.br/Mindset-Carol-S-Dweck/dp/8547000240?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=QK7BYISMUMM6&dib=eyJ2IjoiMSJ9.Vpa81IPpDbfJW-Lr3R9izrJcSSdRmzM7qV6V3WI63N79xsOaWaCic3gjNoAn4zTf18vY8hqZt88efv9o7WgDgDqZkT2uNGbwpyMFrxV-xsWR08f4ULLz9qPKE-7jdr857aRP8NS6IMenOFWCm4HbaSmmGB-HX35OCOK_6NLZFh-VmoI_b2HZKtDI5FDm-LnPMUjayCzWl2f6zhIqsBWsHT1k9ESxP3dJvoOozjSk3yba_ADMnxDAJVljdLxO2PCzFPUN6KCJmWAhvQqV2g3RQ2qqOnex0p1Lx_CCIfEUVjg.X54OFUmS3Y_WPiwMQXKXfsnmny5YsBS9qAcBjiBvetk&dib_tag=se&keywords=mindset&qid=1756147440&sprefix=mindset%2Caps%2C265&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=86fe4e8d9a717ac6a3f72d446b544ec8&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/desenvolvimentopessoal/mindset.png" alt="Capa do Livro: Mindset: A nova psicologia do sucesso" class="book-cover">
+        <h4 class="book-title">Mindset: A nova psicologia do sucesso</h4>
+        <p class="book-author">Autor: Carol S. Dweck</p>
+    </a>
+    <a href="https://www.amazon.com.br/Mindset-Carol-S-Dweck/dp/8547000240?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=QK7BYISMUMM6&dib=eyJ2IjoiMSJ9.Vpa81IPpDbfJW-Lr3R9izrJcSSdRmzM7qV6V3WI63N79xsOaWaCic3gjNoAn4zTf18vY8hqZt88efv9o7WgDgDqZkT2uNGbwpyMFrxV-xsWR08f4ULLz9qPKE-7jdr857aRP8NS6IMenOFWCm4HbaSmmGB-HX35OCOK_6NLZFh-VmoI_b2HZKtDI5FDm-LnPMUjayCzWl2f6zhIqsBWsHT1k9ESxP3dJvoOozjSk3yba_ADMnxDAJVljdLxO2PCzFPUN6KCJmWAhvQqV2g3RQ2qqOnex0p1Lx_CCIfEUVjg.X54OFUmS3Y_WPiwMQXKXfsnmny5YsBS9qAcBjiBvetk&dib_tag=se&keywords=mindset&qid=1756147440&sprefix=mindset%2Caps%2C265&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=86fe4e8d9a717ac6a3f72d446b544ec8&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
 
-    <div class="book-card">
-        <img src="../images/O homem mais rico.png" alt="Capa do Livro 7" class="book-cover">
+<div class="book-card">
+    <a href="https://www.amazon.com.br/Homem-Mais-Rico-Babil%C3%B4nia/dp/8595081530?crid=TOJXM4OWESNK&dib=eyJ2IjoiMSJ9.vr3cqICSg2vvyClkSpjR6VD71HWGdnzTASozugo8oqgladRrDNkvp6BdCDqEybZgx7cIkIALOpaXYQEn3v2l98egL6Tjor3JOiVcQCIlKW9MYewHlAqmNJ-2fPINGLcvN60K0jarl3EE1A0WIbjmFNqnOEORsmsLR1YssDzdBIVvIYpGJCTRegH7HvRhoZ3L48QkaXgGi0XBwbr31HIxmLjTLIq_j_z8HQPztgjlrFNu-Bxj3kcayMWGfAo9JUhWGVnaWc1V6NmcXj2M774vfVvLOZhyU1UxZxs1Q64dYnw.SV-CX8De8pf-WH4mI1Y4cZuohgedI9y_7g9Q2MNBulk&dib_tag=se&keywords=o+homem+mais+rico+da+babilonia&qid=1756147476&sprefix=o+home%2Caps%2C348&sr=8-2&linkCode=ll1&tag=giroliterario-20&linkId=dfdc746a8b67b95a35a1a4a79535ba3e&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/desenvolvimentopessoal/o-homem-mais-rico.png" alt="Capa do Livro: O Homem Mais Rico da Babilônia" class="book-cover">
         <h4 class="book-title">O Homem Mais Rico da Babilônia</h4>
         <p class="book-author">Autor: George S. Clason</p>
-        <a href="#" class="buy-button">Comprar</a>
-    </div>
+    </a>
+    <a href="https://www.amazon.com.br/Homem-Mais-Rico-Babil%C3%B4nia/dp/8595081530?crid=TOJXM4OWESNK&dib=eyJ2IjoiMSJ9.vr3cqICSg2vvyClkSpjR6VD71HWGdnzTASozugo8oqgladRrDNkvp6BdCDqEybZgx7cIkIALOpaXYQEn3v2l98egL6Tjor3JOiVcQCIlKW9MYewHlAqmNJ-2fPINGLcvN60K0jarl3EE1A0WIbjmFNqnOEORsmsLR1YssDzdBIVvIYpGJCTRegH7HvRhoZ3L48QkaXgGi0XBwbr31HIxmLjTLIq_j_z8HQPztgjlrFNu-Bxj3kcayMWGfAo9JUhWGVnaWc1V6NmcXj2M774vfVvLOZhyU1UxZxs1Q64dYnw.SV-CX8De8pf-WH4mI1Y4cZuohgedI9y_7g9Q2MNBulk&dib_tag=se&keywords=o+homem+mais+rico+da+babilonia&qid=1756147476&sprefix=o+home%2Caps%2C348&sr=8-2&linkCode=ll1&tag=giroliterario-20&linkId=dfdc746a8b67b95a35a1a4a79535ba3e&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
 
-    <div class="book-card">
-        <img src="../images/A arte da guerra.png" alt="Capa do Livro 8" class="book-cover">
-        <h4 class="book-title">A  Arte da Guerra</h4>
+<div class="book-card">
+    <a href="https://www.amazon.com.br/arte-guerra-Sun-Tzu/dp/8594318596?crid=1558VZQ4EV2O9&dib=eyJ2IjoiMSJ9.DtdM55glQlKRXhPKBv_QnIw1Ti7ZMOQURu6M6EzPhmwGrkOAkVlxFPHnv1rZoJX-32TZ2rui1mkmRJIpaPqGPAkAx8XI790JMP8wThB4CtoKbPU-SRgoj5ePLHbr0m3xnWV5VqktU8kKwXndsfQnrCUiEiio4XvBKJGnsCW3Bx85pkWS3ix40470uFUqWdCGMmnl165xPHevqTC2wyT28dNxi8muy9QYjopFGSx-f03_xJFukYp6cl6_qC5DrBSdU3XOipR654VFcbyO4-K5p5rm_3l3dgESX_xfQ3NSWOk.wk9EWndrnysoIhCB7JN_cyMz_rNatFs0eFIzbK4dv3s&dib_tag=se&keywords=a+arte+da+guerra&qid=1756147526&sprefix=a+art%2Caps%2C214&sr=8-2&linkCode=ll1&tag=giroliterario-20&linkId=371c92b77c4400ee40df4ccf40024b07&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/desenvolvimentopessoal/a-arte-da-guerra.png" alt="Capa do Livro: A Arte da Guerra" class="book-cover">
+        <h4 class="book-title">A Arte da Guerra</h4>
         <p class="book-author">Autor: Sun Tzu</p>
-        <a href="#" class="buy-button">Comprar</a>
-    </div>
+    </a>
+    <a href="https://www.amazon.com.br/arte-guerra-Sun-Tzu/dp/8594318596?crid=1558VZQ4EV2O9&dib=eyJ2IjoiMSJ9.DtdM55glQlKRXhPKBv_QnIw1Ti7ZMOQURu6M6EzPhmwGrkOAkVlxFPHnv1rZoJX-32TZ2rui1mkmRJIpaPqGPAkAx8XI790JMP8wThB4CtoKbPU-SRgoj5ePLHbr0m3xnWV5VqktU8kKwXndsfQnrCUiEiio4XvBKJGnsCW3Bx85pkWS3ix40470uFUqWdCGMmnl165xPHevqTC2wyT28dNxi8muy9QYjopFGSx-f03_xJFukYp6cl6_qC5DrBSdU3XOipR654VFcbyO4-K5p5rm_3l3dgESX_xfQ3NSWOk.wk9EWndrnysoIhCB7JN_cyMz_rNatFs0eFIzbK4dv3s&dib_tag=se&keywords=a+arte+da+guerra&qid=1756147526&sprefix=a+art%2Caps%2C214&sr=8-2&linkCode=ll1&tag=giroliterario-20&linkId=371c92b77c4400ee40df4ccf40024b07&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
 </div>
 
 <div class="books-container">
     <div class="book-card">
-        <img src="../images/A lei da Atração.png" alt="Capa do Livro 9" class="book-cover">
-        <h4 class="book-title">A lei da Atrção</h4>
-        <p class="book-author">Autor: Michael Losier</p>
-        <a href="#" class="buy-button">Comprar</a>
-    </div>
+    <a href="https://www.amazon.com.br/lei-atra%C3%A7%C3%A3o-Michael-J-Losier/dp/8544106358?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=36ND4G6N60K3J&dib=eyJ2IjoiMSJ9.OmZ4M3nyVb8Cm7hfd0KBrlu1lHwQN9mhSAxXEjhCVgwhOk-eISPEziCLWYdY9WhJEDeqHfY92IzHEiCxuROwM5tcPeYS9JKoqLYfQ5kEvu3hEaE04KtoftIvmi_3Pl2Ym2pM6rFls22KkDv6-PNs7qwFGzOz6vte7lVOhOW6yjLNL_EB8XEFFdoJ3tjfETAv_eIiI3XDP_x7lThR0rHlTOBsQVkujrVYdjatbNYxnPF07SBKEc_EsS70YIU7Iua1I_r7eBGZpzJTd0Or55MD8G0nKo2IdxhMtgLczz_Bg5M.WrpDm-pWA75dGdMkRWl2NLbNZQw5qnYQBuFlaVoV058&dib_tag=se&keywords=a+lei+da+atra%C3%A7%C3%A3o&qid=1756147827&sprefix=a+lei+da+atr%C3%A7%C3%A3o%2Caps%2C305&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=f478c2d6e9a53a84b3eb0c6714ef12cd&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/desenvolvimentopessoal/lei-da-atracao.png" alt="Capa do Livro: A Lei da Atração" class="book-cover">
+        <h4 class="book-title">A Lei da Atração</h4>
+        <p class="book-author">Autor: Michael J. Losier</p>
+    </a>
+    <a href="https://www.amazon.com.br/lei-atra%C3%A7%C3%A3o-Michael-J-Losier/dp/8544106358?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=36ND4G6N60K3J&dib=eyJ2IjoiMSJ9.OmZ4M3nyVb8Cm7hfd0KBrlu1lHwQN9mhSAxXEjhCVgwhOk-eISPEziCLWYdY9WhJEDeqHfY92IzHEiCxuROwM5tcPeYS9JKoqLYfQ5kEvu3hEaE04KtoftIvmi_3Pl2Ym2pM6rFls22KkDv6-PNs7qwFGzOz6vte7lVOhOW6yjLNL_EB8XEFFdoJ3tjfETAv_eIiI3XDP_x7lThR0rHlTOBsQVkujrVYdjatbNYxnPF07SBKEc_EsS70YIU7Iua1I_r7eBGZpzJTd0Or55MD8G0nKo2IdxhMtgLczz_Bg5M.WrpDm-pWA75dGdMkRWl2NLbNZQw5qnYQBuFlaVoV058&dib_tag=se&keywords=a+lei+da+atra%C3%A7%C3%A3o&qid=1756147827&sprefix=a+lei+da+atr%C3%A7%C3%A3o%2Caps%2C305&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=f478c2d6e9a53a84b3eb0c6714ef12cd&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
 
-    <div class="book-card">
-        <img src="../images/Anti fra.png" alt="Capa do Livro 10" class="book-cover">
+<div class="book-card">
+    <a href="https://www.amazon.com.br/Antifr%C3%A1gil-Nova-edi%C3%A7%C3%A3o-Coisas-beneficiam/dp/8547001085?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=KV4A8IM1JU7N&dib=eyJ2IjoiMSJ9.I5qml1iyzUdxShDrHdkKmOje81FGRTKWSwgWWXujxS_kNgD8sR1Tsmmgdc4EsLMVMbhvUTyWhxJfxAC-Wz-2RZ-KfY4z--QSX-1azniuGMnrfT7btSx67coIYikQ3mQsUicancLEfyKERdYM3lVHe4HmUTx-7rkQMFlh4Wxt80Pl_OM23a18Sizd1t_Kt-dmpg0NI2Vv2ikVeKwcwVeg_AGMiTYbBHStU4lw9dWYn1SWk92BXqAPflMRBA0YfjcjksVb95ruUAAFIVipypzoATLtaQwO64fqBRoYq8575xw.FzEzmWROSB354iHvSygC3M02UuLqBSwaZ3SiFCdkaG0&dib_tag=se&keywords=anti+fragil&qid=1756147868&sprefix=anti+fr%C3%A1gil%2Caps%2C214&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=1af3fe8c13df0dbe889a43e03c4f660e&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/desenvolvimentopessoal/anti-fragil.png" alt="Capa do Livro: Anti Frágil" class="book-cover">
         <h4 class="book-title">Anti Frágil</h4>
         <p class="book-author">Autor: Nassim Nicholas Taleb</p>
-        <a href="#" class="buy-button">Comprar</a>
-    </div>
+    </a>
+    <a href="https://www.amazon.com.br/Antifr%C3%A1gil-Nova-edi%C3%A7%C3%A3o-Coisas-beneficiam/dp/8547001085?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=KV4A8IM1JU7N&dib=eyJ2IjoiMSJ9.I5qml1iyzUdxShDrHdkKmOje81FGRTKWSwgWWXujxS_kNgD8sR1Tsmmgdc4EsLMVMbhvUTyWhxJfxAC-Wz-2RZ-KfY4z--QSX-1azniuGMnrfT7btSx67coIYikQ3mQsUicancLEfyKERdYM3lVHe4HmUTx-7rkQMFlh4Wxt80Pl_OM23a18Sizd1t_Kt-dmpg0NI2Vv2ikVeKwcwVeg_AGMiTYbBHStU4lw9dWYn1SWk92BXqAPflMRBA0YfjcjksVb95ruUAAFIVipypzoATLtaQwO64fqBRoYq8575xw.FzEzmWROSB354iHvSygC3M02UuLqBSwaZ3SiFCdkaG0&dib_tag=se&keywords=anti+fragil&qid=1756147868&sprefix=anti+fr%C3%A1gil%2Caps%2C214&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=1af3fe8c13df0dbe889a43e03c4f660e&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
 
-    <div class="book-card">
-        <img src="../images/Rapido e.png" alt="Capa do Livro 11" class="book-cover">
-        <h4 class="book-title">Rapido e devagar: Duas formas de pensar</h4>
+<div class="book-card">
+    <a href="https://www.amazon.com.br/R%C3%A1pido-devagar-Daniel-Kahneman/dp/853900383X?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=OAD3JGQO2ZRM&dib=eyJ2IjoiMSJ9.RATkQpWayDLipjQa8a1a6UHKrrLgi6kmClGCa0TL2i7GjHj071QN20LucGBJIEps.eS4my092QGKUFB06s0gRuHd84B_Mz-kyVsfpONMawRY&dib_tag=se&keywords=Rapido+e+devagar%3A+Duas+formas+de+pensar&qid=1756147897&sprefix=rapido+e+devagar+duas+formas+de+pensar%2Caps%2C211&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=10f847ac2a23f6a804797033cdbb27f8&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/desenvolvimentopessoal/rapido-e-devagar.png" alt="Capa do Livro: Rápido e Devagar: Duas formas de pensar" class="book-cover">
+        <h4 class="book-title">Rápido e Devagar: Duas formas de pensar</h4>
         <p class="book-author">Autor: Daniel Kahneman</p>
-        <a href="#" class="buy-button">Comprar</a>
-    </div>
+    </a>
+    <a href="https://www.amazon.com.br/R%C3%A1pido-devagar-Daniel-Kahneman/dp/853900383X?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=OAD3JGQO2ZRM&dib=eyJ2IjoiMSJ9.RATkQpWayDLipjQa8a1a6UHKrrLgi6kmClGCa0TL2i7GjHj071QN20LucGBJIEps.eS4my092QGKUFB06s0gRuHd84B_Mz-kyVsfpONMawRY&dib_tag=se&keywords=Rapido+e+devagar%3A+Duas+formas+de+pensar&qid=1756147897&sprefix=rapido+e+devagar+duas+formas+de+pensar%2Caps%2C211&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=10f847ac2a23f6a804797033cdbb27f8&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
 
-    <div class="book-card">
-        <img src="../images/Hábitos Atômicos.png" alt="Capa do Livro 12" class="book-cover">
+<div class="book-card">
+    <a href="https://www.amazon.com.br/H%C3%A1bitos-At%C3%B4micos-M%C3%A9todo-Comprovado-Livrar/dp/8550807567?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3FTPHBIZTY998&dib=eyJ2IjoiMSJ9.MdqPg34SqLvdZOw_TgFh35NEaXZSe_j6D1ZPoJVpc5W6tTrfVCLHNrxmJHNutu8_xlJN2kPSDkC0QGEP9GYLbniWh2GEoyMo-1Fbr2tv2xi_ZFIT8TcKusEqDD4d7pROhGeV0nSwAU2_DvCEzk2HwaP8751McDei6pl1kDk5hgkCpwlFlGrcgzFmhnXGEh8amQ4enYt24iiy_D7WCibm-IAdaJX4fVQzwVfUoKyuE_mZ-wtHfo0M7c3L4KHhoV7K4cfdFeo0XEtbiFp0NZuEDqBcfJ8YXolDXI3UhJYe6r0.MC9gSIWWV3fX80UU1yUqSb7ZrPB9rkOlhrmaba3w86I&dib_tag=se&keywords=H%C3%A1bitos+At%C3%B4micos&qid=1756147928&sprefix=h%C3%A1bitos+at%C3%B4micos%2Caps%2C209&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=dde4b65f9b943a6c9d625d96f4fc0d77&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/desenvolvimentopessoal/habitos-atomicos.png" alt="Capa do Livro: Hábitos Atômicos" class="book-cover">
         <h4 class="book-title">Hábitos Atômicos</h4>
         <p class="book-author">Autor: James Clear</p>
-        <a href="#" class="buy-button">Comprar</a>
-    </div>
+    </a>
+    <a href="https://www.amazon.com.br/H%C3%A1bitos-At%C3%B4micos-M%C3%A9todo-Comprovado-Livrar/dp/8550807567?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3FTPHBIZTY998&dib=eyJ2IjoiMSJ9.MdqPg34SqLvdZOw_TgFh35NEaXZSe_j6D1ZPoJVpc5W6tTrfVCLHNrxmJHNutu8_xlJN2kPSDkC0QGEP9GYLbniWh2GEoyMo-1Fbr2tv2xi_ZFIT8TcKusEqDD4d7pROhGeV0nSwAU2_DvCEzk2HwaP8751McDei6pl1kDk5hgkCpwlFlGrcgzFmhnXGEh8amQ4enYt24iiy_D7WCibm-IAdaJX4fVQzwVfUoKyuE_mZ-wtHfo0M7c3L4KHhoV7K4cfdFeo0XEtbiFp0NZuEDqBcfJ8YXolDXI3UhJYe6r0.MC9gSIWWV3fX80UU1yUqSb7ZrPB9rkOlhrmaba3w86I&dib_tag=se&keywords=H%C3%A1bitos+At%C3%B4micos&qid=1756147928&sprefix=h%C3%A1bitos+at%C3%B4micos%2Caps%2C209&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=dde4b65f9b943a6c9d625d96f4fc0d77&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
 </div>
 
 <div class="books-container">
     <div class="book-card">
-        <img src="../images/Cavaleiro preso na armadura.png" alt="Capa do Livro 9" class="book-cover">
+    <a href="https://www.amazon.com.br/cavaleiro-preso-na-armadura/dp/6555870192?crid=3AX4MFR2UPDAN&dib=eyJ2IjoiMSJ9.DoWz7pCXKXe6LqdQk_XzeUWe-wd3Fe5CyMLcm4M9hh9kjNK4I2p51CKoX6IKXLcYXWp8sf_5K9c2Wn_8C49STTRvnA5dVc4oSFrT-Ia3z2Wq-kQBOw0bwir1vknNQH24ei5UG3ld-6Znw8y_P7RBgcKWbDUkwHGA7ER-Zw0J9ZVjbBnU1C123SGxhiN2KWOvqkX90c0mNZ2ov2rS2k3BLFUQCwZgKVACmqJHvV_TCEozQvjvKM5GA9w_6zssP2z4Y_N6rAWkTp2fpldG9zaGn86LW9SnX5TfXyU6E-uqyI.E-OogrLQosoNKcFnyOW9_mmUMSib7HrDJB-NcIgAujY&dib_tag=se&keywords=o+cavaleiro+preso+na+armadura&qid=1756148146&sprefix=ocavaleiro+%2Caps%2C250&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=400ed9017ab9c83e64fa076cb4c6403e&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/desenvolvimentopessoal/caveleiro-preso.png" alt="Capa do Livro: O Cavaleiro preso na armadura" class="book-cover">
         <h4 class="book-title">O Cavaleiro preso na armadura</h4>
         <p class="book-author">Autor: Robert Fisher</p>
-        <a href="#" class="buy-button">Comprar</a>
-    </div>
+    </a>
+    <a href="https://www.amazon.com.br/cavaleiro-preso-na-armadura/dp/6555870192?crid=3AX4MFR2UPDAN&dib=eyJ2IjoiMSJ9.DoWz7pCXKXe6LqdQk_XzeUWe-wd3Fe5CyMLcm4M9hh9kjNK4I2p51CKoX6IKXLcYXWp8sf_5K9c2Wn_8C49STTRvnA5dVc4oSFrT-Ia3z2Wq-kQBOw0bwir1vknNQH24ei5UG3ld-6Znw8y_P7RBgcKWbDUkwHGA7ER-Zw0J9ZVjbBnU1C123SGxhiN2KWOvqkX90c0mNZ2ov2rS2k3BLFUQCwZgKVACmqJHvV_TCEozQvjvKM5GA9w_6zssP2z4Y_N6rAWkTp2fpldG9zaGn86LW9SnX5TfXyU6E-uqyI.E-OogrLQosoNKcFnyOW9_mmUMSib7HrDJB-NcIgAujY&dib_tag=se&keywords=o+cavaleiro+preso+na+armadura&qid=1756148146&sprefix=ocavaleiro+%2Caps%2C250&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=400ed9017ab9c83e64fa076cb4c6403e&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
 
-    <div class="book-card">
-        <img src="../images/As Armas da persuasão.png" alt="Capa do Livro 10" class="book-cover">
+<div class="book-card">
+    <a href="https://www.amazon.com.br/As-armas-persuas%C3%A3o-Robert-Cialdini/dp/8575428098?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=34MVJFGJKAWC9&dib=eyJ2IjoiMSJ9.RsD-j7_Icou2AkWtF6CSsHLlelA9fYzRK51u7lzEm9-eUNT6vw6u_SAO6DpgY9n0gITvlxTC3wwKH8RDDVRLgFdUNUSai0xyTDwXn8tkQxP9oIb2Rn6DO_xnU6AWqoCvaaMaiOoUthpYNMPB4Gtf76u1yBy8JyUciuS3g68egohD3XRUlStByG1N81yhKzlQEQ7aZZ2VwJTYugednCctH_cZ0RmwuiOIYR1cy7JKQfhkQkT_lrKSFvV7STywoRnIJyOfYLcZ9JE5XV8t21NWxcIXaw-LRv4d9Oc0PPNZB_M.ERQQb0I6MHNxuxepVNH3QPBKFY66G8OVYZxMxB4gu8Q&dib_tag=se&keywords=As+Armas+da+Persuas%C3%A3o&qid=1756148184&sprefix=as+armas+da+persuas%C3%A3o%2Caps%2C216&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=1ed96863b772405b3fcc56f0a6bf73bf&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/desenvolvimentopessoal/armas-de-peruasao.png" alt="Capa do Livro: As Armas da Persuasão" class="book-cover">
         <h4 class="book-title">As Armas da Persuasão</h4>
         <p class="book-author">Autor: Robert B. Cialdini</p>
-        <a href="#" class="buy-button">Comprar</a>
-    </div>
+    </a>
+    <a href="https://www.amazon.com.br/As-armas-persuas%C3%A3o-Robert-Cialdini/dp/8575428098?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=34MVJFGJKAWC9&dib=eyJ2IjoiMSJ9.RsD-j7_Icou2AkWtF6CSsHLlelA9fYzRK51u7lzEm9-eUNT6vw6u_SAO6DpgY9n0gITvlxTC3wwKH8RDDVRLgFdUNUSai0xyTDwXn8tkQxP9oIb2Rn6DO_xnU6AWqoCvaaMaiOoUthpYNMPB4Gtf76u1yBy8JyUciuS3g68egohD3XRUlStByG1N81yhKzlQEQ7aZZ2VwJTYugednCctH_cZ0RmwuiOIYR1cy7JKQfhkQkT_lrKSFvV7STywoRnIJyOfYLcZ9JE5XV8t21NWxcIXaw-LRv4d9Oc0PPNZB_M.ERQQb0I6MHNxuxepVNH3QPBKFY66G8OVYZxMxB4gu8Q&dib_tag=se&keywords=As+Armas+da+Persuas%C3%A3o&qid=1756148184&sprefix=as+armas+da+persuas%C3%A3o%2Caps%2C216&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=1ed96863b772405b3fcc56f0a6bf73bf&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
 
-    <div class="book-card">
-        <img src="../images/Poder da mani.png" alt="Capa do Livro 11" class="book-cover">
+<div class="book-card">
+    <a href="https://www.amazon.com.br/Poder-manipula%C3%A7%C3%A3o-Jacob-Petry/dp/8562409685?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=VGICWOZSS343&dib=eyJ2IjoiMSJ9.KrkD27vxwGUBohrQzwKjTx_X6pX5_MACZX8gw3gdnf03RP62e3KgvmyOP8-vtrXC322iywxjjQGb-OfIeUIXzwnzYhO0zXeFC1LO7RgSzfA0MpuSQFWzTk1pkqkYuhaaWwHXc6ur9SJFjzIsq_E18XMTWsvvo6Wxi00-Q2nEtmU7y98hw00sockKEvl8IsGimzm85sWVOVh8tuAmAMoSZVQA1TWL4Ogp6Bq7NjV7P2jnWQC7bpPec49OWWHn3wDar92OTk1aND18J7AWNoIrvgf1JUpFJ_PvjE9Sdgh8Wc._Mxwwr7jOQ3-8tpXVEx4eoCQQyVxlP4V6WLf2N0cGzQ&dib_tag=se&keywords=O+Poder+da+Manipula%C3%A7%C3%A3o&qid=1756148210&sprefix=o+poder+da+manipula%C3%A7%C3%A3o%2Caps%2C233&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=42907fe0a142213dcbf73be5188513a6&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/desenvolvimentopessoal/poder-da-manipulacao.png" alt="Capa do Livro: O Poder da Manipulação" class="book-cover">
         <h4 class="book-title">O Poder da Manipulação</h4>
         <p class="book-author">Autor: Jacob Petry</p>
-        <a href="#" class="buy-button">Comprar</a>
-    </div>
+    </a>
+    <a href="https://www.amazon.com.br/Poder-manipula%C3%A7%C3%A3o-Jacob-Petry/dp/8562409685?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=VGICWOZSS343&dib=eyJ2IjoiMSJ9.KrkD27vxwGUBohrQzwKjTx_X6pX5_MACZX8gw3gdnf03RP62e3KgvmyOP8-vtrXC322iywxjjQGb-OfIeUIXzwnzYhO0zXeFC1LO7RgSzfA0MpuSQFWzTk1pkqkYuhaaWwHXc6ur9SJFjzIsq_E18XMTWsvvo6Wxi00-Q2nEtmU7y98hw00sockKEvl8IsGimzm85sWVOVh8tuAmAMoSZVQA1TWL4Ogp6Bq7NjV7P2jnWQC7bpPec49OWWHn3wDar92OTk1aND18J7AWNoIrvgf1JUpFJ_PvjE9Sdgh8Wc._Mxwwr7jOQ3-8tpXVEx4eoCQQyVxlP4V6WLf2N0cGzQ&dib_tag=se&keywords=O+Poder+da+Manipula%C3%A7%C3%A3o&qid=1756148210&sprefix=o+poder+da+manipula%C3%A7%C3%A3o%2Caps%2C233&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=42907fe0a142213dcbf73be5188513a6&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
 
-    <div class="book-card">
-        <img src="../images/Psicologia fi.png" alt="Capa do Livro 12" class="book-cover">
+<div class="book-card">
+    <a href="https://www.amazon.com.br/psicologia-financeira-atemporais-gan%C3%A2ncia-felicidade/dp/6555111100?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=13DVUI6I4K030&dib=eyJ2IjoiMSJ9.h3cFgA0rVC_-71yJnkkqbJvYcwPa1vxcnQnCewV8KxknJnZb9aCsW4An1OfyKCDDaPu1FajcqVTE4LMKPBf-JH-XgwiFEWp_vh7XC7d6LQ9T2D6_1wTFhW2JgMAXtYaX3tCy4AWJRu6x1P79JwcU9u_NXQuyXICNX9d5_dg1gO4KqmlEpmvkFljcl-dxymU3hE974NZFC8q1VOm4EVcI_7s1zVakjqPPymTb6m3CEXJ-4lW_Nv56INdzfNFCluBiEoT08V6YrA6tQ0YEesidESEOEL68ryMLZ6PuPVtb5uc.DBGrpWFHF-GboeOVK5jZWKkCV_Z7aIwIgbGuPbpI5io&dib_tag=se&keywords=Psicologia+Financeira&qid=1756148244&sprefix=psicologia+financeira%2Caps%2C213&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=99da0d8e9c58612c463b15f501362477&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/desenvolvimentopessoal/psciocologia-financeira.png" alt="Capa do Livro: Psicologia Financeira" class="book-cover">
         <h4 class="book-title">Psicologia Financeira</h4>
         <p class="book-author">Autor: Morgan Housel</p>
-        <a href="#" class="buy-button">Comprar</a>
-    </div>
+    </a>
+    <a href="https://www.amazon.com.br/psicologia-financeira-atemporais-gan%C3%A2ncia-felicidade/dp/6555111100?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=13DVUI6I4K030&dib=eyJ2IjoiMSJ9.h3cFgA0rVC_-71yJnkkqbJvYcwPa1vxcnQnCewV8KxknJnZb9aCsW4An1OfyKCDDaPu1FajcqVTE4LMKPBf-JH-XgwiFEWp_vh7XC7d6LQ9T2D6_1wTFhW2JgMAXtYaX3tCy4AWJRu6x1P79JwcU9u_NXQuyXICNX9d5_dg1gO4KqmlEpmvkFljcl-dxymU3hE974NZFC8q1VOm4EVcI_7s1zVakjqPPymTb6m3CEXJ-4lW_Nv56INdzfNFCluBiEoT08V6YrA6tQ0YEesidESEOEL68ryMLZ6PuPVtb5uc.DBGrpWFHF-GboeOVK5jZWKkCV_Z7aIwIgbGuPbpI5io&dib_tag=se&keywords=Psicologia+Financeira&qid=1756148244&sprefix=psicologia+financeira%2Caps%2C213&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=99da0d8e9c58612c463b15f501362477&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
 </div>
 
 <div class="books-container">
     <div class="book-card">
-        <img src="../images/As Leis da natureza.png" alt="Capa do Livro 9" class="book-cover">
+    <a href="https://www.amazon.com.br/leis-natureza-humana-Robert-Greene/dp/6555353686?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1YWV94BQ55P1S&dib=eyJ2IjoiMSJ9.XgVzQdvOeR0vOUaqcdMo2T5LOj0ZJ8ppipNCkAPdALWy9E59f7Z3_8_YBu3LwMa3F1kI0xI_sE56gAF1reT5S5OYDg42b5WpmMYerL65nh92SwjosiyXMMiHHLiS-Cl2d32GHBz4YOzdXMwtijz_UIpuQwzbXyE5i0KlYTzuXQfh_PaYPMsNhzlfQaSJeti0Bl0DC40F29ElwF2VkVmPKGAtMMk-T_zTGbIuwtce3iHX3EWAHbejlRYv5Zr1sMonSINGIbWPzr4Ak-M_HJ85_wZHkCTQLylgPpS6WzwOKww.1H1O_I3mszLh64v8G9td3T7G16Gy1jcebBCpJn6IX5U&dib_tag=se&keywords=As+Leis+da+Natureza+Humana&qid=1756148491&sprefix=%2Caps%2C470&sr=8-1&ufe=app_do%3Aamzn1.fos.6121c6c4-c969-43ae-92f7-cc248fc6181d&linkCode=ll1&tag=giroliterario-20&linkId=3b4fc52dcd18402e61481b187711d22a&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/desenvolvimentopessoal/leis-natureza-humana.png" alt="Capa do Livro: As Leis da Natureza Humana" class="book-cover">
         <h4 class="book-title">As Leis da Natureza Humana</h4>
         <p class="book-author">Autor: Robert Greene</p>
-        <a href="#" class="buy-button">Comprar</a>
-    </div>
+    </a>
+    <a href="https://www.amazon.com.br/leis-natureza-humana-Robert-Greene/dp/6555353686?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1YWV94BQ55P1S&dib=eyJ2IjoiMSJ9.XgVzQdvOeR0vOUaqcdMo2T5LOj0ZJ8ppipNCkAPdALWy9E59f7Z3_8_YBu3LwMa3F1kI0xI_sE56gAF1reT5S5OYDg42b5WpmMYerL65nh92SwjosiyXMMiHHLiS-Cl2d32GHBz4YOzdXMwtijz_UIpuQwzbXyE5i0KlYTzuXQfh_PaYPMsNhzlfQaSJeti0Bl0DC40F29ElwF2VkVmPKGAtMMk-T_zTGbIuwtce3iHX3EWAHbejlRYv5Zr1sMonSINGIbWPzr4Ak-M_HJ85_wZHkCTQLylgPpS6WzwOKww.1H1O_I3mszLh64v8G9td3T7G16Gy1jcebBCpJn6IX5U&dib_tag=se&keywords=As+Leis+da+Natureza+Humana&qid=1756148491&sprefix=%2Caps%2C470&sr=8-1&ufe=app_do%3Aamzn1.fos.6121c6c4-c969-43ae-92f7-cc248fc6181d&linkCode=ll1&tag=giroliterario-20&linkId=3b4fc52dcd18402e61481b187711d22a&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
 
-    <div class="book-card">
-        <img src="../images/O ego é.png" alt="Capa do Livro 10" class="book-cover">
+<div class="book-card">
+    <a href="https://www.amazon.com.br/ego-seu-inimigo-dominar-advers%C3%A1rio/dp/8551002422?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1IG9XT2XUITZ7&dib=eyJ2IjoiMSJ9.RATVj8Zya0YRPd2PPQ_ngIRNYyisYzEPoe8g0q2bPjqKy4dwxF0KvwxaXHgHWKsCTiOUjggdkfYrmqV9JCiOhGBtRGz_pgD3Uv5R0V4__g-m5XWa4BcYk-CCSbTqbivuKn3zZaOuW2wgg17P0seXt0EaZ0zYotOenj5GxNP_cD8D8dJmyqXsH3XRJcBsUCcsK6phzeYW92Xya5tdKMfFnuwo6kWWB2dm3Ln7aEekaaiH4KjeNheQmmVSd99otUdHD94hN6K7pd2tSbeRkSPcuJ-6fEUKWWJ3zpvhX6Swf2U.jR_WfG65MLaOhsSAIx_7V5nRzhAVEF6xflzAFJY5L5Q&dib_tag=se&keywords=O+Ego+%C3%A9+seu+Inimigo&qid=1756148532&sprefix=o+ego+%C3%A9+seu+inimigo%2Caps%2C228&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=97bcfd1e7f3cfb357c5fc696ccea0bf6&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/desenvolvimentopessoal/ego-inimigo.png" alt="Capa do Livro: O Ego é seu Inimigo" class="book-cover">
         <h4 class="book-title">O Ego é seu Inimigo</h4>
         <p class="book-author">Autor: Ryan Holiday</p>
-        <a href="#" class="buy-button">Comprar</a>
-    </div>
+    </a>
+    <a href="https://www.amazon.com.br/ego-seu-inimigo-dominar-advers%C3%A1rio/dp/8551002422?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1IG9XT2XUITZ7&dib=eyJ2IjoiMSJ9.RATVj8Zya0YRPd2PPQ_ngIRNYyisYzEPoe8g0q2bPjqKy4dwxF0KvwxaXHgHWKsCTiOUjggdkfYrmqV9JCiOhGBtRGz_pgD3Uv5R0V4__g-m5XWa4BcYk-CCSbTqbivuKn3zZaOuW2wgg17P0seXt0EaZ0zYotOenj5GxNP_cD8D8dJmyqXsH3XRJcBsUCcsK6phzeYW92Xya5tdKMfFnuwo6kWWB2dm3Ln7aEekaaiH4KjeNheQmmVSd99otUdHD94hN6K7pd2tSbeRkSPcuJ-6fEUKWWJ3zpvhX6Swf2U.jR_WfG65MLaOhsSAIx_7V5nRzhAVEF6xflzAFJY5L5Q&dib_tag=se&keywords=O+Ego+%C3%A9+seu+Inimigo&qid=1756148532&sprefix=o+ego+%C3%A9+seu+inimigo%2Caps%2C228&sr=8-1&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=giroliterario-20&linkId=97bcfd1e7f3cfb357c5fc696ccea0bf6&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
 
-    <div class="book-card">
-        <img src="../images/Pai rico.png" alt="Capa do Livro 11" class="book-cover">
-        <h4 class="book-title">Pai rico Pai pobre</h4>
-        <p class="book-author">Autor: Jacob Petry</p>
-        <a href="#" class="buy-button">Comprar</a>
-    </div>
+<div class="book-card">
+    <a href="https://www.amazon.com.br/Pai-rico-pai-pobre-anos/dp/8550801488?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=6BKOKU6Y38E0&dib=eyJ2IjoiMSJ9.WD8YpvYMo_P4mBicXrLGFxzIHk37BZreQ9kxwhivKSc0rIklH1iZ5eqivgE_ukKBc_8aGFtNvlVXqsoNM4PFic_HIflAytPns7aT1xyf-9YzyeQzgyZQUD-iTcqfh_eFkoTpPoguvVIXYl2TQtRWOeP1bvEomm0Q9jUeSPx9MbUwDChJrvqyK7iyd6sNko96xdoz88AZHDfPiG58woVE3z0ZXLtng-Az8ZO46ODk5Sfk6Vl4LyWUIgUr36r7s9kPRc6m-cmeL8PrPw_0O_IBU6kTxVlk4-NXRNh_Ah8qZfk.2BoqTmKLmOH3Eirn-Yotor_1usZafYv-JbY5i3Z8Edc&dib_tag=se&keywords=Pai+rico+Pai+pobre&qid=1756148566&sprefix=pai+rico+pai+pobre%2Caps%2C207&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=0dbb8248b34a19ad470d870d22eb55ce&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/desenvolvimentopessoal/pai-rico-pai-pobre.png" alt="Capa do Livro: Pai Rico, Pai Pobre" class="book-cover">
+        <h4 class="book-title">Pai Rico, Pai Pobre</h4>
+        <p class="book-author">Autor: Robert T. Kiyosaki</p>
+    </a>
+    <a href="https://www.amazon.com.br/Pai-rico-pai-pobre-anos/dp/8550801488?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=6BKOKU6Y38E0&dib=eyJ2IjoiMSJ9.WD8YpvYMo_P4mBicXrLGFxzIHk37BZreQ9kxwhivKSc0rIklH1iZ5eqivgE_ukKBc_8aGFtNvlVXqsoNM4PFic_HIflAytPns7aT1xyf-9YzyeQzgyZQUD-iTcqfh_eFkoTpPoguvVIXYl2TQtRWOeP1bvEomm0Q9jUeSPx9MbUwDChJrvqyK7iyd6sNko96xdoz88AZHDfPiG58woVE3z0ZXLtng-Az8ZO46ODk5Sfk6Vl4LyWUIgUr36r7s9kPRc6m-cmeL8PrPw_0O_IBU6kTxVlk4-NXRNh_Ah8qZfk.2BoqTmKLmOH3Eirn-Yotor_1usZafYv-JbY5i3Z8Edc&dib_tag=se&keywords=Pai+rico+Pai+pobre&qid=1756148566&sprefix=pai+rico+pai+pobre%2Caps%2C207&sr=8-1&linkCode=ll1&tag=giroliterario-20&linkId=0dbb8248b34a19ad470d870d22eb55ce&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
 
-    <div class="book-card">
-        <img src="../images/A psicologia do.png" alt="Capa do Livro 12" class="book-cover">
-        <h4 class="book-title">A psicologia Financeira</h4>
-        <p class="book-author">Autor: Morgan Housel</p>
-        <a href="#" class="buy-button">Comprar</a>
-    </div>
+<div class="book-card">
+    <a href="https://www.amazon.com.br/Mais-esperto-que-Diabo-liberdade/dp/8568014003?crid=9FUA2045Y0L9&dib=eyJ2IjoiMSJ9.tlXU8csB4SVOibKmxeXP_cxQ-c8Va0svZ1vB6N3uEuN_OfVnmRoMsqOYWDHuto1LNnFR0mTmXdCsWqdMLU-wqK8kPalqY2u0H0HBF2CAXIzDXhrn9vTXUflmfv2BwK0F-MFMF-Kqj9gwIm4MqfyN4jrZlVqaTOKTaO-Tau3m6K0_du-sDGp_7KxhIwZyX-EAseZkwk0g2dkDJFeznbDQFtP0WZo55fBPQtMnh2DlQfob16R4wQ0GfTwWe15gXfnBkhjTC_gv0nzdrMqUAGU0mYnLwarO5lBmSA0_YUU3jcM.b-K4_uBwhdSc89CNpUE5yxks6Eafpqo0hDj20oL85qk&dib_tag=se&keywords=mais+esperto+que+o+diabo&qid=1756148798&sprefix=mais+%2Caps%2C330&sr=8-2&linkCode=ll1&tag=giroliterario-20&linkId=f1979c3b6997b42483a319f4cf93ce29&language=pt_BR&ref_=as_li_ss_tl" class="book-link" target="_blank" rel="noopener noreferrer">
+        <img src="../images/desenvolvimentopessoal/mais-esperto-que.png" alt="Capa do Livro: Mais Esperto que o Diabo" class="book-cover">
+        <h4 class="book-title">Mais Esperto que o Diabo</h4>
+        <p class="book-author">Autor: Napoleon Hill</p>
+    </a>
+    <a href="https://www.amazon.com.br/Mais-esperto-que-Diabo-liberdade/dp/8568014003?crid=9FUA2045Y0L9&dib=eyJ2IjoiMSJ9.tlXU8csB4SVOibKmxeXP_cxQ-c8Va0svZ1vB6N3uEuN_OfVnmRoMsqOYWDHuto1LNnFR0mTmXdCsWqdMLU-wqK8kPalqY2u0H0HBF2CAXIzDXhrn9vTXUflmfv2BwK0F-MFMF-Kqj9gwIm4MqfyN4jrZlVqaTOKTaO-Tau3m6K0_du-sDGp_7KxhIwZyX-EAseZkwk0g2dkDJFeznbDQFtP0WZo55fBPQtMnh2DlQfob16R4wQ0GfTwWe15gXfnBkhjTC_gv0nzdrMqUAGU0mYnLwarO5lBmSA0_YUU3jcM.b-K4_uBwhdSc89CNpUE5yxks6Eafpqo0hDj20oL85qk&dib_tag=se&keywords=mais+esperto+que+o+diabo&qid=1756148798&sprefix=mais+%2Caps%2C330&sr=8-2&linkCode=ll1&tag=giroliterario-20&linkId=f1979c3b6997b42483a319f4cf93ce29&language=pt_BR&ref_=as_li_ss_tl" class="buy-button">Comprar</a>
+</div>
 </div>
 
 
-    <script src="Pessoal.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>
