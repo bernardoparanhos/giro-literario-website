@@ -286,6 +286,20 @@ body {
     color: #999;
 }
 
+/* Estilos para a nova seção de destaques */
+.highlights-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 3.7rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #6A5ACD, #FF69B4, #FFA07A, #FFD700, #40E0D0); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #6A5ACD;
+}
+
 /* Estilos para a galeria de livros inclinados */
 .hero-books-container {
     display: flex;
@@ -293,7 +307,7 @@ body {
     align-items: flex-end;
     gap: 40px;
     padding: 50px 20px;
-    margin-top: 50px;
+    margin-top: 20px; 
     margin-bottom: 50px;
     flex-wrap: wrap;
 }
@@ -321,7 +335,6 @@ body {
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
 }
 
 .hero-books-container .hero-book:nth-child(2n) {
@@ -332,9 +345,19 @@ body {
     transform: rotate(-3deg);
 }
 
+/* Modificação para a "puladinha" */
 .hero-book:hover {
-    transform: translateY(-10px) scale(1.05);
+    transform: translateY(-20px) scale(1.08) !important;
     z-index: 10;
+}
+
+/* Para garantir que a "puladinha" funcione corretamente com a rotação */
+.hero-books-container .hero-book:nth-child(2n):hover {
+    transform: translateY(-20px) rotate(3deg) scale(1.08) !important;
+}
+
+.hero-books-container .hero-book:nth-child(2n-1):hover {
+    transform: translateY(-20px) rotate(-3deg) scale(1.08) !important;
 }
 
 /* Estilos para a nova frase de impacto */
@@ -343,8 +366,9 @@ body {
     font-family: 'Outfit', sans-serif;
     font-size: 8.2rem;
     font-weight: 700;
+    line-height: 1.1;
     color: #000;
-    margin-top: 40px;
+    margin-top: 100px;
     margin-left: 30px;
 }
 
@@ -518,10 +542,20 @@ footer {
         transform: none !important;
     }
 
+    .highlights-title {
+        font-size: 3.0rem;
+        margin-top: 30px;
+        background: linear-gradient(90deg, #6A5ACD, #FF69B4, #FFA07A, #FFD700, #40E0D0);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: #6A5ACD;
+    }
+
     .impact-phrase {
         font-size: 4rem;
         margin-left: 15px;
         text-align: center;
+        margin-top: 60px;
     }
 }
 
@@ -571,5 +605,6 @@ footer {
 @media (min-width: 768px) and (max-width: 1024px) {
     .impact-phrase {
         font-size: 6rem;
+        margin-top: 80px;
     }
 }

@@ -1,6 +1,6 @@
-// script.js
 document.addEventListener('DOMContentLoaded', () => {
-    // --- Lógica do menu de hambúrguer para telas menores ---
+    // --- Lógica do menu de hambúrguer e dropdown ---
+    // (Mantida a mesma, pois já está funcional)
     const menuToggle = document.getElementById('menuToggle');
     const genresMenu = document.getElementById('genresMenu');
     const exploreLink = document.querySelector('.explore-link');
@@ -34,11 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // --- Lógica do dropdown "Explorar" no cabeçalho (sem o botão principal) ---
     const exploreDropdownMenu = document.querySelector('.explore-dropdown-menu');
-    const exploreMenuContainer = document.querySelector('.explore-menu-container');
-
-    // Este listener global é o que fecha a aba ao clicar fora (apenas em desktop)
     document.addEventListener('click', (event) => {
         if (window.innerWidth > 767) {
             const isClickInsideMenu = exploreDropdownMenu && exploreDropdownMenu.contains(event.target);
@@ -51,14 +47,20 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // --- Lógica da barra de pesquisa com o Backend (MongoDB) ---
+    // --- Lógica da barra de pesquisa com o Backend (AJUSTADA) ---
     const searchInput = document.getElementById('searchInput');
     const searchResultsContainer = document.getElementById('searchResultsContainer');
 
+    // Esta função cria o HTML de cada resultado de livro
     const createResultItem = (book) => {
+        // Assegura que os caminhos das imagens e links estão corretos
+        // com base no que você me enviou (e nas suas configurações do server.js)
+        const imagePath = book.image ? `../${book.image}` : '';
+        const pagePath = book.page ? `../${book.page}` : '#';
+
         return `
-            <a href="../${book.page}" class="search-result-item">
-                <img src="../${book.image}" alt="${book.title}" class="search-result-image">
+            <a href="${pagePath}" class="search-result-item">
+                <img src="${imagePath}" alt="${book.title}" class="search-result-image">
                 <div class="search-result-info">
                     <span class="search-result-title">${book.title}</span>
                     <span class="search-result-author">${book.author}</span>
@@ -67,8 +69,9 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
     };
 
+    // Esta função renderiza a lista de livros na tela
     const renderResults = (books) => {
-        searchResultsContainer.innerHTML = '';
+        searchResultsContainer.innerHTML = ''; // Limpa os resultados anteriores
         if (books.length > 0) {
             const resultItems = books.map(createResultItem).join('');
             searchResultsContainer.innerHTML = resultItems;
@@ -79,6 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    // Esta função faz a requisição para a sua API de busca
     const searchBooks = async (term) => {
         try {
             const response = await fetch(`http://localhost:3000/search-books?term=${encodeURIComponent(term)}`);
@@ -94,17 +98,28 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    // Listener para o campo de input que dispara a busca
     if (searchInput) {
+        let timeoutId;
+
         searchInput.addEventListener('input', (event) => {
             const searchTerm = event.target.value.trim();
+
+            clearTimeout(timeoutId);
+
             if (searchTerm.length > 0) {
-                searchBooks(searchTerm);
+                // Aguarda 300ms antes de fazer a requisição para não sobrecarregar
+                timeoutId = setTimeout(() => {
+                    searchBooks(searchTerm);
+                }, 300);
             } else {
                 searchResultsContainer.style.display = 'none';
+                searchResultsContainer.innerHTML = '';
             }
         });
     }
 
+    // Listener para fechar os resultados ao clicar fora
     document.addEventListener('click', (event) => {
         const isClickInsideSearch = searchInput && searchInput.parentElement.contains(event.target);
         const isClickInsideResults = searchResultsContainer && searchResultsContainer.contains(event.target);
@@ -112,6 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!isClickInsideSearch && !isClickInsideResults) {
             if (searchResultsContainer) {
                 searchResultsContainer.style.display = 'none';
+                searchResultsContainer.innerHTML = '';
             }
         }
     });

@@ -1,0 +1,560 @@
+/* Estilos para o cabeçalho principal */
+.main-header {
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Esconde o menu de gêneros por padrão (telas maiores) */
+.genres-menu {
+    display: none;
+}
+
+/* Esconde o botão de menu hambúrguer por padrão (telas maiores) */
+.menu-toggle {
+    display: none;
+}
+
+.logo {
+    font-family: 'Outfit', sans-serif;
+    color: #000000;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Agrupa a barra de pesquisa e o explorar */
+.header-items {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Estilo do formulário de pesquisa */
+.search-container {
+    display: flex;
+    flex-grow: 1;
+    max-width: 450px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 15px;
+    width: 100%;
+}
+
+.search-input {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 1rem;
+    color: #333;
+    flex-grow: 1;
+    font-family: 'Outfit', sans-serif;
+}
+
+.search-input::placeholder {
+    color: #999;
+    font-family: 'Outfit', sans-serif;
+}
+
+.search-button {
+    background-color: #000080;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-button .fas {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+/* Container do link "Explorar" e do menu flutuante */
+.explore-menu-container {
+    position: relative;
+}
+
+.explore-link {
+    font-family: 'Outfit', sans-serif;
+    color: #000000;
+    font-size: 1.1rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.explore-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    z-index: 1000;
+    width: 250px;
+}
+
+.explore-menu-container:hover .explore-dropdown-menu {
+    display: block;
+}
+
+.dropdown-header-items {
+    padding-bottom: 10px;
+}
+
+.dropdown-top-item {
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-top-item:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown-divider {
+    border: none;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 5px 20px 15px 20px;
+}
+
+.explore-dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.explore-dropdown-menu li a {
+    font-family: 'Outfit', sans-serif;
+    display: block;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.2s ease;
+}
+
+.explore-dropdown-menu li a:hover {
+    background-color: #f0f0f0;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-icon-link {
+    display: flex;
+    transition: transform 0.2s ease-in-out;
+}
+
+.social-icon-link:hover {
+    transform: scale(1.1);
+}
+
+.social-icons svg {
+    width: 28px;
+    height: 28px;
+}
+
+/* Estilos para telas menores que 768px (Mobile) */
+@media (max-width: 767px) {
+    .main-header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+        margin: 0;
+    }
+    
+    .header-items {
+        order: 1;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .search-container {
+        width: 100%;
+        max-width: none;
+    }
+    
+    .explore-menu-container {
+        display: none;
+    }
+
+    .social-icons {
+        margin-left: 0;
+        gap: 10px;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+
+    .genres-menu {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-100%);
+        transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+
+    .genres-menu.is-open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    
+    .genres-menu ul {
+        list-style: none;
+        padding: 10px 0;
+        margin: 0;
+    }
+
+    .genres-menu a {
+        display: block;
+        padding: 12px 20px;
+        text-decoration: none;
+        color: #333;
+        font-family: 'Outfit', sans-serif;
+        font-weight: bold;
+    }
+
+    .genres-menu a:hover {
+        background-color: #f0f0f0;
+    }
+
+    .menu-toggle .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin: 5px 0;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.page-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.books-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.book-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 180px;
+    flex-shrink: 0;
+    justify-content: space-between;
+}
+
+.book-cover {
+    width: 150px;
+    height: 225px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.book-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.1rem;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.buy-button {
+    font-family: 'Outfit', sans-serif;
+    display: inline-block;
+    background-color: #000080;
+    color: #ffffff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: auto;
+}
+
+.buy-button:hover {
+    background-color: #000066;
+}
+
+.book-author {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.9rem;
+    color: #555;
+    margin: -5px 0 15px 0;
+}
+
+/* Adicione esta regra no topo do seu arquivo CSS */
+* {
+    box-sizing: border-box;
+}
+
+/* ... o restante do seu código CSS ... */
+
+/* Media query para telas menores que 768px (tablets e celulares) */
+@media (max-width: 768px) {
+    .books-container {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .book-card {
+        /* Define a largura para que dois cards caibam na mesma linha */
+        width: calc(50% - 10px);
+        /* box-sizing: border-box; <-- Já está no seletor universal, mas deixo como exemplo */
+    }
+}
+
+/* Estilos para telas maiores (desktop) */
+.books-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha */
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.book-card {
+    /* Define a largura para que 4 cards caibam na mesma linha,
+       considerando o espaçamento */
+    width: calc(25% - 15px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    flex-shrink: 0;
+    justify-content: space-between;
+}
+
+/* ... mantenha o restante das regras CSS para .book-cover, .book-title, etc. ... */
+
+/* Media query para telas menores que 768px (tablets e celulares) */
+@media (max-width: 768px) {
+    .books-container {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .book-card {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+        border-right: 1px solid #e0e0e0;
+    }
+
+    .book-card:nth-child(even) {
+        border-right: none;
+    }
+
+    /* Linha horizontal para separar as linhas de 2 livros */
+    .books-container > .book-card:nth-child(2n) {
+        border-bottom: 1px solid #e0e0e0;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    .books-container > .book-card:nth-child(2n):last-child {
+        border-bottom: none;
+    }
+
+}
+
+
+
+/*
+    --- CÓDIGO A SER ADICIONADO AO FINAL DO Aventura.css ---
+*/
+/* Estilo do contêiner de resultados */
+.search-results-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    display: none; /* Inicia escondido */
+    flex-direction: column;
+}
+
+/* Estilo de cada item de resultado */
+.search-result-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.2s ease;
+}
+
+.search-result-item:hover {
+    background-color: #f0f0f0;
+}
+
+.search-result-image {
+    width: 40px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+
+.search-result-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-result-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.search-result-author {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.no-results {
+    padding: 15px;
+    text-align: center;
+    color: #888;
+    font-family: 'Outfit', sans-serif;
+}
+
+
+/* Estilo do formulário de pesquisa */
+.search-container {
+    display: flex;
+    flex-grow: 1;
+    max-width: 450px;
+    position: relative; /* ADICIONE ESTA LINHA */
+}
+
+/* Estilo para o link que envolve a imagem e o texto */
+.book-card .book-link {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Faz o texto herdar a cor do elemento pai (o card) */
+}
+
+/* Estilo para os títulos dos livros dentro do link */
+.book-card .book-link .book-title {
+    color: black; /* Garante que o título seja preto, ou a cor que você preferir */
+}
+
+/* Estilo para o autor do livro dentro do link */
+.book-card .book-link .book-author {
+    color: #666; /* Garante que o autor tenha uma cor cinza mais suave, como na página de Aventura */
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+footer {
+    background-color: #f1f1f1;
+    color: #555;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-center {
+    margin-bottom: 10px; /* Adiciona um espaço entre as duas linhas de texto */
+}
+
+.footer-center p {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}
+
+.footer-right {
+    text-align: center;
+    max-width: 400px;
+}
+
+.footer-right p {
+    font-family: 'Outfit', sans-serif;
+    font-size: 12px; /* Fonte menor para a nota de rodapé */
+    margin: 0;
+    color: #666;
+}
