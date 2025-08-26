@@ -1,48 +1,55 @@
 // script.js
 document.addEventListener('DOMContentLoaded', () => {
-    // --- Lógica do menu "Explorar" para telas menores ---
+    // --- Lógica do menu de hambúrguer para telas menores ---
     const menuToggle = document.getElementById('menuToggle');
     const genresMenu = document.getElementById('genresMenu');
+    const exploreLink = document.querySelector('.explore-link');
 
-    if (menuToggle && genresMenu) {
-        menuToggle.addEventListener('click', () => {
+    const toggleGenresMenu = () => {
+        if (genresMenu) {
             genresMenu.classList.toggle('is-open');
-        });
+        }
+    };
 
-        document.addEventListener('click', (event) => {
-            const isClickInsideMenu = genresMenu.contains(event.target);
-            const isClickOnToggle = menuToggle.contains(event.target);
-
-            if (genresMenu.classList.contains('is-open') && !isClickInsideMenu && !isClickOnToggle) {
-                genresMenu.classList.remove('is-open');
+    if (menuToggle) {
+        menuToggle.addEventListener('click', toggleGenresMenu);
+    }
+    
+    if (exploreLink) {
+        exploreLink.addEventListener('click', (event) => {
+            if (window.innerWidth <= 767) {
+                event.preventDefault();
+                toggleGenresMenu();
             }
         });
     }
 
-    // --- Lógica do botão "Explore o site" para abrir o menu "Explorar" ---
-    const exploreSiteButton = document.querySelector('.buy-button');
+    document.addEventListener('click', (event) => {
+        const isClickInsideMenu = genresMenu && genresMenu.contains(event.target);
+        const isClickOnToggle = menuToggle && menuToggle.contains(event.target);
+        const isClickOnExploreLink = exploreLink && exploreLink.contains(event.target);
+
+        if (genresMenu && genresMenu.classList.contains('is-open') && !isClickInsideMenu && !isClickOnToggle && !isClickOnExploreLink) {
+            genresMenu.classList.remove('is-open');
+        }
+    });
+
+    // --- Lógica do dropdown "Explorar" no cabeçalho (sem o botão principal) ---
     const exploreDropdownMenu = document.querySelector('.explore-dropdown-menu');
     const exploreMenuContainer = document.querySelector('.explore-menu-container');
 
-    if (exploreSiteButton && exploreDropdownMenu && exploreMenuContainer) {
-        exploreSiteButton.addEventListener('click', (event) => {
-            // Previne a navegação, se o botão estiver dentro de um formulário ou link
-            event.preventDefault();
+    // Este listener global é o que fecha a aba ao clicar fora (apenas em desktop)
+    document.addEventListener('click', (event) => {
+        if (window.innerWidth > 767) {
+            const isClickInsideMenu = exploreDropdownMenu && exploreDropdownMenu.contains(event.target);
+            const isClickOnExploreLink = exploreLink && exploreLink.contains(event.target);
+            const isMenuOpen = exploreDropdownMenu && exploreDropdownMenu.classList.contains('show');
 
-            // Adiciona a classe 'show' para exibir o menu
-            exploreDropdownMenu.classList.add('show');
-
-            // Adiciona um listener temporário para fechar o menu ao clicar fora
-            const closeMenuOnClickOutside = (e) => {
-                if (!exploreMenuContainer.contains(e.target) && e.target !== exploreSiteButton) {
-                    exploreDropdownMenu.classList.remove('show');
-                    // Remove o próprio listener para evitar múltiplos
-                    document.removeEventListener('click', closeMenuOnClickOutside);
-                }
-            };
-            document.addEventListener('click', closeMenuOnClickOutside);
-        });
-    }
+            if (isMenuOpen && !isClickInsideMenu && !isClickOnExploreLink) {
+                exploreDropdownMenu.classList.remove('show');
+            }
+        }
+    });
 
     // --- Lógica da barra de pesquisa com o Backend (MongoDB) ---
     const searchInput = document.getElementById('searchInput');
@@ -87,25 +94,32 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    searchInput.addEventListener('input', (event) => {
-        const searchTerm = event.target.value.trim();
-        if (searchTerm.length > 0) {
-            searchBooks(searchTerm);
-        } else {
-            searchResultsContainer.style.display = 'none';
-        }
-    });
+    if (searchInput) {
+        searchInput.addEventListener('input', (event) => {
+            const searchTerm = event.target.value.trim();
+            if (searchTerm.length > 0) {
+                searchBooks(searchTerm);
+            } else {
+                searchResultsContainer.style.display = 'none';
+            }
+        });
+    }
 
     document.addEventListener('click', (event) => {
-        const isClickInsideSearch = searchInput.parentElement.contains(event.target);
-        const isClickInsideResults = searchResultsContainer.contains(event.target);
+        const isClickInsideSearch = searchInput && searchInput.parentElement.contains(event.target);
+        const isClickInsideResults = searchResultsContainer && searchResultsContainer.contains(event.target);
         
         if (!isClickInsideSearch && !isClickInsideResults) {
-            searchResultsContainer.style.display = 'none';
+            if (searchResultsContainer) {
+                searchResultsContainer.style.display = 'none';
+            }
         }
     });
 
-    document.querySelector('.search-form').addEventListener('submit', (event) => {
-        event.preventDefault();
-    });
+    const searchForm = document.querySelector('.search-form');
+    if (searchForm) {
+        searchForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+        });
+    }
 });
