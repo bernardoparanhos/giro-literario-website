@@ -517,3 +517,44 @@
 .book-card .book-link .book-author {
     color: #666; /* Garante que o autor tenha uma cor cinza mais suave, como na página de Aventura */
 }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+footer {
+    background-color: #f1f1f1;
+    color: #555;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-center {
+    margin-bottom: 10px; /* Adiciona um espaço entre as duas linhas de texto */
+}
+
+.footer-center p {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}
+
+.footer-right {
+    text-align: center;
+    max-width: 400px;
+}
+
+.footer-right p {
+    font-family: 'Outfit', sans-serif;
+    font-size: 12px; /* Fonte menor para a nota de rodapé */
+    margin: 0;
+    color: #666;
+}
