@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
     // --- Lógica do menu de hambúrguer e dropdown ---
-    // (Mantida a mesma, pois já está funcional)
     const menuToggle = document.getElementById('menuToggle');
     const genresMenu = document.getElementById('genresMenu');
     const exploreLink = document.querySelector('.explore-link');
@@ -47,16 +46,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // --- Lógica da barra de pesquisa com o Backend (AJUSTADA) ---
+    // --- Lógica da barra de pesquisa com o Backend (CORRIGIDA) ---
     const searchInput = document.getElementById('searchInput');
     const searchResultsContainer = document.getElementById('searchResultsContainer');
 
     // Esta função cria o HTML de cada resultado de livro
     const createResultItem = (book) => {
-        // Assegura que os caminhos das imagens e links estão corretos
-        // com base no que você me enviou (e nas suas configurações do server.js)
+        // O caminho da imagem continua com o "../" porque o seu backend retorna um caminho relativo
         const imagePath = book.image ? `../${book.image}` : '';
-        const pagePath = book.page ? `../${book.page}` : '#';
+        
+        // CORREÇÃO AQUI: o 'book.page' já é um URL absoluto, então o "../" é removido.
+        const pagePath = book.page ? book.page : '#';
 
         return `
             <a href="${pagePath}" class="search-result-item">

@@ -192,9 +192,10 @@ body {
     transform: scale(1.1);
 }
 
+/* CORREÇÃO AQUI: Aumenta o tamanho dos ícones SVG para 40px */
 .social-icons svg {
-    width: 28px;
-    height: 28px;
+    width: 40px;
+    height: 40px;
 }
 
 /* Estilo para o botão "Livros do Momento" */
