@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Esta função faz a requisição para a sua API de busca
     const searchBooks = async (term) => {
         try {
-            const response = await fetch(`http://localhost:3000/search-books?term=${encodeURIComponent(term)}`);
+            const response = await fetch(`https://giroliterario-website.onrender.com/search-books?term=${encodeURIComponent(term)}`);
             if (!response.ok) {
                 throw new Error('Erro na resposta do servidor.');
             }
